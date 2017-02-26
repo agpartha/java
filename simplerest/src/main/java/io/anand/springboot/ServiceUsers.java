@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ServiceUsers {
 	@RequestMapping("/users")
-	public List<User> returnHello () {
+	public List<User> returnUsers () {
 		return Arrays.asList(
 				new User ("John", "Elementary", 192838, 145354545),
 				new User ("Ravi", "Middle", 192298, 145312144),
