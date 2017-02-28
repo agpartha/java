@@ -1,6 +1,11 @@
 package io.anand.springboot;
 
 public class User {
+	
+	public User () {
+		
+	}
+	
 	public User(String name, String grade, long id, long graduated) {
 		super();
 		this.name = name;
@@ -8,6 +13,7 @@ public class User {
 		this.id = id;
 		this.graduated = graduated;
 	}
+	
 	private String	name;
 	private String	grade;
 	private long  	id;
