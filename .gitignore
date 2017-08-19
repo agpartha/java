@@ -1,3 +1,4 @@
-.DS_Store
-simplerest/target/*
+**/.classpath
+**/.DS_Store
+**/target/*
 udemy/bin/*
