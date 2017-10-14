@@ -1,4 +1,6 @@
 **/.classpath
+**/.settings
+**/.project
 **/.DS_Store
 **/target/*
 **/udemy/bin/*
