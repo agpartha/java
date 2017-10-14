@@ -1,4 +1,6 @@
 **/.classpath
 **/.DS_Store
 **/target/*
-udemy/bin/*
+**/udemy/bin/*
+**/*.class
+**/simplerest/bin/*
