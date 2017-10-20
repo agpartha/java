@@ -6,7 +6,7 @@ import java.util.ArrayList;
 // Implement a Min-Heap
 class BinaryHeapGeneric <T extends Comparable<T>> {
     
-    private int                 count  = 0;
+    private int           count  = 0;
     private ArrayList<T>  harray = new ArrayList<T> ();
     
     private boolean insert (T val) {
