@@ -28,5 +28,20 @@ public class UserService {
 	public User getUser (String userName) {
 		return users.stream().filter(u -> u.getName().equals(userName)).findFirst().get();
 	}
- 	
+	
+	public User updUser (String userName, User updUser) {
+	    int index = users.indexOf(users.stream().filter(u -> u.getName().equals(userName)).findFirst().get());
+	    users.set(index, updUser);
+	    return users.get(index);
+	}
+	
+	public boolean addUser (User user) {
+	    return users.add(user);
+	}
+	
+	public boolean remUser (User user) {
+	    boolean deleted = users.remove(user);
+	    System.out.println(deleted ? "Able " : " Unable " + "to remove the user: " + user.toString());
+	    return deleted;
+	}
 }
