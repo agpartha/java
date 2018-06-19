@@ -1,16 +1,16 @@
 package io.anand.learn;
 
-public class LinkedList <DataType extends Comparable<DataType>>{
+public class LinkedList <T extends Comparable<T>>{
     public LinkedListNode head = null;
     
-    public void insert (DataType data) {
-        LinkedListNode <DataType> node = new LinkedListNode <DataType> (data);
+    public void insert (T data) {
+        LinkedListNode <T> node = new LinkedListNode <T> (data);
         if (null == head) {
             head = node;
             return;
         }
         
-        LinkedListNode <DataType> cur = head;
+        LinkedListNode <T> cur = head;
         while (null != cur) {
             if (null == cur.next) {
                 cur.next = node;
@@ -20,8 +20,8 @@ public class LinkedList <DataType extends Comparable<DataType>>{
         }
     }
     
-    public void remove (DataType data) {
-        LinkedListNode <DataType> prev, cur;
+    public void remove (T data) {
+        LinkedListNode <T> prev, cur;
  
         prev = null;
         cur  = head;
@@ -38,7 +38,7 @@ public class LinkedList <DataType extends Comparable<DataType>>{
         }
     }
     public void print () {
-        LinkedListNode <DataType> cur = head;
+        LinkedListNode <T> cur = head;
         System.out.format("List items\n");
         while (null != cur) {
             System.out.println(cur.print());
