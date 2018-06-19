@@ -1,16 +1,16 @@
 package io.anand.learn;
 
-public class LinkedListNode <DataType extends Comparable<DataType>> {
+public class LinkedListNode <T extends Comparable<T>> {
 
-    public LinkedListNode <DataType> next;
-    private DataType data;
+    public LinkedListNode <T> next;
+    private T data;
 
-    public LinkedListNode (DataType data) {
+    public LinkedListNode (T data) {
         this.data = data;
         this.next = null;
     }
     
-    public int compareTo (DataType data2){
+    public int compareTo (T data2){
         return data.compareTo(data2);
     }
     public String print () {
