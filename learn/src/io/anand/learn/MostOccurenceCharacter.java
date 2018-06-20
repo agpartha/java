@@ -1,11 +1,8 @@
 package io.anand.learn;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.*;
 
-public class MostOccurenceRev2 {
+public class MostOccurenceCharacter {
 
     /*
      Given a string S and an integer N, write a function that returns the N characters that occur most often in the string S in order of occurence count.
@@ -30,6 +27,11 @@ public class MostOccurenceRev2 {
                 return -1;
             return 0;
         }
+
+        @Override
+        public String toString () {
+            return "(CharCount: Char: " + this.c + ", Count: " + this.count + ")";
+        }
     }
 
     public static String MostOccurentChars (String text, int count) {
@@ -51,15 +53,19 @@ public class MostOccurenceRev2 {
         // Get a sorted set based on the count
         // 1, 2, 3
         // 3, 2, 1
-        SortedSet<CharCount> countSortedSet = new TreeSet<>();
+        List<CharCount> countSet = new ArrayList<>();
         for (Character c: freqMap.keySet()) {
-            System.out.println("Sorting: Char: " + c + ", count: " + freqMap.get(c));
-            countSortedSet.add(new CharCount(c, freqMap.get(c)));
+            System.out.println("Sorting: Character: " + c + ", count: " + freqMap.get(c));
+            countSet.add(new CharCount(c, freqMap.get(c)));
         }
+
+        // Sort the list with our comparator for frequency
+        Collections.sort(countSet);
+
 
         // Prepare the String selecting first 'count' characters
         StringBuilder sb = new StringBuilder();
-        for (CharCount charCount: countSortedSet) {
+        for (CharCount charCount: countSet) {
             System.out.println("Building: Char: " + charCount.c + ", count: " + charCount.count);
             if (0 < count--)
                 sb.append(charCount.c);
@@ -79,8 +85,8 @@ public class MostOccurenceRev2 {
         */
 
         /* Test Data: 3 */
-        String text  = "ABCDEEFGGHIIIKKLMNOPQ11";
-        int    count = 5;
+        String text  = "ABCDEEFGGHIIIKKLMNOPQQQQQ11";
+        int    count = 6;
 
         System.out.println("Most Occurent Characters result: " + MostOccurentChars(text, count) + ", for text: " + text + ", count: " + count);
 

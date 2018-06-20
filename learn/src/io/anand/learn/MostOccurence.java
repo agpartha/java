@@ -30,7 +30,7 @@ public class MostOccurence {
 
         @Override
         public String toString () {
-            return "[IntCount: Integer: " + this.c + ", Count: " + this.count + "]";
+            return "(IntCount: Integer: " + this.c + ", Count: " + this.count + ")";
         }
     }
 

@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MostOccurence.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
+      <file leaf-file-name="MostOccurence.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
         <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+            <state relative-caret-position="286">
+              <caret line="90" selection-start-line="90" selection-end-line="98" />
               <folding>
                 <element signature="e#884#885#0" expanded="true" />
                 <element signature="e#979#980#0" expanded="true" />
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MostOccurenceRev2.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceRev2.java">
+      <file leaf-file-name="MostOccurenceCharacter.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            <state relative-caret-position="167">
+              <caret line="56" column="58" lean-forward="true" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -133,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/io/anand/learn/LinkedListNode.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceRev2.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java" />
       </list>
     </option>
   </component>
@@ -206,20 +207,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MostOccurence">
+  <component name="RunManager" selected="Application.MostOccurenceCharacter">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="BinaryHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.BinaryHeap" />
-      <module name="learn" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.anand.learn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration name="BinaryHeapGeneric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.anand.learn.BinaryHeapGeneric" />
@@ -245,6 +235,17 @@
     </configuration>
     <configuration name="MostOccurence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.anand.learn.MostOccurence" />
+      <module name="learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="MostOccurenceCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MostOccurenceCharacter" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -308,18 +309,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.BinaryHeapGeneric" />
-      <item itemvalue="Application.BinaryHeap" />
       <item itemvalue="Application.PeakMountainArray" />
       <item itemvalue="Application.CarFleet" />
       <item itemvalue="Application.MostOccurence" />
+      <item itemvalue="Application.MostOccurenceCharacter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MostOccurenceCharacter" />
         <item itemvalue="Application.MostOccurence" />
         <item itemvalue="Application.BinaryHeapGeneric" />
         <item itemvalue="Application.CarFleet" />
         <item itemvalue="Application.PeakMountainArray" />
-        <item itemvalue="Application.BinaryHeap" />
       </list>
     </recent_temporary>
   </component>
@@ -338,12 +339,12 @@
       <workItem from="1529423959021" duration="5984000" />
       <workItem from="1529441124053" duration="109000" />
       <workItem from="1529441263813" duration="9242000" />
-      <workItem from="1529503688722" duration="3350000" />
+      <workItem from="1529503688722" duration="3935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27358000" />
+    <option name="totallyTimeSpent" value="27943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="22" width="1868" height="978" extended-state="0" />
@@ -432,7 +433,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceRev2.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="17" />
@@ -509,7 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceRev2.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="17" />
@@ -761,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceRev2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeapGeneric.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50">
@@ -781,12 +775,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+        <state relative-caret-position="286">
+          <caret line="90" selection-start-line="90" selection-end-line="98" />
           <folding>
             <element signature="e#884#885#0" expanded="true" />
             <element signature="e#979#980#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="56" column="58" lean-forward="true" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
         </state>
       </provider>
     </entry>
