@@ -48,16 +48,19 @@ public class MostOccurence {
         // Get a sorted set based on the count
         // 1, 2, 3
         // 3, 2, 1
-        SortedSet<IntegerCount> countSortedSet = new TreeSet<>();
+        List<IntegerCount> countSet = new ArrayList<>();
         for (Integer c: freqMap.keySet()) {
             System.out.println("Sorting: Integer: " + c + ", count: " + freqMap.get(c));
-            countSortedSet.add(new IntegerCount(c, freqMap.get(c)));
+            countSet.add(new IntegerCount(c, freqMap.get(c)));
         }
+
+        // Sort the list with our comparator for frequency
+        Collections.sort(countSet);
 
         // Prepare the Integers selecting first 'count' characters
         List<Integer> result = new ArrayList<>();
         int i = 0;
-        for (IntegerCount intCount: countSortedSet) {
+        for (IntegerCount intCount: countSet) {
             System.out.println("Building: Integer: " + intCount.c + ", count: " + intCount.count);
             if (i < k)
                 result.add(i++, intCount.c);
@@ -80,7 +83,7 @@ public class MostOccurence {
         String text  = "ABCDEEFGGHIIIKKLMNOPQ11";
         int    count = 5;
         */
-        int nums[] = {1,1,1,2,2,3};
+        int nums[] = {1,2};
         int count = 2;
 
         System.out.println("Most Occurent Characters result: " + topKFrequent(nums, count) + ", for nums: " + Arrays.asList(nums) + ", count: " + count);
