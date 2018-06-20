@@ -10,17 +10,17 @@ public class MostOccurence {
         For example f('ABCBCC', 1) should return 'C' and f('ABCBCC', 2) should return 'CB'.
      */
 
-    private static class CharCount implements Comparable<CharCount> {
-        Character c;
+    private static class IntegerCount implements Comparable<IntegerCount> {
+        Integer   c;
         Integer   count;
 
-        public CharCount (Character c, Integer count) {
+        public IntegerCount(Integer c, Integer count) {
             this.c      = c;
             this.count  = count;
         }
 
         @Override
-        public int compareTo(CharCount that) {
+        public int compareTo(IntegerCount that) {
             if (this.count < that.count)
                 return 1;
             else if (this.count > that.count)
@@ -29,17 +29,17 @@ public class MostOccurence {
         }
     }
 
-    public static String MostOccurentChars (String text, int count) {
-        Map<Character, Integer> freqMap = new HashMap<>();
+    public static List<Integer> topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> freqMap = new HashMap<>();
 
         // Parse the text string character by character and update the frequency map
-        for (int i = 0; i < text.length(); i ++) {
-            Character c = text.charAt(i);
+        for (int i = 0; i < nums.length; i ++) {
+            Integer c = nums[i];
             if (freqMap.containsKey(c))
                 freqMap.put(c, freqMap.get(c) + 1);
             else
                 freqMap.put(c, 1);
-            System.out.println("Counting: Char: " + c + ", frequency: " + freqMap.get(c));
+            System.out.println("Counting: Integer: " + c + ", frequency: " + freqMap.get(c));
         }
 
         // A =1 , B = 2, C = 3
@@ -48,20 +48,21 @@ public class MostOccurence {
         // Get a sorted set based on the count
         // 1, 2, 3
         // 3, 2, 1
-        SortedSet<CharCount> countSortedSet = new TreeSet<>();
-        for (Character c: freqMap.keySet()) {
-            System.out.println("Sorting: Char: " + c + ", count: " + freqMap.get(c));
-            countSortedSet.add(new CharCount(c, freqMap.get(c)));
+        SortedSet<IntegerCount> countSortedSet = new TreeSet<>();
+        for (Integer c: freqMap.keySet()) {
+            System.out.println("Sorting: Integer: " + c + ", count: " + freqMap.get(c));
+            countSortedSet.add(new IntegerCount(c, freqMap.get(c)));
         }
 
-        // Prepare the String selecting first 'count' characters
-        StringBuilder sb = new StringBuilder();
-        for (CharCount charCount: countSortedSet) {
-            System.out.println("Building: Char: " + charCount.c + ", count: " + charCount.count);
-            if (0 < count--)
-                sb.append(charCount.c);
+        // Prepare the Integers selecting first 'count' characters
+        List<Integer> result = new ArrayList<>();
+        int i = 0;
+        for (IntegerCount intCount: countSortedSet) {
+            System.out.println("Building: Integer: " + intCount.c + ", count: " + intCount.count);
+            if (i < k)
+                result.add(i++, intCount.c);
         }
-        return sb.toString();
+        return result;
     }
 
     public static void main(String[] args) {
@@ -75,11 +76,14 @@ public class MostOccurence {
         int    count = 1;
         */
 
-        /* Test Data: 3 */
+        /* Test Data: 3
         String text  = "ABCDEEFGGHIIIKKLMNOPQ11";
         int    count = 5;
+        */
+        int nums[] = {1,1,1,2,2,3};
+        int count = 2;
 
-        System.out.println("Most Occurent Characters result: " + MostOccurentChars(text, count) + ", for text: " + text + ", count: " + count);
+        System.out.println("Most Occurent Characters result: " + topKFrequent(nums, count) + ", for nums: " + Arrays.asList(nums) + ", count: " + count);
 
     }
 

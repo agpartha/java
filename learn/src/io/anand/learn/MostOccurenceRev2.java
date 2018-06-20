@@ -51,7 +51,7 @@ public class MostOccurenceRev2 {
         // Get a sorted set based on the count
         // 1, 2, 3
         // 3, 2, 1
-        ArrayList<CharCount> countSortedSet = new TreeSet<>();
+        SortedSet<CharCount> countSortedSet = new TreeSet<>();
         for (Character c: freqMap.keySet()) {
             System.out.println("Sorting: Char: " + c + ", count: " + freqMap.get(c));
             countSortedSet.add(new CharCount(c, freqMap.get(c)));
