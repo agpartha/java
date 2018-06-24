@@ -13,7 +13,7 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class RotateArray {
-    
+
     // Complete the rotLeft function below.
     // uses one loop, not necessarily faster but less code.
     static int[] rotLeft_A(int[] a, int d) {
