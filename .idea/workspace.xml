@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fdc9220-7403-4dfd-a329-589387598d6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/learn/src/io/anand/learn/MissingNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learn/learn.iml" afterDir="false" />
-    </list>
+    <list default="true" id="9fdc9220-7403-4dfd-a329-589387598d6d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,8 +51,8 @@
       <file leaf-file-name="MissingNumber.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/MissingNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="48" column="97" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="97" />
+            <state relative-caret-position="178">
+              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MissingNumber">
+  <component name="RunManager" selected="Application.MostOccurence">
     <configuration name="BinaryHeapGeneric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.anand.learn.BinaryHeapGeneric" />
       <module name="learn" />
@@ -191,8 +188,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="PermutationStringCharacaters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.PermutationStringCharacaters" />
+    <configuration name="MostOccurence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MostOccurence" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -202,8 +199,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="SimpleThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.SimpleThreads" />
+    <configuration name="PermutationStringCharacaters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.PermutationStringCharacaters" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -255,19 +252,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.SimpleThreads" />
       <item itemvalue="Application.PermutationStringCharacaters" />
       <item itemvalue="Application.BinaryHeapGeneric" />
       <item itemvalue="Application.MakeAnagram" />
       <item itemvalue="Application.MissingNumber" />
+      <item itemvalue="Application.MostOccurence" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MostOccurence" />
         <item itemvalue="Application.MissingNumber" />
         <item itemvalue="Application.MakeAnagram" />
         <item itemvalue="Application.BinaryHeapGeneric" />
         <item itemvalue="Application.PermutationStringCharacaters" />
-        <item itemvalue="Application.SimpleThreads" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +287,7 @@
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32900432" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -365,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/MissingNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="48" column="97" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="97" />
+        <state relative-caret-position="178">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

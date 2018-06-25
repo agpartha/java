@@ -45,7 +45,7 @@ public class MissingNumber {
         int num [] = {1,3,6,4,1,2};
         int result = getMissingNumber(num);
 
-        System.out.println("Numbers: " + Arrays.asList(num) + ", Smallest Positive Missing Number: " + result);
+        System.out.println("Numbers: " + Arrays.toString(num) + ", Smallest Positive Missing Number: " + result);
     }
 
 
