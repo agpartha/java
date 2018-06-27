@@ -37,14 +37,48 @@ public class LinkedList <T extends Comparable<T>>{
             cur  = cur.next;                 
         }
     }
-    public void print () {
+
+
+    public void reverse () {
+        if (null == head)
+            return;
+
+        LinkedListNode <T> prev, cur, temp;
+
+        prev = null;
+        cur  = head;
+        // A -> B -> C -> D -> E -> Null
+        // A -> Null
+        // B -> A
+        // C -> B
+        // D -> C
+        // E -> D
+        // Head == E
+        while (null != cur) {
+            temp        = cur.next;
+            cur.next    = prev;
+            prev        = cur;
+            cur         = temp;
+        }
+        head = prev;
+    }
+
+    public void printList (String header) {
         LinkedListNode <T> cur = head;
-        System.out.format("List items\n");
+        System.out.format("\n%s:\n", header);
         while (null != cur) {
             System.out.println(cur.print());
             cur = cur.next;
         }
      }
+
+    public void print () {
+
+        this.printList("List items");
+        this.reverse();
+        this.printList("Reversed List items");
+        this.reverse();
+    }
 
     public static void main(String[] args) {
         LinkedList <String> ls = new LinkedList <> ();
@@ -61,6 +95,7 @@ public class LinkedList <T extends Comparable<T>>{
         li.insert(2);
         li.insert(3);
         li.remove(3);
+        li.print();
         li.print();
         li.insert(5);
         li.print();
