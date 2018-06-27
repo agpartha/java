@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fdc9220-7403-4dfd-a329-589387598d6d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/src/io/anand/learn/MatchingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn/src/io/anand/learn/MatchingNumber.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,11 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-898">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="443">
+              <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchingNumber.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/MatchingNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="62" column="126" selection-start-line="62" selection-start-column="126" selection-end-line="62" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -75,6 +84,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="agpartha &lt;code.ag@outlook.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -82,8 +96,8 @@
       <list>
         <option value="$PROJECT_DIR$/learn/src/io/anand/learn/MissingNumber.java" />
         <option value="$PROJECT_DIR$/learn/src/io/anand/learn/MostOccurence.java" />
-        <option value="$PROJECT_DIR$/learn/src/io/anand/learn/MatchingNumber.java" />
         <option value="$PROJECT_DIR$/learn/src/io/anand/learn/WinterSummer.java" />
+        <option value="$PROJECT_DIR$/learn/src/io/anand/learn/MatchingNumber.java" />
       </list>
     </option>
   </component>
@@ -131,6 +145,9 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -143,9 +160,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WinterSummer">
-    <configuration name="BinaryHeapGeneric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.BinaryHeapGeneric" />
+  <component name="RunManager" selected="Application.MatchingNumber">
+    <configuration name="MakeAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MakeAnagram" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -155,8 +172,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="MakeAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MakeAnagram" />
+    <configuration name="MatchingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MatchingNumber" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -241,19 +258,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.BinaryHeapGeneric" />
       <item itemvalue="Application.MakeAnagram" />
       <item itemvalue="Application.MissingNumber" />
       <item itemvalue="Application.MostOccurence" />
       <item itemvalue="Application.WinterSummer" />
+      <item itemvalue="Application.MatchingNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MatchingNumber" />
         <item itemvalue="Application.WinterSummer" />
         <item itemvalue="Application.MostOccurence" />
         <item itemvalue="Application.MissingNumber" />
         <item itemvalue="Application.MakeAnagram" />
-        <item itemvalue="Application.BinaryHeapGeneric" />
       </list>
     </recent_temporary>
   </component>
@@ -268,10 +285,19 @@
       <option name="presentableId" value="Default" />
       <updated>1529526011534</updated>
     </task>
+    <task id="LOCAL-00001" summary="Winter Summer">
+      <created>1530068643132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530068643132</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1527" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -281,8 +307,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.328341" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35023043" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.328341" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35023043" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -333,6 +359,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Winter Summer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Winter Summer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -394,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/MatchingNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/MostOccurenceCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-798">
@@ -458,8 +481,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-898">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="443">
+          <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/src/io/anand/learn/MatchingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="62" column="126" selection-start-line="62" selection-start-column="126" selection-end-line="62" selection-end-column="126" />
         </state>
       </provider>
     </entry>

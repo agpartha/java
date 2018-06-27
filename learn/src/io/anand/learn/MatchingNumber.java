@@ -6,9 +6,7 @@ public class MatchingNumber {
 
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
-
-    class Solution {
-        public int solution(int A, int B) {
+    static public int getMathcingNumber(int A, int B) {
             // write your code in Java SE 8
 
             // Divide the number A by 10 and compare till A is 0
@@ -58,5 +56,11 @@ public class MatchingNumber {
             }
             return lastMatchPosition;
         }
+
+    public static void main(String[] args) {
+        int num_A = 53;
+        int num_B = 153928536;
+        System.out.println("Number: " + num_A + " at index: " + getMathcingNumber(num_A, num_B) + " in the Number: " + num_B);
+
     }
 }
