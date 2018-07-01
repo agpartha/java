@@ -50,7 +50,7 @@ public class ReverseWords {
     }
 
     public static void main (String args []) {
-        String input = "a";
+        String input = "a hello     11    1212 1 1 1    9   ";
 
         System.out.println("Reversed words string: " + reverse(input) + ", Input string: " + input);
     }
