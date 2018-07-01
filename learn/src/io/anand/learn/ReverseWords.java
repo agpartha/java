@@ -6,10 +6,11 @@ import java.util.List;
 public class ReverseWords {
 
     static public String reverse(String S) {
-        String result           = "";
-        boolean       inWord    = false;
-        char          word[]    = new char[S.length()];
-        int           charCount = 0;
+        char          result[]      = new char[S.length()];
+        boolean       inWord        = false;
+        char          word[]        = new char[S.length()];
+        int           charCount     = 0;
+        int           resultIndex   = result.length - 1;
 
         // Capture the words and add them to the list
         for (int i = 0; i < S.length(); i++) {
@@ -20,7 +21,11 @@ public class ReverseWords {
             // and add to the list
             if (' ' == c) {
                 if (inWord) {
-                    result = String.valueOf(word, 0, charCount) + (result.length() > 0 ? " " : "") + result;
+                    // capture the space if not first word
+                    if (resultIndex != (result.length - 1))
+                        result[resultIndex--] = c;
+                    while (--charCount >= 0)
+                        result[resultIndex--] = word[charCount];
                     inWord = false;
                     charCount = 0;
                 }
@@ -30,12 +35,20 @@ public class ReverseWords {
             }
         }
 
-        // last word if any can be now added to the begininig.
-        return (charCount > 0 ? String.valueOf(word, 0, charCount) + (result.length() > 0 ? " " : ""): "") + result;
+        // last word if any can be now added to the begining
+        if (charCount > 0) {
+            result[resultIndex--] = ' ';
+            while (--charCount >= 0)
+                result[resultIndex--] = word[charCount];
+        }
+
+        // if only we have a result that is modified
+        resultIndex += 1;
+        return String.valueOf(result, resultIndex, result.length - resultIndex);
     }
 
     public static void main (String args []) {
-        String input = "    a    1    ";
+        String input = "    the     sky is blue     ";
 
         System.out.println("Reversed words string: " + reverse(input) + ", Input string: " + input);
     }
