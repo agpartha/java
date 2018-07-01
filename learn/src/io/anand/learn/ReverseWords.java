@@ -38,7 +38,8 @@ public class ReverseWords {
 
         // last word if any can be now added to the begining
         if (charCount > 0) {
-            result[resultIndex--] = ' ';
+            if (resultIndex != (result.length - 1))
+                result[resultIndex--] = ' ';
             while (--charCount >= 0)
                 result[resultIndex--] = word[charCount];
         }
@@ -49,7 +50,7 @@ public class ReverseWords {
     }
 
     public static void main (String args []) {
-        String input = "    the     sky is blue     ";
+        String input = "a";
 
         System.out.println("Reversed words string: " + reverse(input) + ", Input string: " + input);
     }

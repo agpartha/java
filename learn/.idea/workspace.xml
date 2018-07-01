@@ -46,8 +46,8 @@
       <file leaf-file-name="ReverseWords.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="47" column="80" lean-forward="true" selection-start-line="8" selection-end-line="47" selection-end-column="80" />
+            <state relative-caret-position="329">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -360,16 +360,15 @@
       <workItem from="1529441263813" duration="9242000" />
       <workItem from="1529503688722" duration="4613000" />
       <workItem from="1529607285996" duration="25990000" />
-      <workItem from="1530392163009" duration="10573000" />
+      <workItem from="1530392163009" duration="10864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65184000" />
+    <option name="totallyTimeSpent" value="65475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="22" width="1920" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -377,11 +376,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.0857295" side_tool="true" visible="true" weight="0.35269272" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5058573" side_tool="true" visible="true" weight="0.47307286" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.9142705" visible="true" weight="0.35269272" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9142705" weight="0.35269272" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -393,7 +392,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4946752" weight="0.47307286" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" visible="true" weight="0.47307286" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -461,12 +460,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java</url>
-          <line>47</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -850,8 +861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="47" column="80" lean-forward="true" selection-start-line="8" selection-end-line="47" selection-end-column="80" />
+        <state relative-caret-position="329">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
