@@ -7,10 +7,11 @@ public class ReverseWords {
 
     static public String reverse(String S) {
         char          result[]      = new char[S.length()];
-        boolean       inWord        = false;
         char          word[]        = new char[S.length()];
-        int           charCount     = 0;
         int           resultIndex   = result.length - 1;
+        int           charCount     = 0;
+        boolean       inWord        = false;
+
 
         // Capture the words and add them to the list
         for (int i = 0; i < S.length(); i++) {
@@ -42,7 +43,7 @@ public class ReverseWords {
                 result[resultIndex--] = word[charCount];
         }
 
-        // if only we have a result that is modified
+        // Get our resultIndex adjusted for length, we either have some string to interpet in the character array or empty string
         resultIndex += 1;
         return String.valueOf(result, resultIndex, result.length - resultIndex);
     }
