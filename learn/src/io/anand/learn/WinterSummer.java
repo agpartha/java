@@ -30,7 +30,7 @@ public class WinterSummer {
 
 
     public static void main(String[] args) throws IOException {
-        int num [] = {-5, -5, -5, -5, -42, 3, 8, 6};
+        int num [] = {5, 1, 0, -5, 2, 3, 8, 6};
         int result = getSummerStart(num);
 
         System.out.println("Temperatures: " + Arrays.toString(num) + ", Summer starts at: " + result);

@@ -48,11 +48,8 @@ public class LinkedList <T extends Comparable<T>>{
         prev = null;
         cur  = head;
         // A -> B -> C -> D -> E -> Null
-        // A -> Null
-        // B -> A
-        // C -> B
-        // D -> C
-        // E -> D
+        // 1. temp = B, cur (A) -> prev (Null), prev =  cur (A), cur = temp (B)
+        // 2. temp = C, cur (B) -> prev (A), prev =  cur (0), cur = temp (C)
         // Head == E
         while (null != cur) {
             temp        = cur.next;
