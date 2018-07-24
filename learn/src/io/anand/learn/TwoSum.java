@@ -48,7 +48,7 @@ public class TwoSum {
             }
         }
 
-        System.out.println("Matched indices: " + result[0] + ", " + result[1] + ", Target: " + target + ", Input: " + Arrays.toString(nums));
+        System.out.println("TwoSum: Matched indices: " + result[0] + ", " + result[1] + ", Target: " + target + ", Input: " + Arrays.toString(nums));
         return result;
     }
 
@@ -114,9 +114,10 @@ public class TwoSum {
     }
 
     public static void main (String args []) {
-        int nums [] = { 1, 2, 3, 4, 5, 6, 7};
-        int twoSmTarget    = 9;
-        int threeSumTarget = 100;
+        //int nums [] = { 1, 2, 3, 4, 5, 6, 7};
+        int nums [] = { 1, 2, 6};
+        int twoSmTarget    = 7;
+        int threeSumTarget = 9;
 
         twoSum_A(nums, twoSmTarget);
         threeSum(nums, threeSumTarget);
