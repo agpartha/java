@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8772aa5-faf4-44d8-98ab-12bf1e9b4df1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/turoy.iml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change afterPath="$PROJECT_DIR$/src/io/anand/play/Node.java" afterDir="$SP_SCHEDULER_ENABLE$" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/learn.iml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/learn.iml" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/play/Solution.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/Solution.java" afterDir="$SP_SCHEDULER_ENABLE$" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../../turoy/.gradle/" />
@@ -35,80 +32,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MakeAnagram.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MissingNumber.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RotateArray.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoveDuplicates.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/RemoveDuplicates.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeakMountainArray.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PeakMountainArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MostOccurenceGeneric.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceGeneric.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MostOccurenceCharacter.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwoSum.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
+      <file leaf-file-name="TwoSum.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
         <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TwoSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-686">
-              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="461">
+              <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Solution.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -458,11 +420,12 @@
         <option value="$PROJECT_DIR$/src/io/anand/learn/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java" />
-        <option value="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/RemoveDuplicates.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java" />
-        <option value="$PROJECT_DIR$/src/io/anand/play/Solution.java" />
         <option value="$PROJECT_DIR$/../../turoy/src/com/interview/multithreaded/DependencyTaskExecutor.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/play/Node.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/play/Solution.java" />
       </list>
     </option>
   </component>
@@ -476,10 +439,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="130" />
-    <option name="y" value="22" />
-    <option name="width" value="1790" />
-    <option name="height" value="991" />
+    <option name="x" value="568" />
+    <option name="y" value="111" />
+    <option name="width" value="1713" />
+    <option name="height" value="1101" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -513,7 +476,7 @@
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="anand" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="play" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -544,20 +507,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TwoSum">
+  <component name="RunManager" selected="Application.Solution">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="AddNumberRepresentedByLinkList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interview.linklist.AddNumberRepresentedByLinkList" />
-      <module name="learn" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.interview.linklist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration name="AddingTwoSetOfIntervals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.interview.misc.AddingTwoSetOfIntervals" />
@@ -588,6 +540,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.play.Solution" />
+      <module name="learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.anand.play.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -645,19 +608,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.AddNumberRepresentedByLinkList" />
       <item itemvalue="Application.AddingTwoSetOfIntervals" />
       <item itemvalue="Application.MakeAnagram" />
       <item itemvalue="Application.MissingNumber" />
       <item itemvalue="Application.TwoSum" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.TwoSum" />
         <item itemvalue="Application.MissingNumber" />
         <item itemvalue="Application.MakeAnagram" />
         <item itemvalue="Application.AddingTwoSetOfIntervals" />
-        <item itemvalue="Application.AddNumberRepresentedByLinkList" />
       </list>
     </recent_temporary>
   </component>
@@ -692,31 +655,32 @@
       <workItem from="1531950991767" duration="1138000" />
       <workItem from="1532022486408" duration="633000" />
       <workItem from="1532366186081" duration="598000" />
-      <workItem from="1532366897845" duration="608000" />
+      <workItem from="1532366897845" duration="4239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86341000" />
+    <option name="totallyTimeSpent" value="89972000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="22" width="1790" height="991" extended-state="0" />
+    <frame x="617" y="118" width="1713" height="1101" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4909478" weight="0.32704994" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.08867277" side_tool="true" weight="0.21029083" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.91132724" weight="0.21029083" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.91132724" visible="true" weight="0.187251" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23741418" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24835429" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="4" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -724,9 +688,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.47307286" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.47219604" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4909478" weight="0.3277405" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="9" weight="0.32997763" />
@@ -820,17 +783,10 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/UniqueStringCharacters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Urlify.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -957,13 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/play/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1099,7 +1048,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
+        <state relative-caret-position="626">
           <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1137,8 +1086,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-686">
-          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="461">
+          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
