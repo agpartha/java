@@ -21,18 +21,20 @@ public class Solution {
 
         while (!queue.isEmpty()) {
             Node node = queue.poll();
+            System.out.println("Processing node: " + node.getId());
             // Loop over the children of this node
-            for (Node child : root.children) {
+            for (Node child : node.children) {
                 // if child is in the lookup table
                 // we must have added this as another traversal.
-                if (lookupTable.contains(child.getId())) {
-                    System.out.println("Detected a loop between node: " + node.getId() + ", and node: " + child.getId());
+                if (lookupTable.contains(node.getId())) {
+                    System.out.println("Detected a loop between node: " + node.getId() + ", and : " + child.getId());
                     return false;
                 }
                 // Add the child and also keep it in the lookup table
                 queue.add(child);
-                lookupTable.add(child.getId());
             }
+            // Safe to mark this parent node as done. Should not be seen as a child of anyone or this node [self loop)
+            lookupTable.add(node.getId());
         }
         return true;
     }
@@ -44,7 +46,9 @@ public class Solution {
         Node root = new Node (1, Collections.emptyList());
         System.out.println("Null check: loop free: " + isLoopFree(root));
         List<Node> children = new LinkedList<>();
-        children.add(root);
+        children.add(new Node(2));
+        children.add(new Node(3));
+//        children.add(root);
         root.setChildren(children);
         System.out.println("Null check: loop free: " + isLoopFree(root));
 
