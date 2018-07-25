@@ -1,10 +1,24 @@
-package io.anand.play;
+package io.anand.learn;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Node {
     // Define the Node
+
+
+        public void addChild (Node child) {
+            this.children.add(child);
+        }
+
+        public void delChild (Node delChild) {
+            for (Node child: this.children)
+                if (child.equals(delChild)) {
+                    this.children.remove(delChild);
+                    break;
+                }
+        }
+
         public int getId() {
             return id;
         }
@@ -31,5 +45,5 @@ public class Node {
         }
 
         private     int     id;
-        List<Node>          children = Collections.emptyList();
+        List<Node>          children = new ArrayList<Node>();
     }

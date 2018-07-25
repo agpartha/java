@@ -1,9 +1,9 @@
-package io.anand.play;
+package io.anand.learn;
 
 import java.util.*;
 import java.util.concurrent.LinkedBlockingDeque;
 
-public class Solution {
+public class LoopFreeGraph {
 
     // Returns if the Tree from the root node has any loops
     public static boolean isLoopFree (Node root) {
@@ -27,7 +27,7 @@ public class Solution {
                 // if child is in the lookup table
                 // we must have added this as another traversal.
                 if (lookupTable.contains(node.getId())) {
-                    System.out.println("Detected a loop between node: " + node.getId() + ", and : " + child.getId());
+                    System.out.println("Detected a loop between node: " + node.getId() + " and : " + child.getId());
                     return false;
                 }
                 // Add the child and also keep it in the lookup table
@@ -42,15 +42,40 @@ public class Solution {
 
 
     public static void main (String args []) {
-        System.out.println("Null check: loop free: " + isLoopFree(null));
-        Node root = new Node (1, Collections.emptyList());
-        System.out.println("Null check: loop free: " + isLoopFree(root));
-        List<Node> children = new LinkedList<>();
-        children.add(new Node(2));
-        children.add(new Node(3));
-//        children.add(root);
-        root.setChildren(children);
-        System.out.println("Null check: loop free: " + isLoopFree(root));
+        Node root, l1, m1, r1, l2l1, l2m1, r2m1, l2r1, m2r1, r2r1;
 
+        System.out.println("Null check: loop free: " + isLoopFree(null));
+
+        root = new Node (1);
+
+        System.out.println("Single Root check: loop free: " + isLoopFree(root));
+
+        l1   = new Node (2);
+        m1   = new Node (3);
+        r1   = new Node (4);
+        l2l1 = new Node (5);
+        l2m1 = new Node (6);
+        r2m1 = new Node (7);
+        l2r1 = new Node (8);
+        m2r1 = new Node (10);
+        r2r1 = new Node (11);
+
+        root.addChild(l1);
+        root.addChild(m1);
+        root.addChild(r1);
+
+        l1.addChild(l2l1);
+
+        m1.addChild(l2m1);
+        m1.addChild(r2m1);
+
+        r1.addChild(l2r1);
+        r1.addChild(m2r1);
+        r1.addChild(r2r1);
+
+        // Loops
+        l2l1.addChild(l1);
+
+        System.out.println("Multi Level check: loop free: " + isLoopFree(root));
     }
 }
