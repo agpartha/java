@@ -34,13 +34,13 @@ public class MakeAnagram {
     }
 
     public static void main(String[] args) throws IOException {
-/*
+
         String stringA = "ABCDEF";
         String stringB = "BCDE";
-*/
+/*
         String stringA = "fcrxzwscanmligyxyvym";
         String stringB = "jxwtrhvujlmrpdoqbisbwhmgpmeoke";
-
+*/
         System.out.println("Number of deletions: " + makeAnagram(stringA.toLowerCase(), stringB.toLowerCase()   ) + ", String A: " + stringA + ", String B: " + stringB );
     }
 }

@@ -74,7 +74,7 @@ public class LoopFreeGraph {
         r1.addChild(r2r1);
 
         // Loops
-        l2l1.addChild(l1);
+        l2l1.addChild(r1);
 
         System.out.println("Multi Level check: loop free: " + isLoopFree(root));
     }

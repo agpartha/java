@@ -118,7 +118,7 @@ public class TwoSum {
         //int nums [] = { 1, 2, 6};
         int nums [] = {1, 8, 9};
         int twoSmTarget    = 7;
-        int threeSumTarget = 9;
+        int threeSumTarget = 18;
 
         twoSum_A(nums, twoSmTarget);
         threeSum(nums, threeSumTarget);

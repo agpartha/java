@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/../../../core-services-plugin/grails-app/domain/com/spc/stockpile/domain/customer/CardAccount.groovy" description="CardAccount" line="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b8772aa5-faf4-44d8-98ab-12bf1e9b4df1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/turoy.iml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/modules/turoy.iml" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/play/Node.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/Node.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/play/Solution.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/Solution.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../../turoy/.gradle/" />
     <ignored path="$PROJECT_DIR$/../../turoy/build/" />
     <ignored path="$PROJECT_DIR$/../../turoy/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="$SP_SCHEDULER_ENABLE$" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="$SP_SCHEDULER_ENABLE$" />
@@ -29,22 +37,56 @@
       </state>
     </system>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1334753693">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="56" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="56" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="821" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="821" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TwoSum.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TwoSum.java">
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Solution.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+            <state relative-caret-position="677">
+              <caret line="67" selection-start-line="67" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,25 +94,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/Node.java">
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="586">
+              <caret line="73" column="106" selection-start-line="73" selection-start-column="106" selection-end-line="73" selection-end-column="106" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceGeneric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MatchingNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -90,7 +193,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$/../../turoy" value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11" />
+        <entry key="$PROJECT_DIR$/../../turoy" value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -327,68 +430,123 @@
               <option name="name" value="turoy" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-base-services-groovy-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-base-services-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-core-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-open-api-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/ant-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-model-groovy-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-cli-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-ui-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-wrapper-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-launcher-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-native-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-resources-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-messaging-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-docs-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/groovy-all-2.4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-tooling-api-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/gradle-model-core-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-osgi-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-language-java-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-diagnostics-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-ide-native-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-tooling-api-builders-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-testing-native-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-platform-native-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-language-jvm-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-build-comparison-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-ear-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-testing-base-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-signing-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-publish-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-testing-jvm-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-jetty-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-resources-s3-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-ivy-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-language-native-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-announce-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-resources-http-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-ide-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-maven-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-scala-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-platform-base-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-language-scala-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-build-init-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-resources-sftp-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-plugins-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-sonar-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-reporting-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-plugin-use-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-language-groovy-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-platform-jvm-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-javascript-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-code-quality-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-dependency-management-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-plugin-development-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-antlr-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-jacoco-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-platform-play-2.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-bin/452syho4l32rlk2s8ivdjogs8/gradle-2.11/lib/plugins/gradle-test-kit-2.11.jar" />
-                  <option value="$PROJECT_DIR$/../../turoy/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/../../turoy/buildSrc/src/main/groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/ui" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/jetty" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/sonar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/open-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-base-services-groovy-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-base-services-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-core-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-open-api-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/ant-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-model-groovy-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-cli-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-ui-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-wrapper-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-launcher-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-native-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/ant-launcher-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-resources-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-messaging-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-docs-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/groovy-all-2.4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-tooling-api-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/gradle-model-core-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-osgi-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-language-java-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-diagnostics-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-ide-native-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-tooling-api-builders-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-testing-native-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-platform-native-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-language-jvm-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-build-comparison-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-ear-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-testing-base-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-signing-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-publish-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-testing-jvm-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-jetty-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-resources-s3-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-ivy-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-language-native-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-announce-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-resources-http-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-ide-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-maven-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-scala-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-platform-base-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-language-scala-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-build-init-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-resources-sftp-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-plugins-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-sonar-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-reporting-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-plugin-use-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-language-groovy-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-platform-jvm-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-javascript-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-code-quality-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-dependency-management-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-plugin-development-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-antlr-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-jacoco-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-platform-play-2.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.11-all/ace7yl0a7udokebb27mt9s3qr/gradle-2.11/lib/plugins/gradle-test-kit-2.11.jar" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -415,7 +573,6 @@
         <option value="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceGeneric.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/RotateArray.java" />
-        <option value="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/WinterSummer.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java" />
@@ -423,9 +580,13 @@
         <option value="$PROJECT_DIR$/src/io/anand/learn/RemoveDuplicates.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java" />
         <option value="$PROJECT_DIR$/../../turoy/src/com/interview/multithreaded/DependencyTaskExecutor.java" />
-        <option value="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/io/anand/play/Node.java" />
         <option value="$PROJECT_DIR$/src/io/anand/play/Solution.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java" />
       </list>
     </option>
   </component>
@@ -435,13 +596,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1713" />
-    <option name="height" value="1101" />
+    <option name="x" value="16" />
+    <option name="y" value="59" />
+    <option name="width" value="1437" />
+    <option name="height" value="1064" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -450,7 +609,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -474,20 +632,21 @@
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="anand" type="462c0819:PsiDirectoryNode" />
-              <item name="play" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="$SP_SCHEDULER_ENABLE$" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537491035321" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -506,31 +665,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PermutationPalindrome">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="AddingTwoSetOfIntervals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interview.misc.AddingTwoSetOfIntervals" />
-      <module name="turoy_main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.interview.misc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="LoopFreeGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.LoopFreeGraph" />
-      <module name="learn" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.anand.learn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="MakeAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.anand.learn.MakeAnagram" />
@@ -542,9 +682,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MissingNumber" />
+    <configuration name="MostOccurenceCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MostOccurenceCharacter" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -553,6 +696,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PermutationPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.PermutationPalindrome" />
+      <module name="learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.learn.ReverseWords" />
+      <module name="learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.anand.learn.TwoSum" />
@@ -564,62 +738,44 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="$SP_SCHEDULER_ENABLE$" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="$SP_SCHEDULER_ENABLE$" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="$SP_SCHEDULER_ENABLE$" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AddingTwoSetOfIntervals" />
       <item itemvalue="Application.MakeAnagram" />
-      <item itemvalue="Application.MissingNumber" />
       <item itemvalue="Application.TwoSum" />
-      <item itemvalue="Application.LoopFreeGraph" />
+      <item itemvalue="Application.MostOccurenceCharacter" />
+      <item itemvalue="Application.ReverseWords" />
+      <item itemvalue="Application.PermutationPalindrome" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoopFreeGraph" />
+        <item itemvalue="Application.PermutationPalindrome" />
         <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.MissingNumber" />
+        <item itemvalue="Application.ReverseWords" />
+        <item itemvalue="Application.MostOccurenceCharacter" />
         <item itemvalue="Application.MakeAnagram" />
-        <item itemvalue="Application.AddingTwoSetOfIntervals" />
       </list>
     </recent_temporary>
   </component>
@@ -655,48 +811,63 @@
       <workItem from="1532022486408" duration="633000" />
       <workItem from="1532366186081" duration="598000" />
       <workItem from="1532366897845" duration="9511000" />
-      <workItem from="1532473706142" duration="1165000" />
+      <workItem from="1532473706142" duration="1974000" />
+      <workItem from="1533311717702" duration="1691000" />
+      <workItem from="1533321402991" duration="2527000" />
+      <workItem from="1533791431716" duration="591000" />
+      <workItem from="1534044886885" duration="50000" />
+      <workItem from="1534044973819" duration="452000" />
+      <workItem from="1534046086114" duration="505000" />
+      <workItem from="1534746334941" duration="237000" />
+      <workItem from="1535476999169" duration="558000" />
+      <workItem from="1535477937300" duration="1195000" />
+      <workItem from="1535670809898" duration="590000" />
+      <workItem from="1536602242164" duration="1120000" />
+      <workItem from="1536689888992" duration="3251000" />
+      <workItem from="1537049853248" duration="579000" />
+      <workItem from="1537394985823" duration="147000" />
+      <workItem from="1537395174969" duration="5359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96409000" />
+    <option name="totallyTimeSpent" value="116070000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1713" height="1101" extended-state="0" />
+    <frame x="16" y="59" width="1437" height="1064" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4909478" weight="0.32669324" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.08867277" side_tool="true" weight="0.21029083" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.91132724" visible="true" weight="0.187251" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2513465" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Gradle" order="4" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23870967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.47211155" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="9" weight="0.32997763" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.91132724" visible="true" weight="0.18621399" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.4711934" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.08867277" side_tool="true" weight="0.21029083" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4909478" weight="0.3261317" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.32997763" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Gradle" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -775,92 +946,59 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/play/Solution.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java</url>
           <line>28</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/play/Solution.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java</url>
           <line>36</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/play/Solution.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/io/anand/reference/linklist/AddNumberRepresentedByLinkList.java</url>
           <line>77</line>
-          <properties class="com.interview.linklist.AddNumberRepresentedByLinkList" method="main">
+          <properties class="com.interview.linklist.AddNumberRepresentedByLinkList">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Urlify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/HelloThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/EasyRecursion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/HelloThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44835">
@@ -868,114 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/HelloRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="202" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/CarFleet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Urlify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/UniqueStringCharacters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeapGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="138" selection-start-line="138" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MatchingNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/WinterSummer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TryRegex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5085">
-          <caret line="136" column="205575" selection-start-line="136" selection-start-column="205575" selection-end-line="136" selection-end-column="205575" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1044,27 +1078,131 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/reference/test/string/ValidPalindromeTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeapGeneric.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="294">
+          <caret line="138" selection-start-line="138" selection-end-line="139" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/CarFleet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+        <state relative-caret-position="-141">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PeakMountainArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/EasyRecursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/HelloRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/HelloThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/WinterSummer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Urlify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/UniqueStringCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="108" column="22" lean-forward="true" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TryRegex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/SimpleThreads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
+        <state relative-caret-position="781">
           <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1078,10 +1216,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PeakMountainArray.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1094,43 +1232,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="465">
           <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TwoSum.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/play/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="270">
+          <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MatchingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="67" selection-start-line="67" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/play/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+        <state relative-caret-position="586">
+          <caret line="73" column="106" selection-start-line="73" selection-start-column="106" selection-end-line="73" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
