@@ -1,2 +1,2 @@
 # java
-Java journey
+Java journey.
