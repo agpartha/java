@@ -20,6 +20,82 @@ public class RemoveComments {
     static String  blockBeginChars = "/*";
     static String  blockEndChars   = "*/";
 
+    // Returns the starting index in the string where the
+    // single line comment is found.
+    // -1 if not found.
+    static public int findSingleComment (String line) {
+        return line.indexOf(singleChars);
+    }
+
+    // Returns the starting index in the string where the
+    // multi line comment start is found.
+    // -1 if not found.
+    static public int findBlockCommentStart (String line) {
+        return line.indexOf(blockBeginChars);
+    }
+
+
+    // Returns the starting index in the string where the
+    // multi line comment end is found.
+    // -1 if not found.
+    static public int findBlockCommentEnd(String line) {
+        return line.indexOf(blockEndChars);
+    }
+
+    //
+    // Treat the line to have many possible states
+    // since block comments can start and complete many times.
+    // if we find a single comment out of block comment segment, we skip the rest of the line.
+    // It
+    static void processCommentLines (String line, boolean outputEnabled) {
+        int length = line.length();
+        int i = 0;
+        // till we have some characters
+        while (i < length) {
+            String remLine = (String) line.substring(i);
+            int slcIndex        = findSingleComment(remLine);
+            int mlcStartIndex   = findBlockCommentStart(remLine);
+            int mlcEndIndex     = findBlockCommentEnd(remLine);
+            boolean anyCommentStart = (-1 != slcIndex) || (-1 != mlcStartIndex);
+
+            // reset our string index for this iteration.
+            i = 0;
+            // Not inside a comment block only applies for multiline block comment types.
+            if (!commentStart) {
+                if (!anyCommentStart) {
+                    System.out.println(remLine);
+                    return;
+                }
+
+                // If we have a single line comment, print upto the start of the comment and
+                // return.
+                // Careful if block comment is not starting earlier than single comment.
+                if (-1 != slcIndex) {
+                    if ((slcIndex < mlcStartIndex) || (-1 == mlcStartIndex)) {
+                        System.out.println(remLine.substring(i, slcIndex));
+                        return;
+                    }
+                }
+
+                // block comment start somewhere without a single line comment.
+                // print upto start of the block comment
+                System.out.println(remLine.substring(i, mlcStartIndex));
+                commentStart = true;
+                i = mlcStartIndex + blockBeginChars.length();
+            }
+
+            // Inside a block comment,
+            // Ignore all till we see a end of the block comment.
+            if (-1 != mlcEndIndex) {
+                i = mlcEndIndex + blockEndChars.length();
+                commentStart = false;
+            } else {
+                // we are done in this line
+                return;
+            }
+        }
+    }
+
     // Detect if we starting a new comment
     // Also determine if it is a block comment.
     // This method also outputs the characters till the start of the comment
@@ -50,8 +126,7 @@ public class RemoveComments {
         // Block comment present
         // We ignore single comment inside block comment.
         // If we started line with the comment, no substring,
-        if (-1 != blockCommentIndex)
-            System.out.println(line.substring(0, blockCommentIndex));
+        System.out.println(line.substring(0, blockCommentIndex));
         commentStart = blockComment = true;
         // is there an end of comment in same line ?
         return detectCommentEnd(line.substring(blockCommentIndex + blockBeginChars.length()), outputEnabled);
@@ -84,11 +159,14 @@ public class RemoveComments {
         String input;
 
         while (null != (input = br.readLine())) {
+            processCommentLines(input, true);
+            /*
             if (false == commentStart) {
                 detectCommentStart(input, true);
             } else {
                 detectCommentEnd(input, true);
             }
+            */
         }
     }
 }
