@@ -2,7 +2,6 @@ package io.anand.learn;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class RemoveComments {
     // 1. Detect the comments start,
