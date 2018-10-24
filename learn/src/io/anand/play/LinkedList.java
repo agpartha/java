@@ -1,4 +1,4 @@
-package io.anand.learn;
+package io.anand.play;
 
 public class LinkedList <T extends Comparable<T>>{
     public LinkedListNode head = null;

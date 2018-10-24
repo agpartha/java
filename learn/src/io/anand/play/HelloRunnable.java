@@ -1,4 +1,4 @@
-package io.anand.learn;
+package io.anand.play;
 
 /*
  * Copyright (c) 1995, 2008, Oracle and/or its affiliates. All rights reserved.

@@ -1,4 +1,4 @@
-package io.anand.learn;
+package io.anand.play;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

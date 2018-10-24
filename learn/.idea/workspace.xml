@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/../../../core-services-plugin/grails-app/domain/com/spc/stockpile/domain/customer/CardAccount.groovy" description="CardAccount" line="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8772aa5-faf4-44d8-98ab-12bf1e9b4df1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/turoy.iml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/modules/turoy.iml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
+    <list default="true" id="b8772aa5-faf4-44d8-98ab-12bf1e9b4df1" name="Default" comment="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/BinaryHeap.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/BinaryHeapGeneric.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/BinaryHeapGeneric.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/CarFleet.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/CarFleet.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/EasyRecursion.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/EasyRecursion.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/HelloRunnable.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/HelloRunnable.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/HelloThread.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/HelloThread.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LinkedList.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/LinkedList.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LinkedListNode.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/LinkedListNode.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MakeAnagram.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MatchingNumber.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MatchingNumber.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MissingNumber.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MostOccurence.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MostOccurenceCharacter.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceGeneric.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MostOccurenceGeneric.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/Node.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/Node.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/PeakMountainArray.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/PeakMountainArray.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/PermutationStringCharacaters.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RemoveComments.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RemoveComments.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RemoveCommentsState.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RemoveCommentsState.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RemoveDuplicates.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RemoveDuplicates.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/ReverseWords.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RotateArray.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RotateArray.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/SimpleThreads.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/SimpleThreads.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/TryRegex.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/TryRegex.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/TwoSum.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/UniqueStringCharacters.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/UniqueStringCharacters.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/Urlify.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/Urlify.java" afterDir="$SP_SCHEDULER_ENABLE$" />
+      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/WinterSummer.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/WinterSummer.java" afterDir="$SP_SCHEDULER_ENABLE$" />
       <change beforePath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,64 +61,80 @@
     <session id="1334753693">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="25" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.20" value="2" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="56" />
+          <entry key="java" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="56" />
+          <entry key="JAVA" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="821" />
+          <entry key="dummy" value="22" />
+          <entry key="java" value="5583" />
+          <entry key="txt" value="317" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="821" />
+          <entry key="JAVA" value="5583" />
+          <entry key="PLAIN_TEXT" value="339" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="67" selection-start-line="67" selection-end-line="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="73" column="106" selection-start-line="73" selection-start-column="106" selection-end-line="73" selection-end-column="106" />
+            <state relative-caret-position="-1350">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeapGeneric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/CarFleet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,34 +143,7 @@
         </entry>
       </file>
       <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceGeneric.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/EasyRecursion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -143,16 +152,25 @@
         </entry>
       </file>
       <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/HelloRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+            <state relative-caret-position="495">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MatchingNumber.java">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/HelloThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -161,19 +179,31 @@
         </entry>
       </file>
       <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/MakeAnagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/LinkedListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
+        <entry file="file://$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -587,6 +617,11 @@
         <option value="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/Scratch.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/RemoveComments.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/RemoveCommentsSubmit.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/learn/RemoveCommentsState.java" />
+        <option value="$PROJECT_DIR$/src/io/anand/play/RemoveCommentsState.java" />
       </list>
     </option>
   </component>
@@ -597,10 +632,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="59" />
-    <option name="width" value="1437" />
-    <option name="height" value="1064" />
+    <option name="x" value="378" />
+    <option name="y" value="117" />
+    <option name="width" value="1522" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -608,6 +643,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -632,19 +668,18 @@
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="anand" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="play" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="$SP_SCHEDULER_ENABLE$" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537491035321" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540399493848" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
@@ -665,20 +700,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PermutationPalindrome">
+  <component name="RunManager" selected="Application.BinaryHeap">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MakeAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MakeAnagram" />
+    <configuration name="BinaryHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.play.BinaryHeap" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="PATTERN" value="io.anand.play.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -686,13 +721,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MostOccurenceCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.MostOccurenceCharacter" />
+    <configuration name="RemoveComments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.play.RemoveComments" />
       <module name="learn" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="PATTERN" value="io.anand.play.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -700,13 +734,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PermutationPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.PermutationPalindrome" />
+    <configuration name="RemoveCommentsState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.play.RemoveCommentsState" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="PATTERN" value="io.anand.play.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -714,13 +748,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.ReverseWords" />
+    <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.play.RemoveDuplicates" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="PATTERN" value="io.anand.play.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -728,13 +762,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.anand.learn.TwoSum" />
+    <configuration name="RotateArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.anand.play.RotateArray" />
       <module name="learn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.anand.learn.*" />
+          <option name="PATTERN" value="io.anand.play.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -763,19 +797,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MakeAnagram" />
-      <item itemvalue="Application.TwoSum" />
-      <item itemvalue="Application.MostOccurenceCharacter" />
-      <item itemvalue="Application.ReverseWords" />
-      <item itemvalue="Application.PermutationPalindrome" />
+      <item itemvalue="Application.RotateArray" />
+      <item itemvalue="Application.RemoveDuplicates" />
+      <item itemvalue="Application.RemoveComments" />
+      <item itemvalue="Application.RemoveCommentsState" />
+      <item itemvalue="Application.BinaryHeap" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PermutationPalindrome" />
-        <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.ReverseWords" />
-        <item itemvalue="Application.MostOccurenceCharacter" />
-        <item itemvalue="Application.MakeAnagram" />
+        <item itemvalue="Application.BinaryHeap" />
+        <item itemvalue="Application.RemoveCommentsState" />
+        <item itemvalue="Application.RemoveComments" />
+        <item itemvalue="Application.RemoveDuplicates" />
+        <item itemvalue="Application.RotateArray" />
       </list>
     </recent_temporary>
   </component>
@@ -826,18 +860,58 @@
       <workItem from="1536689888992" duration="3251000" />
       <workItem from="1537049853248" duration="579000" />
       <workItem from="1537394985823" duration="147000" />
-      <workItem from="1537395174969" duration="5359000" />
+      <workItem from="1537395174969" duration="6709000" />
+      <workItem from="1537569440693" duration="520000" />
+      <workItem from="1537903139433" duration="597000" />
+      <workItem from="1537917410048" duration="2168000" />
+      <workItem from="1538057810990" duration="20000" />
+      <workItem from="1538057853768" duration="1147000" />
+      <workItem from="1538235286776" duration="1198000" />
+      <workItem from="1538668825628" duration="129000" />
+      <workItem from="1538668958183" duration="662000" />
+      <workItem from="1539011607900" duration="466000" />
+      <workItem from="1539014696015" duration="1132000" />
+      <workItem from="1539295441092" duration="472000" />
+      <workItem from="1539625474837" duration="672000" />
+      <workItem from="1539629537199" duration="516000" />
+      <workItem from="1539631184718" duration="461000" />
+      <workItem from="1539641484640" duration="3671000" />
+      <workItem from="1539651606125" duration="3314000" />
+      <workItem from="1540152893746" duration="25384000" />
+      <workItem from="1540321555906" duration="3094000" />
     </task>
+    <task id="LOCAL-00001" summary="Multi-Segment comment processing version. Handles comment start and end on same line many times and different types.">
+      <created>1540230462534</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540230462535</updated>
+    </task>
+    <task id="LOCAL-00002" summary="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size.">
+      <created>1540250674036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540250674036</updated>
+    </task>
+    <task id="LOCAL-00003" summary="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size.">
+      <created>1540251377021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540251377021</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116070000" />
+    <option name="totallyTimeSpent" value="163043000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="59" width="1437" height="1064" extended-state="0" />
+    <frame x="378" y="117" width="1522" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23870967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2858108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -846,8 +920,41 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.91132724" visible="true" weight="0.18621399" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.4711934" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.91132724" weight="0.19255319" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.34042552" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.08867277" side_tool="true" weight="0.21029083" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4909478" weight="0.32553193" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.32997763" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Gradle" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28243244" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.91132724" visible="true" weight="0.19255319" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.27263373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -868,7 +975,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Gradle" order="9" />
       <window_info anchor="right" id="SciView" order="10" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -876,116 +983,283 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Multi-Segment comment processing version. Handles comment start and end on same line many times and different types." />
+    <MESSAGE value="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size." />
+    <option name="LAST_COMMIT_MESSAGE" value="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/CarFleet.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/CarFleet.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java</url>
           <line>51</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java</url>
           <line>45</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java</url>
           <line>55</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java</url>
           <line>58</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java</url>
           <line>65</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java</url>
           <line>35</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java</url>
           <line>32</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/ReverseWords.java</url>
           <line>48</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/ReverseWords.java</url>
           <line>43</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/ReverseWords.java</url>
           <line>39</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java</url>
           <line>28</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java</url>
           <line>36</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
           <line>40</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
           <line>39</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java</url>
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
           <line>42</line>
           <properties />
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>265</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>248</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>272</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>222</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>230</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>175</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>190</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>128</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>262</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/io/anand/reference/linklist/AddNumberRepresentedByLinkList.java</url>
@@ -994,6 +1268,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java</url>
+          <line>240</line>
+          <properties class="io.anand.learn.RemoveComments" method="detectCommentEnd">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1078,128 +1360,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/reference/test/string/ValidPalindromeTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeapGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="138" selection-start-line="138" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/CarFleet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PeakMountainArray.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/PeakMountainArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/EasyRecursion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/HelloRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/HelloThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LinkedListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/WinterSummer.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/WinterSummer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Urlify.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/Urlify.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/UniqueStringCharacters.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/UniqueStringCharacters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="108" column="22" lean-forward="true" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/TryRegex.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/TryRegex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/SimpleThreads.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/SimpleThreads.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/RotateArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/ReverseWords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
@@ -1209,86 +1412,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/RemoveDuplicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceGeneric.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/PermutationStringCharacaters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="990">
+          <caret line="67" selection-start-line="67" selection-end-line="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="1110">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/RotateArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="780">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/MissingNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MatchingNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/MatchingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/MostOccurenceGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/MostOccurenceCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/MostOccurence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27795">
+          <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
+          <folding>
+            <element signature="e#67454#67455#0" expanded="true" />
+            <element signature="e#67492#67493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/RemoveComments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1338">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/RemoveDuplicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/RemoveCommentsState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="79" lean-forward="true" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeapGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/CarFleet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/EasyRecursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/HelloRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/HelloThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/LinkedListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="67" selection-start-line="67" selection-end-line="74" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java">
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/MakeAnagram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="73" column="106" selection-start-line="73" selection-start-column="106" selection-end-line="73" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

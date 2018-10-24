@@ -1,4 +1,4 @@
-package io.anand.learn;
+package io.anand.play;
 
 public class MatchingNumber {
     // you can also use imports, for example:

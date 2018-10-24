@@ -1,5 +1,5 @@
 // Simple Min-Heap implementation using Array Lists for Integers.
-package io.anand.learn;
+package io.anand.play;
 
 import java.util.ArrayList;
 
