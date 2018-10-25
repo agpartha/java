@@ -3,36 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b8772aa5-faf4-44d8-98ab-12bf1e9b4df1" name="Default" comment="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/BinaryHeap.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/BinaryHeap.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/BinaryHeapGeneric.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/BinaryHeapGeneric.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/CarFleet.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/CarFleet.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/EasyRecursion.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/EasyRecursion.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/HelloRunnable.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/HelloRunnable.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/HelloThread.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/HelloThread.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LinkedList.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/LinkedList.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LinkedListNode.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/LinkedListNode.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/LoopFreeGraph.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MakeAnagram.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MakeAnagram.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MatchingNumber.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MatchingNumber.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MissingNumber.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MissingNumber.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MostOccurence.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MostOccurence.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceCharacter.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MostOccurenceCharacter.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/MostOccurenceGeneric.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/MostOccurenceGeneric.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/Node.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/Node.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/PeakMountainArray.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/PeakMountainArray.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/PermutationPalindrome.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/PermutationPalindrome.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/PermutationStringCharacaters.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/PermutationStringCharacaters.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RemoveComments.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RemoveComments.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RemoveCommentsState.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RemoveCommentsState.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RemoveDuplicates.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RemoveDuplicates.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/ReverseWords.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/ReverseWords.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/RotateArray.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/RotateArray.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/SimpleThreads.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/SimpleThreads.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/TryRegex.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/TryRegex.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/TwoSum.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/TwoSum.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/UniqueStringCharacters.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/UniqueStringCharacters.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/Urlify.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/Urlify.java" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/src/io/anand/learn/WinterSummer.java" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/src/io/anand/play/WinterSummer.java" afterDir="$SP_SCHEDULER_ENABLE$" />
       <change beforePath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -99,13 +69,13 @@
         <counts>
           <entry key="dummy" value="22" />
           <entry key="java" value="5583" />
-          <entry key="txt" value="317" />
+          <entry key="txt" value="383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="5583" />
-          <entry key="PLAIN_TEXT" value="339" />
+          <entry key="PLAIN_TEXT" value="405" />
         </counts>
       </usages-collector>
     </session>
@@ -115,7 +85,7 @@
       <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1350">
+            <state relative-caret-position="-1023">
               <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
@@ -632,8 +602,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="378" />
-    <option name="y" value="117" />
+    <option name="x" value="1528" />
+    <option name="y" value="250" />
     <option name="width" value="1522" />
     <option name="height" value="1032" />
   </component>
@@ -663,13 +633,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="anand" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="anand" type="462c0819:PsiDirectoryNode" />
-              <item name="play" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -679,7 +642,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="$SP_SCHEDULER_ENABLE$" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540399493848" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540421121350" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
@@ -878,7 +841,7 @@
       <workItem from="1539641484640" duration="3671000" />
       <workItem from="1539651606125" duration="3314000" />
       <workItem from="1540152893746" duration="25384000" />
-      <workItem from="1540321555906" duration="3094000" />
+      <workItem from="1540321555906" duration="4104000" />
     </task>
     <task id="LOCAL-00001" summary="Multi-Segment comment processing version. Handles comment start and end on same line many times and different types.">
       <created>1540230462534</created>
@@ -901,15 +864,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540251377021</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Moving to play package and leaving sandbox for quick experiments.">
+      <created>1540399621682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540399621682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163043000" />
+    <option name="totallyTimeSpent" value="164053000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="378" y="117" width="1522" height="1032" extended-state="0" />
-    <editor active="true" />
+    <frame x="1528" y="250" width="1522" height="1032" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2858108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -920,7 +889,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.91132724" weight="0.19255319" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.91132724" visible="true" weight="0.19255319" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4941427" weight="0.34042552" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -986,7 +955,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Multi-Segment comment processing version. Handles comment start and end on same line many times and different types." />
     <MESSAGE value="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size." />
-    <option name="LAST_COMMIT_MESSAGE" value="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size." />
+    <MESSAGE value="Moving to play package and leaving sandbox for quick experiments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving to play package and leaving sandbox for quick experiments." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1594,7 +1564,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1350">
+        <state relative-caret-position="-1023">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
