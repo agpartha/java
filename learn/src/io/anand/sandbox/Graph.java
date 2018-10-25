@@ -94,16 +94,23 @@ public class Graph<I, D> {
         }
     }
 
-    HashSet<I> visitedSet = new HashSet<>();
-    public void doDFS (I id) {
+    public void doDFS (I id, HashSet<I> visitedSet) {
         Vertex<I, D>    vertex = vertices.get(id);
         System.out.println("Vertex: id: " + vertex.getId() + ", data: " + vertex.getData());
         visitedSet.add(id);
         for (I edgeId: vertex.getEdges()) {
             if (!visitedSet.contains(edgeId))
-                doDFS(edgeId);
+                doDFS(edgeId, visitedSet);
         }
+    }
 
+    public void doDFSTraversal(I sourceId) {
+        HashSet<I> visitedSet = new HashSet<>();
+        doDFS(sourceId, visitedSet);
+    }
+
+    public void doDFSTraversal () {
+        doDFSTraversal(vertices.keySet().iterator().next());
     }
 
     public static void main (String[] args) {
@@ -123,7 +130,7 @@ public class Graph<I, D> {
         cities.addVertex(vertex.getId(), vertex);
         cities.printVertices();
         cities.printVerticesEdges();
-        cities.doDFS(1);
+        cities.doDFSTraversal(1);
 
 
         // Add some connections
@@ -138,7 +145,7 @@ public class Graph<I, D> {
         cities.getVertex(5).addEdge(2);
         cities.printVertices();
         cities.printVerticesEdges();
-        cities.doDFS(1);
+        cities.doDFSTraversal(2);
 
 
         // Remove some connections
@@ -147,6 +154,6 @@ public class Graph<I, D> {
         cities.getVertex(2).delEdge(1);
         cities.printVertices();
         cities.printVerticesEdges();
-        cities.doDFS(1);
+        cities.doDFSTraversal();
     }
 }
