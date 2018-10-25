@@ -6,7 +6,7 @@ public class Vertex <I, D> {
 
     private I               id;
     private D               data;
-    private HashSet<I>      edges;
+    private HashSet<I>      edges = new HashSet<>();
 
     public I getId() {
         return id;
@@ -31,6 +31,7 @@ public class Vertex <I, D> {
     public boolean delEdge(I id) {
         return edges.remove(id);
     }
+
     public Vertex(I id) {
         this.id = id;
     }

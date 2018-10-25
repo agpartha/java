@@ -48,11 +48,20 @@ public class Graph<I, V> {
 
         // Add some connections
         System.out.println("Adding Routes");
+        cities.getVertex(1).addEdge(2);
+        cities.getVertex(2).addEdge(1);
+        cities.getVertex(1).addEdge(3);
+        cities.getVertex(3).addEdge(4);
+        cities.getVertex(4).addEdge(3);
+        cities.getVertex(4).addEdge(5);
+        cities.getVertex(5).addEdge(4);
+        cities.getVertex(5).addEdge(2);
         cities.printVertices();
 
         // Remove some connections
         System.out.println("Removing Routes");
+        cities.getVertex(5).delEdge(2);
+        cities.getVertex(2).delEdge(1);
         cities.printVertices();
-
     }
 }
