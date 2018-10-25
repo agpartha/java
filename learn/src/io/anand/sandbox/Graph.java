@@ -4,27 +4,93 @@ package io.anand.sandbox;
 // The vertices themselves
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
-public class Graph<I, V> {
 
-    private Map<I, V> vertices;
+public class Graph<I, D> {
 
-    public Graph() {
-        vertices = new HashMap<I, V>();
+    static private class Vertex <I, D> {
+
+        private I id;
+        private D data;
+        private HashSet<I> edges = new HashSet<>();
+
+        public I getId() {
+            return id;
+        }
+
+        public D getData() {
+            return data;
+        }
+
+        public void setData(D data) {
+            this.data = data;
+        }
+
+        public HashSet<I> getEdges() {
+            return edges;
+        }
+
+        public boolean addEdge(I id) {
+            return edges.add(id);
+        }
+
+        public boolean delEdge(I id) {
+            return edges.remove(id);
+        }
+
+        public Vertex(I id) {
+            this.id = id;
+        }
+
+        public Vertex(I id, D data) {
+            this.id = id;
+            this.data = data;
+        }
+
+        @Override
+        public String toString() {
+            return "Vertex{" +
+                    "id=" + id +
+                    ", data=" + data +
+                    ", edges=" + edges +
+                    '}';
+        }
     }
 
-    public V addVertex(I id, V node) {
+    private Map<I, Vertex> vertices;
+
+    public Graph() {
+        vertices = new HashMap<I, Vertex>();
+    }
+
+    public Vertex addVertex(I id, Vertex node) {
         return vertices.put(id, node);
     }
 
-    public V getVertex(I id) {
+    public Vertex getVertex(I id) {
         return vertices.get(id);
     }
 
     public void printVertices () {
         for (I id : vertices.keySet()) {
             System.out.println(vertices.get(id));
+        }
+    }
+
+    public void printVerticesEdges () {
+        for (I id : vertices.keySet()) {
+            StringBuilder sb = new StringBuilder();
+            Vertex vertex = vertices.get(id);
+            sb.append("Vertex{ id: " + id + ", data: " + vertex.getData() + ", edges: [");
+            HashSet<I> edges = vertex.getEdges();
+            for (I edgeId : edges) {
+                Vertex edgeVertex = vertices.get(edgeId);
+                sb.append(" " + edgeVertex.getData());
+            }
+            sb.append(" ]}");
+            System.out.println(sb.toString());
         }
     }
 
@@ -44,6 +110,7 @@ public class Graph<I, V> {
         vertex = new Vertex(5, "Pleasanton");
         cities.addVertex(vertex.getId(), vertex);
         cities.printVertices();
+        cities.printVerticesEdges();
 
 
         // Add some connections
@@ -57,11 +124,13 @@ public class Graph<I, V> {
         cities.getVertex(5).addEdge(4);
         cities.getVertex(5).addEdge(2);
         cities.printVertices();
+        cities.printVerticesEdges();
 
         // Remove some connections
         System.out.println("Removing Routes");
         cities.getVertex(5).delEdge(2);
         cities.getVertex(2).delEdge(1);
         cities.printVertices();
+        cities.printVerticesEdges();
     }
 }
