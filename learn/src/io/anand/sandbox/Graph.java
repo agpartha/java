@@ -83,15 +83,27 @@ public class Graph<I, D> {
         for (I id : vertices.keySet()) {
             StringBuilder sb = new StringBuilder();
             Vertex vertex = vertices.get(id);
-            sb.append("Vertex{ id: " + id + ", data: " + vertex.getData() + ", edges: [");
+            sb.append("Vertex: { id: " + id + ", data: " + vertex.getData() + ", edges: [");
             HashSet<I> edges = vertex.getEdges();
             for (I edgeId : edges) {
                 Vertex edgeVertex = vertices.get(edgeId);
                 sb.append(" " + edgeVertex.getData());
             }
-            sb.append(" ]}");
+            sb.append(" ] }");
             System.out.println(sb.toString());
         }
+    }
+
+    HashSet<I> visitedSet = new HashSet<>();
+    public void doDFS (I id) {
+        Vertex<I, D>    vertex = vertices.get(id);
+        System.out.println("Vertex: id: " + vertex.getId() + ", data: " + vertex.getData());
+        visitedSet.add(id);
+        for (I edgeId: vertex.getEdges()) {
+            if (!visitedSet.contains(edgeId))
+                doDFS(edgeId);
+        }
+
     }
 
     public static void main (String[] args) {
@@ -111,6 +123,7 @@ public class Graph<I, D> {
         cities.addVertex(vertex.getId(), vertex);
         cities.printVertices();
         cities.printVerticesEdges();
+        cities.doDFS(1);
 
 
         // Add some connections
@@ -125,6 +138,8 @@ public class Graph<I, D> {
         cities.getVertex(5).addEdge(2);
         cities.printVertices();
         cities.printVerticesEdges();
+        cities.doDFS(1);
+
 
         // Remove some connections
         System.out.println("Removing Routes");
@@ -132,5 +147,6 @@ public class Graph<I, D> {
         cities.getVertex(2).delEdge(1);
         cities.printVertices();
         cities.printVerticesEdges();
+        cities.doDFS(1);
     }
 }
