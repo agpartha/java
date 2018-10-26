@@ -3,9 +3,8 @@ package io.anand.sandbox;
 // Graph class uses a concept of vertices and stores the connected node Ids in each node as a set (no duplicates)
 // The vertices themselves
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.BlockingDeque;
 
 
 public class Graph<I, D> {
@@ -113,6 +112,34 @@ public class Graph<I, D> {
         doDFSTraversal(vertices.keySet().iterator().next());
     }
 
+    public void doBFS (I sourceId) {
+        Queue<I> vertexList     = new LinkedList<I>();
+        HashSet<I> visitedSet   = new HashSet<>();
+
+        vertexList.add(sourceId);
+        visitedSet.add(sourceId);
+        while (!vertexList.isEmpty()) {
+            I id                   = vertexList.poll();
+            Vertex<I, D>    vertex = vertices.get(id);
+            System.out.println("Vertex: id: " + vertex.getId() + ", data: " + vertex.getData());
+            visitedSet.add(id);
+
+            // Add all the children who are not yet visited to the queue so that they
+            // are visited after our current list of vertices are handled.
+            for (I edgeId: vertex.getEdges())
+                if (!visitedSet.contains(edgeId))
+                    vertexList.add(edgeId);
+        }
+    }
+
+    public void doBFSTraversal(I sourceId) {
+        doBFS(sourceId);
+    }
+
+    public void doBFSTraversal () {
+        doBFSTraversal(vertices.keySet().iterator().next());
+    }
+
     public static void main (String[] args) {
         Graph<Integer, Vertex<Integer, String>>  cities = new Graph<>();
 
@@ -131,6 +158,7 @@ public class Graph<I, D> {
         cities.printVertices();
         cities.printVerticesEdges();
         cities.doDFSTraversal(1);
+        cities.doBFSTraversal(1);
 
 
         // Add some connections
@@ -146,6 +174,7 @@ public class Graph<I, D> {
         cities.printVertices();
         cities.printVerticesEdges();
         cities.doDFSTraversal(2);
+        cities.doBFSTraversal(2);
 
 
         // Remove some connections
@@ -155,5 +184,6 @@ public class Graph<I, D> {
         cities.printVertices();
         cities.printVerticesEdges();
         cities.doDFSTraversal();
+        cities.doBFSTraversal();
     }
 }
