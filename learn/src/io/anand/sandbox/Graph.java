@@ -6,7 +6,6 @@ package io.anand.sandbox;
 import java.util.*;
 import java.util.concurrent.BlockingDeque;
 
-
 public class Graph<I, D> {
 
     static private class Vertex <I, D> {
@@ -122,13 +121,17 @@ public class Graph<I, D> {
             I id                   = vertexList.poll();
             Vertex<I, D>    vertex = vertices.get(id);
             System.out.println("Vertex: id: " + vertex.getId() + ", data: " + vertex.getData());
-            visitedSet.add(id);
 
             // Add all the children who are not yet visited to the queue so that they
             // are visited after our current list of vertices are handled.
             for (I edgeId: vertex.getEdges())
-                if (!visitedSet.contains(edgeId))
+                if (!visitedSet.contains(edgeId)) {
                     vertexList.add(edgeId);
+                    // Though it appears not right to maark as visited yet since we have not really seen it,
+                    // it helps tp avoid the node appearing twice if the same child appeats as a child of any other
+                    // node. In this case next level node is reachable by two of the current children nodes.
+                    visitedSet.add(id);
+                }
         }
     }
 
