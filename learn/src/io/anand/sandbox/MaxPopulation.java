@@ -3,7 +3,7 @@ package io.anand.sandbox;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MaxPopulationInput {
+public class MaxPopulation {
 
     private static class Person {
         private int birth;
@@ -27,6 +27,8 @@ public class MaxPopulationInput {
         private int death;
     }
 
+    private static int firstYear = Integer.MAX_VALUE;
+    private static int lastYear  = 0;
     private ArrayList<Person>   people = new ArrayList<>();
     private static HashMap<Integer, Integer> births = new HashMap<>();
     private static HashMap<Integer, Integer> deaths = new HashMap<>();
@@ -52,8 +54,15 @@ public class MaxPopulationInput {
         return maxYear;
     }
 
+    private static int maxPopulatiopnYear () {
+        return maxPopulatiopnYear(firstYear, lastYear);
+    }
+
+
     // Assume -1 for death means person still alive
     private static void addPerson (int birth, int death) {
+        if (firstYear > birth) firstYear = birth;
+        if (lastYear < death) lastYear = death;
         births.put(birth, 1 + births.getOrDefault(birth, 0));
         if (death > 0)
             deaths.put(death, 1 + deaths.getOrDefault(death, 0));
@@ -71,18 +80,18 @@ public class MaxPopulationInput {
         deaths.put(1970, 30);
         deaths.put(1995, 40);
         */
-        addPerson(1940, 1990);
-        addPerson(1940, -1);
-        addPerson(1960, -1);
-        addPerson(1960, 1990);
-        addPerson(1980, 1990);
+        addPerson(1740, 1790);
+        addPerson(1840, -1);
+        addPerson(1990, -1);
+        addPerson(1990, 1999);
+        addPerson(1980, 1999);
         addPerson(1950, -1);
         addPerson(1951, 1990);
         addPerson(1880, 1990);
-        addPerson(1740, 1790);
-        addPerson(1930, -1);
-        addPerson(1940, -1);
-        addPerson(1970, -1);
+        addPerson(2000, 2100);
+        addPerson(2009, -1);
+        addPerson(2001, -1);
+        addPerson(1999, -1);
         addPerson(1980, 2018);
         addPerson(1998, -1);
         addPerson(2005, -1);
@@ -92,6 +101,6 @@ public class MaxPopulationInput {
 
         System.out.println("Births: " + births);
         System.out.println("Deaths: " + deaths);
-        maxPopulatiopnYear(1800, 2010);
+        maxPopulatiopnYear();
     }
 }
