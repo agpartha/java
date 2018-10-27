@@ -1,10 +1,10 @@
-package io.anand.sandbox;
+package io.anand.play;
 
 // Graph class uses a concept of vertices and stores the connected node Ids in each node as a set (no duplicates)
 // The vertices themselves
 
 import java.util.*;
-import java.util.concurrent.BlockingDeque;
+import java.util.LinkedList;
 
 public class Graph<I, D> {
 
@@ -103,6 +103,7 @@ public class Graph<I, D> {
     }
 
     public void doDFSTraversal(I sourceId) {
+        System.out.println("DFS starting from: " + sourceId);
         HashSet<I> visitedSet = new HashSet<>();
         doDFS(sourceId, visitedSet);
     }
@@ -121,21 +122,26 @@ public class Graph<I, D> {
             I id                   = vertexList.poll();
             Vertex<I, D>    vertex = vertices.get(id);
             System.out.println("Vertex: id: " + vertex.getId() + ", data: " + vertex.getData());
+            // Though it appears right to mark as visited only here,
+            // it helps tp avoid the node appearing twice if the same child appears as a child of any other
+            // node. In this case next level node is reachable by two of the current children nodes.
+            //visitedSet.add(id);
 
             // Add all the children who are not yet visited to the queue so that they
             // are visited after our current list of vertices are handled.
             for (I edgeId: vertex.getEdges())
                 if (!visitedSet.contains(edgeId)) {
                     vertexList.add(edgeId);
-                    // Though it appears not right to maark as visited yet since we have not really seen it,
-                    // it helps tp avoid the node appearing twice if the same child appeats as a child of any other
+                    // Though it appears not right to mark as visited yet since we have not really seen it,
+                    // it helps tp avoid the node appearing twice if the same child appears as a child of any other
                     // node. In this case next level node is reachable by two of the current children nodes.
-                    visitedSet.add(id);
+                    visitedSet.add(edgeId);
                 }
         }
     }
 
     public void doBFSTraversal(I sourceId) {
+        System.out.println("BFS starting from: " + sourceId);
         doBFS(sourceId);
     }
 
@@ -166,13 +172,14 @@ public class Graph<I, D> {
 
         // Add some connections
         System.out.println("Adding Routes");
-        cities.getVertex(1).addEdge(2);
-        cities.getVertex(2).addEdge(1);
+        cities.getVertex(1).addEdge(5);
         cities.getVertex(1).addEdge(3);
+        cities.getVertex(1).addEdge(2);
+        cities.getVertex(2).addEdge(3);
         cities.getVertex(3).addEdge(4);
-        cities.getVertex(4).addEdge(3);
         cities.getVertex(4).addEdge(5);
-        cities.getVertex(5).addEdge(4);
+        cities.getVertex(4).addEdge(2);
+        cities.getVertex(5).addEdge(1);
         cities.getVertex(5).addEdge(2);
         cities.printVertices();
         cities.printVerticesEdges();
@@ -182,8 +189,9 @@ public class Graph<I, D> {
 
         // Remove some connections
         System.out.println("Removing Routes");
+        cities.getVertex(1).delEdge(3);
         cities.getVertex(5).delEdge(2);
-        cities.getVertex(2).delEdge(1);
+        cities.getVertex(4).delEdge(5);
         cities.printVertices();
         cities.printVerticesEdges();
         cities.doDFSTraversal();
