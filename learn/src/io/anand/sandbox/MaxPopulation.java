@@ -56,11 +56,12 @@ public class MaxPopulation {
 // This will not work well since we will skip the non-birth years and deaths that reduce population
 // will get skipped. So we have to run through the first birth year to last birth year all years.
 //            for (int bYear : yearlyPopulation.keySet()) {
-            population = yearlyPopulation.getOrDefault(bYear, 0);
+            population += yearlyPopulation.getOrDefault(bYear, 0);
             if (maxPopulation < population) {
                 maxPopulation = population;
                 maxYear = bYear;
             }
+            System.out.println("Year: " + year +", population: " + population + ", maxPopulation: " + maxPopulation);
             year++;
             numYears++;
         }
@@ -82,7 +83,7 @@ public class MaxPopulation {
         // Count deaths for next year, so that person is counted in the last year of
         // their life. if not desired, then don't increment.
         if (death > 0)
-            yearlyPopulation.put(death + 1, 1 + yearlyPopulation.getOrDefault(death, 0));
+            yearlyPopulation.put(death + 1, yearlyPopulation.getOrDefault(death + 1, 0) - 1);
         // Not needed, just for display for sanity checking.
         people.add(new Person(birth, death));
     }
@@ -99,9 +100,9 @@ public class MaxPopulation {
         deaths.put(1970, 30);
         deaths.put(1995, 40);
         */
-        addPerson(1940, 1976);
-        addPerson(1965, 2010);
-        addPerson(1990, 2034);
+        addPerson(1940, 1945);
+        addPerson(1965, 1987);
+        addPerson(1990, 1994);
         addPerson(1990, 1994);
         addPerson(1980, 1987);
         addPerson(1950, -1);
