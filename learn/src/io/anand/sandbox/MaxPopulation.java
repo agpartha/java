@@ -33,7 +33,7 @@ public class MaxPopulation {
     private static HashMap<Integer, Integer> births = new HashMap<>();
     private static HashMap<Integer, Integer> deaths = new HashMap<>();
 
-    private static int maxPopulatiopnYear (int start, int end)
+    private static int maxPopulationYear (int start, int end)
     {
         int year, maxYear;
         int population, maxPopulation;
@@ -41,31 +41,39 @@ public class MaxPopulation {
         year = maxYear = start;
         population = maxPopulation = 0;
 
+        int numYears = 0;
         while (year <= end) {
-            population += births.getOrDefault(year, 0);
-            population -= deaths.getOrDefault(year, 0);
+            int bYear = year;
+// This will not work well since we will skip the non-birth years and deaths that reduce population
+// will get skipped. So we have to run through the first birth year to last birth year all years.
+// for (int bYear : births.keySet()) {
+            population += births.getOrDefault(bYear, 0) - deaths.getOrDefault(bYear, 0);
             if (maxPopulation < population) {
                 maxPopulation = population;
-                maxYear = year;
+                maxYear = bYear;
             }
             year++;
+            numYears++;
         }
+        System.out.println("Searched (" + numYears + ") years from: " + firstYear + " to: " + lastYear);
         System.out.println("Year: " + maxYear + " had maximum population of: " + maxPopulation);
         return maxYear;
     }
 
-    private static int maxPopulatiopnYear () {
-        return maxPopulatiopnYear(firstYear, lastYear);
+    private static int maxPopulationYear () {
+        return maxPopulationYear(firstYear, lastYear);
     }
 
 
     // Assume -1 for death means person still alive
     private static void addPerson (int birth, int death) {
         if (firstYear > birth) firstYear = birth;
-        if (lastYear < death) lastYear = death;
+        if (lastYear < birth) lastYear = birth;
         births.put(birth, 1 + births.getOrDefault(birth, 0));
+        // Count deaths for next year, so that person is counted in the last year of
+        // their life. if not desired, then don't increment.
         if (death > 0)
-            deaths.put(death, 1 + deaths.getOrDefault(death, 0));
+            deaths.put(death + 1, 1 + deaths.getOrDefault(death, 0));
     }
 
     public static void main (String args[]) {
@@ -80,27 +88,27 @@ public class MaxPopulation {
         deaths.put(1970, 30);
         deaths.put(1995, 40);
         */
-        addPerson(1740, 1790);
-        addPerson(1840, -1);
-        addPerson(1990, -1);
-        addPerson(1990, 1999);
-        addPerson(1980, 1999);
+        addPerson(1940, 1976);
+        addPerson(1965, 2010);
+        addPerson(1990, 2034);
+        addPerson(1990, 1994);
+        addPerson(1980, 1987);
         addPerson(1950, -1);
-        addPerson(1951, 1990);
-        addPerson(1880, 1990);
-        addPerson(2000, 2100);
-        addPerson(2009, -1);
-        addPerson(2001, -1);
-        addPerson(1999, -1);
-        addPerson(1980, 2018);
+        addPerson(1951, 1978);
+        addPerson(1967, 2004);
+        addPerson(1990, 2003);
+        addPerson(1956, 1978);
+        addPerson(1991, 2006);
+        addPerson(1999, 1999);
+        addPerson(1980, 1996);
         addPerson(1998, -1);
-        addPerson(2005, -1);
+        addPerson(1998, -1);
         addPerson(1999, 2017);
         // Prepare list by adding people to the array list
 
 
         System.out.println("Births: " + births);
         System.out.println("Deaths: " + deaths);
-        maxPopulatiopnYear();
+        maxPopulationYear();
     }
 }
