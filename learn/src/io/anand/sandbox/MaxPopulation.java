@@ -52,14 +52,10 @@ public class MaxPopulation {
 
         int numYears = 0;
         while (year <= end) {
-           int bYear = year;
-// This will not work well since we will skip the non-birth years and deaths that reduce population
-// will get skipped. So we have to run through the first birth year to last birth year all years.
-//            for (int bYear : yearlyPopulation.keySet()) {
-            population += yearlyPopulation.getOrDefault(bYear, 0);
+            population += yearlyPopulation.getOrDefault(year, 0);
             if (maxPopulation < population) {
                 maxPopulation = population;
-                maxYear = bYear;
+                maxYear = year;
             }
             System.out.println("Year: " + year +", population: " + population + ", maxPopulation: " + maxPopulation);
             year++;
