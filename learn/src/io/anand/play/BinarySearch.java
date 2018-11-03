@@ -17,8 +17,14 @@ public class BinarySearch {
         int mid = start + (end - start) / 2;
         System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
 
+        // If the value is at any one of the locations we have access to, just check and be done with it.
         if (a[mid] == key)
             return mid;
+        if (a[start] == key)
+            return start;
+        if (a[end] == key)
+            return end;
+
         if (key > a[mid])
             return binSearchRecurse(a, key,mid + 1, end);
         else
@@ -41,8 +47,14 @@ public class BinarySearch {
             int mid = start + (end - start) / 2;
             System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
 
+            // If the value is at any one of the locations we have access to, just check and be done with it.
             if (a[mid] == key)
                 return mid;
+            if (a[start] == key)
+                return start;
+            if (a[end] == key)
+                return end;
+
             if (key > a[mid])
                 start = mid + 1;
             else
@@ -60,7 +72,7 @@ public class BinarySearch {
 
     public static void main(String args[]) {
         int[] a = {1, 2, 4, 7, 8, 12, 15, 19, 24, 50, 69, 80, 100};
-        int key = 10;
+        int key = 7;
         int index = binSearch(a, key);
 
         System.out.println("Key: " + key + " at the array: " + index + ", in input: " + Arrays.toString(a));

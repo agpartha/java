@@ -14,8 +14,13 @@ public class SearchRotatedArray {
         int mid = start + (end - start) / 2;
         System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
 
+        // If the value is at any one of the locations we have access to, just check and be done with it.
         if (a[mid] == key)
             return mid;
+        if (a[start] == key)
+            return start;
+        if (a[end] == key)
+            return end;
 
         boolean firstHalfSorted   = a[start] < a[mid];
         boolean secondHalfSorted  = a[mid] < a[end];
@@ -61,8 +66,13 @@ public class SearchRotatedArray {
             int mid = start + (end - start) / 2;
             System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
 
+            // If the value is at any one of the locations we have access to, just check and be done with it.
             if (a[mid] == key)
                 return mid;
+            if (a[start] == key)
+                return start;
+            if (a[end] == key)
+                return end;
 
             boolean firstHalfSorted   = a[start] < a[mid];
             boolean secondHalfSorted  = a[mid] < a[end];
