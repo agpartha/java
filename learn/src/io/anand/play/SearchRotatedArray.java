@@ -36,7 +36,7 @@ public class SearchRotatedArray {
             // Unsorted second half, and have eliminated the possibility of key in second sorted half.
             searchSecondHalf = true;
         else
-            searchSecondHalf = true;
+            return -1;
 
         // Adjust the next search indices
         if (searchSecondHalf)
@@ -83,7 +83,7 @@ public class SearchRotatedArray {
                 // Unsorted second half, and have eliminated the possibility of key in second sorted half.
                 searchSecondHalf = true;
             else
-                searchSecondHalf = true;
+                return -1;
 
             // Adjust the next search indices
             if (searchSecondHalf)
