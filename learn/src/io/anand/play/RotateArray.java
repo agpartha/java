@@ -39,7 +39,7 @@ public class RotateArray {
     // Complete the rotLeft function below.
     static int[] rotLeft(int[] a, int d) {
 
-        // if we rotate more thsn length we just need a modulo
+        // if we rotate more than length we just need a modulo
         // if modulo is zero dont rotate
         int size      = a.length;
         int rotateMod = d % a.length;
