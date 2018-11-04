@@ -19,31 +19,27 @@ public class SearchRotatedArray {
         // If the value is at any one of the locations we have access to, just check and be done with it.
         if (a[mid] == key)
             return mid;
-        /*
-        if (a[start] == key)
-            return start;
-        if (a[end] == key)
-            return end;
-*/
+
         boolean firstHalfSorted   = a[start] < a[mid];
         boolean secondHalfSorted  = a[mid] < a[end];
 
         boolean searchFirstHalf;
-        if (firstHalfSorted && (key >= a[start]) && (key < a[mid]))
-            // If the first half is regular sorted part (start < mid) and our key value is >= start of the section
-            // and < middle value -> search start -> mid - 1
-            searchFirstHalf = true;
-        else if (secondHalfSorted && (key > a[mid]) && (key <= a[end]))
-            // If the mid onward is regular sorted part (mid < end) and our key value is > mid of the section
-            // and l<= end value -> search mid + 1 -> end
-            searchFirstHalf = false;
-        else if (!firstHalfSorted)
-            // UnSorted first half and have eliminated the possibility of key in second sorted half.
-            searchFirstHalf = true;
-        else if (!secondHalfSorted)
-            // Unsorted second half, and have eliminated the possibility of key in second sorted half.
-            searchFirstHalf = false;
-        else
+        if (firstHalfSorted) {
+            if ((key >= a[start]) && (key < a[mid]))
+                // If the first half is sorted  (start < mid) and our key value is >= start and < middle
+                searchFirstHalf = true;
+            else
+                // Sorted, but key is out of range, only chance is second half.
+                searchFirstHalf = false;
+        } else if (secondHalfSorted)  {
+            if ((key > a[mid]) && (key <= a[end]))
+                // If the second half is sorted (mid < end) and our key value is > middle and <= end
+                searchFirstHalf = false;
+            else
+                // Sorted, but key is out of range, only chance is first half.
+                searchFirstHalf = true;
+        } else
+            // Technically not valid since array is sorted at-least in one of the halves.
             return -1;
 
         // Adjust the next search indices
@@ -72,12 +68,7 @@ public class SearchRotatedArray {
             // If the value is at any one of the locations we have access to, just check and be done with it.
             if (a[mid] == key)
                 return mid;
-            /*
-            if (a[start] == key)
-                return start;
-            if (a[end] == key)
-                return end;
-*/
+
             boolean firstHalfSorted   = a[start] < a[mid];
             boolean secondHalfSorted  = a[mid] < a[end];
 
@@ -97,7 +88,7 @@ public class SearchRotatedArray {
                     // Sorted, but key is out of range, only chance is first half.
                     searchFirstHalf = true;
             } else
-                // Technically not valid since array is sorted atleast in one of the halves.
+                // Technically not valid since array is sorted at-least in one of the halves.
                 return -1;
 
             // Adjust the next search indices
@@ -109,7 +100,7 @@ public class SearchRotatedArray {
         return -1;
     }
 
-    private static boolean useRecursion = false;
+    private static boolean useRecursion = true;
     private static int binarySearchRotated (int [] a, int key) {
         if (useRecursion)
             return binSearchRecurse(a, key, 0, a.length - 1);
@@ -125,5 +116,9 @@ public class SearchRotatedArray {
         System.out.println("Input: " + Arrays.toString(v2));
         System.out.println("Key(3) found at: "+binarySearchRotated(v2, 3));
         System.out.println("Key(6) found at: "+binarySearchRotated(v2, 6));
+        System.out.println("Key(4) found at: "+binarySearchRotated(v2, 4));
+        System.out.println("Key(90) found at: "+binarySearchRotated(v2, 90));
+        System.out.println("Key(1) found at: "+binarySearchRotated(v2, 1));
+        System.out.println("Key(-1) found at: "+binarySearchRotated(v2, -1));
     }
 }
