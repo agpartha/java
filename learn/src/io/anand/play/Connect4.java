@@ -1,4 +1,4 @@
-package sandbox;
+package io.anand.play;
 
 import java.util.Arrays;
 import java.util.Random;

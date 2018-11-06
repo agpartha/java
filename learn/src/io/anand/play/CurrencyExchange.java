@@ -1,4 +1,4 @@
-package sandbox;
+package io.anand.play;
 
 import java.util.*;
 
@@ -156,9 +156,7 @@ public class CurrencyExchange {
         addConversion("USD", "ETH", 200);
         addConversion("EUR", "BTC", 5500);
         addConversion("EUR", "ETH", 150);
-        addConversion("INR", "YEN", 74);
-        addConversion("YEN", "ETH", 2000000);
-        addConversion("INR", "YEN", 74);
+        addConversion("INR", "YEN", 800);
 
         printExchange();
         printExchangePeers();
