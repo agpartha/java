@@ -36,6 +36,14 @@ public class CurrencyExchange {
         private String      name;
 
        HashSet<CurrencyPeer> peers = new HashSet<>(); // All peer currencies we can trade to.
+
+        @Override
+        public String toString() {
+            return "Currency{" +
+                    "name=" + getName() +
+                    ", peers=" + getPeers().toString() +
+                    '}';
+        }
     }
 
     private static class CurrencyPeer {
@@ -62,87 +70,92 @@ public class CurrencyExchange {
             this.name = peerCur;
             this.rate    = rate;
         }
+
+        @Override
+        public String toString() {
+            return "Peer{" +
+                    "name=" + getName() +
+                    ", rate=" + getRate() +
+                    '}';
+        }
     }
 
     // Graph is a map of currencies and it's associated links.
     private static Map<String, Currency> currencies = new HashMap<>();
 
-    public Currency addCurrency(String cur, Currency node) {
-        return currencies.put(cur, node);
-    }
-
-    public Currency getCurrency(String name) {
+    public static Currency getCurrency(String name) {
         return currencies.get(name);
     }
 
-    public void printExchange () {
+    public static void printExchange () {
         for (String cur : currencies.keySet()) {
             System.out.println(currencies.get(cur));
         }
     }
 
+    private static Currency addCurrency (String name) {
+        Currency cur = getCurrency(name);
+        if (null == cur) {
+            cur = new Currency(name);
+            currencies.put(name, cur);
+        }
+        return cur;
+    }
+
+    public void printCurrencies () {
+        for (String name : currencies.keySet()) {
+            System.out.println(currencies.get(name));
+        }
+    }
+
+    public static void printExchangePeers() {
+        for (String name : currencies.keySet()) {
+            StringBuilder sb = new StringBuilder();
+            Currency cur = currencies.get(name);
+            sb.append("Currency: { name: " + cur.getName() + " , peers: [");
+            HashSet<CurrencyPeer> peers = cur.getPeers();
+            for (CurrencyPeer peer : peers) {
+                Currency peerCur = currencies.get(peer.getName());
+                sb.append(" " + peerCur.getName());
+                sb.append(": " + peer.getRate());
+            }
+            sb.append(" ] }");
+            System.out.println(sb.toString());
+        }
+    }
+
     private static void addConversion (String fromCurrency, String toCurrency, double rate) {
         // If currency exists, fine just add the link. Else create both and add the link.
-        Currency fromCur = currencies.getOrDefault(fromCurrency, new Currency(fromCurrency));
-        Currency toCur = currencies.getOrDefault(toCurrency, new Currency(fromCurrency));
+        Currency fromCur = addCurrency(fromCurrency);
+        Currency toCur  = addCurrency(toCurrency);
         fromCur.addPeer(new CurrencyPeer(toCurrency, rate));
         toCur.addPeer((new CurrencyPeer(fromCurrency, 1.0 /rate)));
     }
 
-    private double exchange (Currency fromCur, Currency toCur, double amount, HashSet<String> visitedSet) {
+    private static  double exchange (Currency fromCur, Currency toCur, double amount, HashSet<String> visitedSet) {
         System.out.println("Currency: " + fromCur.getName());
         visitedSet.add(fromCur.getName());
         for (CurrencyPeer peer: fromCur.getPeers()) {
             if (!visitedSet.contains(peer.getName()))
-                exchange(currencies.get(peer.getName()), toCur, amount, visitedSet);
+                return exchange(currencies.get(peer.getName()), toCur, amount, visitedSet);
         }
+        return 0;
     }
 
     private static double exchange (String fromCurrency, String toCurrency, int amount) {
         HashSet<String> visitedSet = new HashSet<>();
-        // Look up links entry for fromCurrency.
-        double convertedAmount = amount;
-        Set<currencyLink> mapCurrencies = conversions.get(fromCurrency);
-        Iterator<currencyLink>   iterator = mapCurrencies.iterator();
-
-        // Traverse all the links from this currency till we find the toCurrency.
-        // Add up the conversion using rates.
-        if (null == mapCurrencies)
-            return 0;
-
-        Map<String, Boolean> consumedMap = new HashMap<>();
-        List<currencyLink>  linksToConsume = new LinkedList<currencyLink>();
-        linksToConsume.add(iterator.next());
-        while (!linksToConsume.isEmpty()) {
-            // Remember the visited node
-            currencyLink currencyLink = linksToConsume.remove(0);
-            boolean seen = consumedMap.getOrDefault(.fromCur, false);
-            if (!seen) {
-                // Get the conversion for the amount using the rate in this link
-                convertedAmount *= currencyLink.rate;
-                //
-                linksToConsume.add(iterator.next());
-            }
-            if (currencyLink.toCur.equals(toCurrency)) {
-                return convertedAmount;
-            }
-        }
+        return exchange(currencies.get(fromCurrency), currencies.get(toCurrency), 1.0 * amount, visitedSet);
     }
 
     public static void main (String [] args) {
-
         //Add Conversions
         addConversion("USD", "BTC", 6000);
         addConversion("USD", "ETH", 200);
         addConversion("EUR", "BTC", 5500);
         addConversion("EUR", "ETH", 150);
 
-
-
-
-
-
-
+        printExchange();
+        printExchangePeers();
     }
 
 }

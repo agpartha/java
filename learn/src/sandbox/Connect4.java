@@ -49,7 +49,6 @@ public class Connect4 {
         for (int row = MAX_ROWS - 1; row >= 0; row--) {
             if (0 == board[row][col]) {
                 board[row][col] = player;
-
                 return false;
             }
         }
@@ -60,7 +59,7 @@ public class Connect4 {
     static int isRowWinDir(boolean left, int row, int col, int matchCount) {
         int matchedCol = 0;
 
-        for (int i = col; i < matchCount; i+ ) {
+        for (int i = col; i < matchCount; i++ ) {
             int newCol = left ? (col - 1) : (col + 1);
             if ((col < 0) || (col > MAX_COLS))
                 break;
@@ -106,12 +105,9 @@ public class Connect4 {
         // toggling the turns.
         while (true) {
             boolean winner = false;
-
-
             do {
                 int col = getRandomColumn();
                 try {
-
                     winner = playBoard(player1Turn ? 1 : 2, col);
                     drawBoard();
                 } catch (Exception e)  {
