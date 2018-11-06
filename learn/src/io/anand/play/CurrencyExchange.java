@@ -128,16 +128,16 @@ public class CurrencyExchange {
         // If currency exists, fine just add the link. Else create both and add the link.
         Currency fromCur = addCurrency(fromCurrency);
         Currency toCur  = addCurrency(toCurrency);
-        fromCur.addPeer(new CurrencyPeer(toCurrency, 1.0 / rate));
-        toCur.addPeer((new CurrencyPeer(fromCurrency, rate)));
+        fromCur.addPeer(new CurrencyPeer(toCurrency, rate));
+        toCur.addPeer((new CurrencyPeer(fromCurrency, 1.0 / rate)));
     }
 
     private static boolean findConversions (Currency cur, Currency toCur, double amount, double rate, boolean isPossible, HashSet<String> visitedSet) {
         double amountIn = amount;
         amount *= rate;
-        System.out.println("Possible ?: " + isPossible + ", Currency: " + cur.getName() + ", rate: " + rate + ", amountIn: " + amountIn + ", amount: " + amount);
+        System.out.println("Currency: " + cur.getName() + ", rate: " + rate + ", amountIn: " + amountIn + ", amount: " + amount);
         if (cur.getName().equals(toCur.getName())) {
-            System.out.println("Converted amount: " + amount);
+            System.out.println("****** Yay!, Converted amount: " + amount + " ******");
             return true;
         }
         visitedSet.add(cur.getName());
@@ -159,12 +159,12 @@ public class CurrencyExchange {
 
     public static void main (String [] args) {
         //Add Conversions
-        addExchange("USD", "BTC", 6000);
-        addExchange("USD", "ETH", 200);
-        addExchange("EUR", "BTC", 5500);
-        addExchange("EUR", "ETH", 150);
-        addExchange("INR", "YEN", 800);
- //       addExchange("ETH", "YEN", 8000);
+        addExchange("BTC", "USD", 6000);
+        addExchange("ETH", "USD", 200);
+        addExchange("BTC", "EUR", 5500);
+        addExchange("ETH", "EUR", 150);
+        addExchange("YEN", "INR", 800);
+        addExchange("ETH", "YEN", 1000);
 
         printExchange();
         printExchangePeers();
