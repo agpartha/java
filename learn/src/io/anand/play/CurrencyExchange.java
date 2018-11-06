@@ -152,6 +152,8 @@ public class CurrencyExchange {
 
     private static boolean findConversions (String fromCurrency, String toCurrency, int amount) {
         HashSet<String> visitedSet = new HashSet<>();
+        System.out.println("------------------------------------------------------------------------------------------------------------------------");
+        System.out.println(fromCurrency + " -> " +  toCurrency + " (amount: " + amount + ")");
         return findConversions(currencies.get(fromCurrency), currencies.get(toCurrency), 1.0 * amount, 1.0, false, visitedSet);
     }
 
@@ -167,12 +169,12 @@ public class CurrencyExchange {
         printExchange();
         printExchangePeers();
 
-        System.out.println("ETH-> BTC: " + findConversions("ETH", "BTC", 4) );
-        System.out.println("ETH-> INR: " + findConversions("ETH", "INR", 6) );
-        System.out.println("USD-> BTC: " + findConversions("USD", "BTC", 1) );
-        System.out.println("USD-> EUR: " + findConversions("USD", "EUR", 2) );
-        System.out.println("BTC-> ETH: " + findConversions("BTC", "ETH", 3) );
-        System.out.println("INR-> BTC: " + findConversions("INR", "BTC", 50000) );
+        System.out.println("ETH -> BTC: " + (findConversions("ETH", "BTC", 4) ? "Possible" : "Not Possible"));
+        System.out.println("ETH -> INR: " + (findConversions("ETH", "INR", 6) ? "Possible" : "Not Possible"));
+        System.out.println("USD -> BTC: " + (findConversions("USD", "BTC", 1) ? "Possible" : "Not Possible"));
+        System.out.println("USD -> EUR: " + (findConversions("USD", "EUR", 2) ? "Possible" : "Not Possible"));
+        System.out.println("BTC -> ETH: " + (findConversions("BTC", "ETH", 3) ? "Possible" : "Not Possible"));
+        System.out.println("INR -> BTC: " + (findConversions("INR", "BTC", 50000) ? "Possible" : "Not Possible"));
     }
 
     /*
