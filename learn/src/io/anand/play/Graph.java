@@ -123,7 +123,7 @@ public class Graph<I, D> {
             Vertex<I, D>    vertex = vertices.get(id);
             System.out.println("Vertex: id: " + vertex.getId() + ", data: " + vertex.getData());
             // Though it appears right to mark as visited only here,
-            // it helps tp avoid the node appearing twice if the same child appears as a child of any other
+            // it helps to avoid the node appearing twice if the same child appears as a child of any other
             // node. In this case next level node is reachable by two of the current children nodes.
             //visitedSet.add(id);
 
