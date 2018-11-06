@@ -134,6 +134,8 @@ public class CurrencyExchange {
 
     private static  double exchange (Currency fromCur, Currency toCur, double amount, HashSet<String> visitedSet) {
         System.out.println("Currency: " + fromCur.getName());
+        if (fromCur.getName().equals(toCur.getName()))
+            return 1;
         visitedSet.add(fromCur.getName());
         for (CurrencyPeer peer: fromCur.getPeers()) {
             if (!visitedSet.contains(peer.getName()))
@@ -153,9 +155,18 @@ public class CurrencyExchange {
         addConversion("USD", "ETH", 200);
         addConversion("EUR", "BTC", 5500);
         addConversion("EUR", "ETH", 150);
+        addConversion("INR", "USD", 74);
+
 
         printExchange();
         printExchangePeers();
+
+        System.out.println("USD-> BTC: " + exchange("USD", "BTC", 2) );
+        System.out.println("USD-> EUR: " + exchange("USD", "EUR", 2) );
+        System.out.println("BTC-> ETH: " + exchange("BTC", "ETH", 2) );
+        System.out.println("ETH-> BTC: " + exchange("ETH", "BTC", 2) );
+        System.out.println("INR-> BTC: " + exchange("INR", "BTC", 2) );
+
     }
 
 }
