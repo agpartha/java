@@ -136,18 +136,29 @@ public class CurrencyExchange {
         amount *= rate;
         System.out.println("Currency: " + fromCur.getName() + ", rate: " + rate + ", amount: " + amount);
         if (fromCur.getName().equals(toCur.getName()))
-            return amount;
+            return -1.0 * amount;
         visitedSet.add(fromCur.getName());
         for (CurrencyPeer peer: fromCur.getPeers()) {
-            if (!visitedSet.contains(peer.getName()))
-                return exchange(currencies.get(peer.getName()), toCur, amount, peer.getRate(), visitedSet);
+            if (!visitedSet.contains(peer.getName())) {
+                double updAmount = exchange(currencies.get(peer.getName()), toCur, amount, peer.getRate(), visitedSet);
+                if (0 != updAmount) {
+                    if (amount < 0)
+                        return amount;
+                    else
+                        amount = updAmount;
+                }
+            }
         }
         return 0;
     }
 
     private static double exchange (String fromCurrency, String toCurrency, int amount) {
         HashSet<String> visitedSet = new HashSet<>();
-        return exchange(currencies.get(fromCurrency), currencies.get(toCurrency), 1.0 * amount, 1.0,  visitedSet);
+        double updAmount = exchange(currencies.get(fromCurrency), currencies.get(toCurrency), 1.0 * amount, 1.0,  visitedSet);
+        if (updAmount < 0)
+            return -1.0 * updAmount;
+        else
+            return 0;
     }
 
     public static void main (String [] args) {
@@ -157,15 +168,16 @@ public class CurrencyExchange {
         addConversion("EUR", "BTC", 5500);
         addConversion("EUR", "ETH", 150);
         addConversion("INR", "YEN", 800);
+        addConversion("ETH", "YEN", 8000);
 
         printExchange();
         printExchangePeers();
 
+        System.out.println("ETH-> BTC: " + exchange("ETH", "BTC", 4) );
         System.out.println("ETH-> INR: " + exchange("ETH", "INR", 6) );
         System.out.println("USD-> BTC: " + exchange("USD", "BTC", 1) );
         System.out.println("USD-> EUR: " + exchange("USD", "EUR", 2) );
         System.out.println("BTC-> ETH: " + exchange("BTC", "ETH", 3) );
-        System.out.println("ETH-> BTC: " + exchange("ETH", "BTC", 4) );
         System.out.println("INR-> BTC: " + exchange("INR", "BTC", 50000) );
     }
 
