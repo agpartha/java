@@ -174,47 +174,91 @@ public class CurrencyExchange {
         System.out.println("USD -> EUR: " + (findConversions("USD", "EUR", 2) ? "Possible" : "Not Possible"));
         System.out.println("BTC -> ETH: " + (findConversions("BTC", "ETH", 3) ? "Possible" : "Not Possible"));
         System.out.println("INR -> BTC: " + (findConversions("INR", "BTC", 50000) ? "Possible" : "Not Possible"));
-    }
 
-    /*
-      Run output:
+        /*
+          Output from the run.
 
-Currency{name=BTC, peers=[Peer{name=EUR, rate=5500.0}, Peer{name=USD, rate=6000.0}]}
-Currency{name=EUR, peers=[Peer{name=ETH, rate=0.006666666666666667}, Peer{name=BTC, rate=1.818181818181818E-4}]}
-Currency{name=YEN, peers=[Peer{name=INR, rate=74.0}]}
+          Currency{name=BTC, peers=[Peer{name=EUR, rate=5500.0}, Peer{name=USD, rate=6000.0}]}
+Currency{name=EUR, peers=[Peer{name=BTC, rate=1.818181818181818E-4}, Peer{name=ETH, rate=0.006666666666666667}]}
+Currency{name=YEN, peers=[Peer{name=INR, rate=800.0}, Peer{name=ETH, rate=0.001}]}
 Currency{name=USD, peers=[Peer{name=BTC, rate=1.6666666666666666E-4}, Peer{name=ETH, rate=0.005}]}
-Currency{name=ETH, peers=[Peer{name=EUR, rate=150.0}, Peer{name=USD, rate=200.0}]}
-Currency{name=INR, peers=[Peer{name=YEN, rate=0.013513513513513514}]}
+Currency{name=ETH, peers=[Peer{name=YEN, rate=1000.0}, Peer{name=EUR, rate=150.0}, Peer{name=USD, rate=200.0}]}
+Currency{name=INR, peers=[Peer{name=YEN, rate=0.00125}]}
 Currency: { name: BTC , peers: [ EUR: 5500.0 USD: 6000.0 ] }
-Currency: { name: EUR , peers: [ ETH: 0.006666666666666667 BTC: 1.818181818181818E-4 ] }
-Currency: { name: YEN , peers: [ INR: 74.0 ] }
+Currency: { name: EUR , peers: [ BTC: 1.818181818181818E-4 ETH: 0.006666666666666667 ] }
+Currency: { name: YEN , peers: [ INR: 800.0 ETH: 0.001 ] }
 Currency: { name: USD , peers: [ BTC: 1.6666666666666666E-4 ETH: 0.005 ] }
-Currency: { name: ETH , peers: [ EUR: 150.0 USD: 200.0 ] }
-Currency: { name: INR , peers: [ YEN: 0.013513513513513514 ] }
-Currency: USD, rate: 1.0, amount: 1.0
-Currency: BTC, rate: 1.6666666666666666E-4, amount: 1.6666666666666666E-4
-USD-> BTC: 1.6666666666666666E-4
-Currency: USD, rate: 1.0, amount: 2.0
-Currency: BTC, rate: 1.6666666666666666E-4, amount: 3.333333333333333E-4
-Currency: EUR, rate: 5500.0, amount: 1.8333333333333333
-USD-> EUR: 1.8333333333333333
-Currency: BTC, rate: 1.0, amount: 3.0
-Currency: EUR, rate: 5500.0, amount: 16500.0
-Currency: ETH, rate: 0.006666666666666667, amount: 110.0
-BTC-> ETH: 110.0
-Currency: ETH, rate: 1.0, amount: 4.0
-Currency: EUR, rate: 150.0, amount: 600.0
-Currency: BTC, rate: 1.818181818181818E-4, amount: 0.10909090909090909
-ETH-> BTC: 0.10909090909090909
-Currency: INR, rate: 1.0, amount: 50000.0
-Currency: YEN, rate: 0.013513513513513514, amount: 675.6756756756757
-INR-> BTC: 0.0
-Currency: ETH, rate: 1.0, amount: 6.0
-Currency: EUR, rate: 150.0, amount: 900.0
-Currency: BTC, rate: 1.818181818181818E-4, amount: 0.16363636363636364
-Currency: USD, rate: 6000.0, amount: 981.8181818181818
-ETH-> INR: 0.0
+Currency: { name: ETH , peers: [ YEN: 1000.0 EUR: 150.0 USD: 200.0 ] }
+Currency: { name: INR , peers: [ YEN: 0.00125 ] }
+------------------------------------------------------------------------------------------------------------------------
+ETH -> BTC (amount: 4)
+Currency: ETH, rate: 1.0, amountIn: 4.0, amount: 4.0
+Currency: YEN, rate: 1000.0, amountIn: 4.0, amount: 4000.0
+Currency: INR, rate: 800.0, amountIn: 4000.0, amount: 3200000.0
+Currency: EUR, rate: 150.0, amountIn: 4.0, amount: 600.0
+Currency: BTC, rate: 1.818181818181818E-4, amountIn: 600.0, amount: 0.10909090909090909
+****** Yay!, Converted amount: 0.10909090909090909 ******
+Currency: USD, rate: 200.0, amountIn: 4.0, amount: 800.0
+Currency: BTC, rate: 1.6666666666666666E-4, amountIn: 800.0, amount: 0.13333333333333333
+****** Yay!, Converted amount: 0.13333333333333333 ******
+ETH -> BTC: Possible
+------------------------------------------------------------------------------------------------------------------------
+ETH -> INR (amount: 6)
+Currency: ETH, rate: 1.0, amountIn: 6.0, amount: 6.0
+Currency: YEN, rate: 1000.0, amountIn: 6.0, amount: 6000.0
+Currency: INR, rate: 800.0, amountIn: 6000.0, amount: 4800000.0
+****** Yay!, Converted amount: 4800000.0 ******
+Currency: EUR, rate: 150.0, amountIn: 6.0, amount: 900.0
+Currency: BTC, rate: 1.818181818181818E-4, amountIn: 900.0, amount: 0.16363636363636364
+Currency: USD, rate: 6000.0, amountIn: 0.16363636363636364, amount: 981.8181818181818
+ETH -> INR: Possible
+------------------------------------------------------------------------------------------------------------------------
+USD -> BTC (amount: 1)
+Currency: USD, rate: 1.0, amountIn: 1.0, amount: 1.0
+Currency: BTC, rate: 1.6666666666666666E-4, amountIn: 1.0, amount: 1.6666666666666666E-4
+****** Yay!, Converted amount: 1.6666666666666666E-4 ******
+Currency: ETH, rate: 0.005, amountIn: 1.0, amount: 0.005
+Currency: YEN, rate: 1000.0, amountIn: 0.005, amount: 5.0
+Currency: INR, rate: 800.0, amountIn: 5.0, amount: 4000.0
+Currency: EUR, rate: 150.0, amountIn: 0.005, amount: 0.75
+Currency: BTC, rate: 1.818181818181818E-4, amountIn: 0.75, amount: 1.3636363636363634E-4
+****** Yay!, Converted amount: 1.3636363636363634E-4 ******
+USD -> BTC: Possible
+------------------------------------------------------------------------------------------------------------------------
+USD -> EUR (amount: 2)
+Currency: USD, rate: 1.0, amountIn: 2.0, amount: 2.0
+Currency: BTC, rate: 1.6666666666666666E-4, amountIn: 2.0, amount: 3.333333333333333E-4
+Currency: EUR, rate: 5500.0, amountIn: 3.333333333333333E-4, amount: 1.8333333333333333
+****** Yay!, Converted amount: 1.8333333333333333 ******
+Currency: ETH, rate: 0.005, amountIn: 2.0, amount: 0.01
+Currency: YEN, rate: 1000.0, amountIn: 0.01, amount: 10.0
+Currency: INR, rate: 800.0, amountIn: 10.0, amount: 8000.0
+Currency: EUR, rate: 150.0, amountIn: 0.01, amount: 1.5
+****** Yay!, Converted amount: 1.5 ******
+USD -> EUR: Possible
+------------------------------------------------------------------------------------------------------------------------
+BTC -> ETH (amount: 3)
+Currency: BTC, rate: 1.0, amountIn: 3.0, amount: 3.0
+Currency: EUR, rate: 5500.0, amountIn: 3.0, amount: 16500.0
+Currency: ETH, rate: 0.006666666666666667, amountIn: 16500.0, amount: 110.0
+****** Yay!, Converted amount: 110.0 ******
+Currency: USD, rate: 6000.0, amountIn: 3.0, amount: 18000.0
+Currency: ETH, rate: 0.005, amountIn: 18000.0, amount: 90.0
+****** Yay!, Converted amount: 90.0 ******
+BTC -> ETH: Possible
+------------------------------------------------------------------------------------------------------------------------
+INR -> BTC (amount: 50000)
+Currency: INR, rate: 1.0, amountIn: 50000.0, amount: 50000.0
+Currency: YEN, rate: 0.00125, amountIn: 50000.0, amount: 62.5
+Currency: ETH, rate: 0.001, amountIn: 62.5, amount: 0.0625
+Currency: EUR, rate: 150.0, amountIn: 0.0625, amount: 9.375
+Currency: BTC, rate: 1.818181818181818E-4, amountIn: 9.375, amount: 0.0017045454545454545
+****** Yay!, Converted amount: 0.0017045454545454545 ******
+Currency: USD, rate: 200.0, amountIn: 0.0625, amount: 12.5
+Currency: BTC, rate: 1.6666666666666666E-4, amountIn: 12.5, amount: 0.0020833333333333333
+****** Yay!, Converted amount: 0.0020833333333333333 ******
+INR -> BTC: Possible
 
-     */
-
+         */
+    }
 }
