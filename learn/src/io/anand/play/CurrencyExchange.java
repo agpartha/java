@@ -117,8 +117,9 @@ public class CurrencyExchange {
             for (CurrencyPeer peer : peers) {
                 Currency peerCur = currencies.get(peer.getName());
                 sb.append(" " + peerCur.getName());
-                sb.append(": " + peer.getRate());
+                sb.append(": " + peer.getRate() + ",");
             }
+            sb.deleteCharAt(sb.length() - 1);
             sb.append(" ] }");
             System.out.println(sb.toString());
         }
@@ -178,7 +179,7 @@ public class CurrencyExchange {
         /*
           Output from the run.
 
-          Currency{name=BTC, peers=[Peer{name=EUR, rate=5500.0}, Peer{name=USD, rate=6000.0}]}
+Currency{name=BTC, peers=[Peer{name=EUR, rate=5500.0}, Peer{name=USD, rate=6000.0}]}
 Currency{name=EUR, peers=[Peer{name=BTC, rate=1.818181818181818E-4}, Peer{name=ETH, rate=0.006666666666666667}]}
 Currency{name=YEN, peers=[Peer{name=INR, rate=800.0}, Peer{name=ETH, rate=0.001}]}
 Currency{name=USD, peers=[Peer{name=BTC, rate=1.6666666666666666E-4}, Peer{name=ETH, rate=0.005}]}
