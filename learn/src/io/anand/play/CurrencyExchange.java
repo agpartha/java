@@ -124,7 +124,7 @@ public class CurrencyExchange {
         }
     }
 
-    private static void addConversion (String fromCurrency, String toCurrency, double rate) {
+    private static void addExchange(String fromCurrency, String toCurrency, double rate) {
         // If currency exists, fine just add the link. Else create both and add the link.
         Currency fromCur = addCurrency(fromCurrency);
         Currency toCur  = addCurrency(toCurrency);
@@ -132,53 +132,47 @@ public class CurrencyExchange {
         toCur.addPeer((new CurrencyPeer(fromCurrency, rate)));
     }
 
-    private static  double exchange (Currency fromCur, Currency toCur, double amount, double rate, HashSet<String> visitedSet) {
+    private static boolean findConversions (Currency cur, Currency toCur, double amount, double rate, boolean isPossible, HashSet<String> visitedSet) {
+        double amountIn = amount;
         amount *= rate;
-        System.out.println("Currency: " + fromCur.getName() + ", rate: " + rate + ", amount: " + amount);
-        if (fromCur.getName().equals(toCur.getName()))
-            return -1.0 * amount;
-        visitedSet.add(fromCur.getName());
-        for (CurrencyPeer peer: fromCur.getPeers()) {
+        System.out.println("Possible ?: " + isPossible + ", Currency: " + cur.getName() + ", rate: " + rate + ", amountIn: " + amountIn + ", amount: " + amount);
+        if (cur.getName().equals(toCur.getName())) {
+            System.out.println("Converted amount: " + amount);
+            return true;
+        }
+        visitedSet.add(cur.getName());
+        for (CurrencyPeer peer: cur.getPeers()) {
             if (!visitedSet.contains(peer.getName())) {
-                double updAmount = exchange(currencies.get(peer.getName()), toCur, amount, peer.getRate(), visitedSet);
-                if (0 != updAmount) {
-                    if (amount < 0)
-                        return amount;
-                    else
-                        amount = updAmount;
-                }
+                double amountSoFar = amount;
+                isPossible = findConversions(currencies.get(peer.getName()), toCur, amount, peer.getRate(), isPossible, visitedSet);
             }
         }
-        return 0;
+        return isPossible;
     }
 
-    private static double exchange (String fromCurrency, String toCurrency, int amount) {
+    private static boolean findConversions (String fromCurrency, String toCurrency, int amount) {
         HashSet<String> visitedSet = new HashSet<>();
-        double updAmount = exchange(currencies.get(fromCurrency), currencies.get(toCurrency), 1.0 * amount, 1.0,  visitedSet);
-        if (updAmount < 0)
-            return -1.0 * updAmount;
-        else
-            return 0;
+        return findConversions(currencies.get(fromCurrency), currencies.get(toCurrency), 1.0 * amount, 1.0, false, visitedSet);
     }
 
     public static void main (String [] args) {
         //Add Conversions
-        addConversion("USD", "BTC", 6000);
-        addConversion("USD", "ETH", 200);
-        addConversion("EUR", "BTC", 5500);
-        addConversion("EUR", "ETH", 150);
-        addConversion("INR", "YEN", 800);
-        addConversion("ETH", "YEN", 8000);
+        addExchange("USD", "BTC", 6000);
+        addExchange("USD", "ETH", 200);
+        addExchange("EUR", "BTC", 5500);
+        addExchange("EUR", "ETH", 150);
+        addExchange("INR", "YEN", 800);
+ //       addExchange("ETH", "YEN", 8000);
 
         printExchange();
         printExchangePeers();
 
-        System.out.println("ETH-> BTC: " + exchange("ETH", "BTC", 4) );
-        System.out.println("ETH-> INR: " + exchange("ETH", "INR", 6) );
-        System.out.println("USD-> BTC: " + exchange("USD", "BTC", 1) );
-        System.out.println("USD-> EUR: " + exchange("USD", "EUR", 2) );
-        System.out.println("BTC-> ETH: " + exchange("BTC", "ETH", 3) );
-        System.out.println("INR-> BTC: " + exchange("INR", "BTC", 50000) );
+        System.out.println("ETH-> BTC: " + findConversions("ETH", "BTC", 4) );
+        System.out.println("ETH-> INR: " + findConversions("ETH", "INR", 6) );
+        System.out.println("USD-> BTC: " + findConversions("USD", "BTC", 1) );
+        System.out.println("USD-> EUR: " + findConversions("USD", "EUR", 2) );
+        System.out.println("BTC-> ETH: " + findConversions("BTC", "ETH", 3) );
+        System.out.println("INR-> BTC: " + findConversions("INR", "BTC", 50000) );
     }
 
     /*
