@@ -156,19 +156,60 @@ public class CurrencyExchange {
         addConversion("USD", "ETH", 200);
         addConversion("EUR", "BTC", 5500);
         addConversion("EUR", "ETH", 150);
-        addConversion("INR", "USD", 74);
-
+        addConversion("INR", "YEN", 74);
+        addConversion("YEN", "ETH", 2000000);
+        addConversion("INR", "YEN", 74);
 
         printExchange();
         printExchangePeers();
 
+        System.out.println("ETH-> INR: " + exchange("ETH", "INR", 6) );
         System.out.println("USD-> BTC: " + exchange("USD", "BTC", 1) );
         System.out.println("USD-> EUR: " + exchange("USD", "EUR", 2) );
         System.out.println("BTC-> ETH: " + exchange("BTC", "ETH", 3) );
         System.out.println("ETH-> BTC: " + exchange("ETH", "BTC", 4) );
         System.out.println("INR-> BTC: " + exchange("INR", "BTC", 50000) );
-        System.out.println("ETH-> INR: " + exchange("ETH", "INR", 6) );
-
     }
+
+    /*
+      Run output:
+
+Currency{name=BTC, peers=[Peer{name=EUR, rate=5500.0}, Peer{name=USD, rate=6000.0}]}
+Currency{name=EUR, peers=[Peer{name=ETH, rate=0.006666666666666667}, Peer{name=BTC, rate=1.818181818181818E-4}]}
+Currency{name=YEN, peers=[Peer{name=INR, rate=74.0}]}
+Currency{name=USD, peers=[Peer{name=BTC, rate=1.6666666666666666E-4}, Peer{name=ETH, rate=0.005}]}
+Currency{name=ETH, peers=[Peer{name=EUR, rate=150.0}, Peer{name=USD, rate=200.0}]}
+Currency{name=INR, peers=[Peer{name=YEN, rate=0.013513513513513514}]}
+Currency: { name: BTC , peers: [ EUR: 5500.0 USD: 6000.0 ] }
+Currency: { name: EUR , peers: [ ETH: 0.006666666666666667 BTC: 1.818181818181818E-4 ] }
+Currency: { name: YEN , peers: [ INR: 74.0 ] }
+Currency: { name: USD , peers: [ BTC: 1.6666666666666666E-4 ETH: 0.005 ] }
+Currency: { name: ETH , peers: [ EUR: 150.0 USD: 200.0 ] }
+Currency: { name: INR , peers: [ YEN: 0.013513513513513514 ] }
+Currency: USD, rate: 1.0, amount: 1.0
+Currency: BTC, rate: 1.6666666666666666E-4, amount: 1.6666666666666666E-4
+USD-> BTC: 1.6666666666666666E-4
+Currency: USD, rate: 1.0, amount: 2.0
+Currency: BTC, rate: 1.6666666666666666E-4, amount: 3.333333333333333E-4
+Currency: EUR, rate: 5500.0, amount: 1.8333333333333333
+USD-> EUR: 1.8333333333333333
+Currency: BTC, rate: 1.0, amount: 3.0
+Currency: EUR, rate: 5500.0, amount: 16500.0
+Currency: ETH, rate: 0.006666666666666667, amount: 110.0
+BTC-> ETH: 110.0
+Currency: ETH, rate: 1.0, amount: 4.0
+Currency: EUR, rate: 150.0, amount: 600.0
+Currency: BTC, rate: 1.818181818181818E-4, amount: 0.10909090909090909
+ETH-> BTC: 0.10909090909090909
+Currency: INR, rate: 1.0, amount: 50000.0
+Currency: YEN, rate: 0.013513513513513514, amount: 675.6756756756757
+INR-> BTC: 0.0
+Currency: ETH, rate: 1.0, amount: 6.0
+Currency: EUR, rate: 150.0, amount: 900.0
+Currency: BTC, rate: 1.818181818181818E-4, amount: 0.16363636363636364
+Currency: USD, rate: 6000.0, amount: 981.8181818181818
+ETH-> INR: 0.0
+
+     */
 
 }
