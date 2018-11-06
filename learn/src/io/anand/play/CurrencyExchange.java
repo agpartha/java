@@ -143,7 +143,6 @@ public class CurrencyExchange {
         visitedSet.add(cur.getName());
         for (CurrencyPeer peer: cur.getPeers()) {
             if (!visitedSet.contains(peer.getName())) {
-                double amountSoFar = amount;
                 isPossible = findConversions(currencies.get(peer.getName()), toCur, amount, peer.getRate(), isPossible, visitedSet);
             }
         }
