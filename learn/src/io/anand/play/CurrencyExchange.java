@@ -138,7 +138,7 @@ public class CurrencyExchange {
         amount *= rate;
         System.out.println("Currency: " + cur.getName() + ", rate: " + rate + ", amountIn: " + amountIn + ", amount: " + amount);
         if (cur.getName().equals(toCur.getName())) {
-            System.out.println("****** Yay!, Converted amount: " + amount + " ******");
+            System.out.println("************** Yay!, Converted amount: " + amount + " **************");
             return true;
         }
         visitedSet.add(cur.getName());
@@ -166,7 +166,6 @@ public class CurrencyExchange {
         addExchange("YEN", "INR", 800);
         addExchange("ETH", "YEN", 1000);
 
-        printExchange();
         printExchangePeers();
 
         System.out.println("ETH -> BTC: " + (findConversions("ETH", "BTC", 4) ? "Possible" : "Not Possible"));
