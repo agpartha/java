@@ -22,6 +22,13 @@ public class ReverseVowels {
         }
     }
 
+    private static void swapChars (char [] charArray, int left, int right) {
+        char temp;
+        temp = charArray[left];
+        charArray[left] = charArray[right];
+        charArray[right] = temp;
+    }
+
     private static String reverseVowels (String input) {
         // Idea would be to have a pointer from the each end of the
         // string characters. When we find a vowel, swap it with the other
@@ -31,12 +38,16 @@ public class ReverseVowels {
         int left          = 0;
         int right         = charArray.length - 1;
 
+        // Till our markers are not crossed over (means we have done swapping
+        // all potential candidates
         while ( left < right ) {
+
             // Go till the first vowel from left and resume the loop by continuing.
             if (!isVowel(charArray[left])) {
                 left++;
                 continue;
             }
+
             // Go till the first vowel from right
             if (!isVowel(charArray[right])) {
                 right--;
@@ -44,10 +55,7 @@ public class ReverseVowels {
             }
 
             // Fact we did not continue means we have two vowels and not crossed over.
-            char temp;
-            temp = charArray[left];
-            charArray[left] = charArray[right];
-            charArray[right] = temp;
+            swapChars(charArray, left, right);
 
             // These are needed, else we will be in loop swapping same two vowels.
             left++;
@@ -58,8 +66,8 @@ public class ReverseVowels {
 
 
     public static void main (String [] args) {
-        String input   = "Is this a good test for apple, say hello";
-        String ooutput = reverseVowels(input);
-        System.out.println("Input: " + input + ", Output: " + ooutput);
+        String input  = "Is this a good test for apple, say hello";
+        String output = reverseVowels(input);
+        System.out.println("Input: " + input + ", Output: " + output);
     }
 }
