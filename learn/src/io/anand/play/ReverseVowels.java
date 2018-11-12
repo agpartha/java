@@ -1,4 +1,4 @@
-package sandbox;
+package io.anand.play;
 
 public class ReverseVowels {
 
@@ -32,30 +32,33 @@ public class ReverseVowels {
         int right         = charArray.length - 1;
 
         while ( left < right ) {
-            // Go till the first vowel from left
-            while ((left < right) && !isVowel(charArray[left]))
+            // Go till the first vowel from left and resume the loop by continuing.
+            if (!isVowel(charArray[left])) {
                 left++;
-            // Go till the first vowel from right
-            while ((right > left) && !isVowel(charArray[right]))
-                right--;
-
-            // If we found the vowels swap them.
-            if ((left < right) && (isVowel(charArray[left]) &&
-                    isVowel(charArray[right]))) {
-                char temp;
-                temp             = charArray[left];
-                charArray[left]  = charArray[right];
-                charArray[right] = temp;
-                left++;
-                right--;
+                continue;
             }
+            // Go till the first vowel from right
+            if (!isVowel(charArray[right])) {
+                right--;
+                continue;
+            }
+
+            // Fact we did not continue means we have two vowels and not crossed over.
+            char temp;
+            temp = charArray[left];
+            charArray[left] = charArray[right];
+            charArray[right] = temp;
+
+            // These are needed, else we will be in loop swapping same two vowels.
+            left++;
+            right--;
         }
         return new String (charArray);
     }
 
 
     public static void main (String [] args) {
-        String input   = "hello";
+        String input   = "aeiou";
         String ooutput = reverseVowels(input);
         System.out.println("Input: " + input + ", Output: " + ooutput);
     }
