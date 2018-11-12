@@ -58,7 +58,7 @@ public class ReverseVowels {
 
 
     public static void main (String [] args) {
-        String input   = "aeiou";
+        String input   = "Is this a good test for apple, say hello";
         String ooutput = reverseVowels(input);
         System.out.println("Input: " + input + ", Output: " + ooutput);
     }
