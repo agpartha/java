@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8772aa5-faf4-44d8-98ab-12bf1e9b4df1" name="Default" comment="State Machine based handling, works for multiple occirrences of comments in each line. Extra memory limited to configurable size independent of input line size.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
-      <change beforePath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" beforeDir="$SP_SCHEDULER_ENABLE$" afterPath="$PROJECT_DIR$/../../turoy/.idea/workspace.xml" afterDir="$SP_SCHEDULER_ENABLE$" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../../turoy/.gradle/" />
     <ignored path="$PROJECT_DIR$/../../turoy/build/" />
     <ignored path="$PROJECT_DIR$/../../turoy/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="$SP_SCHEDULER_ENABLE$" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="$SP_SCHEDULER_ENABLE$" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/../../turoy">
@@ -79,106 +72,6 @@
         </counts>
       </usages-collector>
     </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1023">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/BinaryHeapGeneric.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/CarFleet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/EasyRecursion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/HelloRunnable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/HelloThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/MakeAnagram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/LinkedListNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="$SP_SCHEDULER_ENABLE$" current-in-tab="$SP_SCHEDULER_ENABLE$">
-        <entry file="file://$PROJECT_DIR$/src/io/anand/play/LoopFreeGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -640,7 +533,6 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="$SP_SCHEDULER_ENABLE$" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540421121350" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -898,7 +790,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.08867277" side_tool="true" weight="0.21029083" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4909478" weight="0.32553193" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32997763" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -931,7 +822,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.08867277" side_tool="true" weight="0.21029083" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4909478" weight="0.3261317" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="$SP_SCHEDULER_ENABLE$" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32997763" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
