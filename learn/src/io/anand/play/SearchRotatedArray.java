@@ -25,15 +25,15 @@ public class SearchRotatedArray {
 
         boolean searchFirstHalf;
         if (firstHalfSorted) {
+            // If the first half is sorted and key value is in range
             if ((key >= a[start]) && (key < a[mid]))
-                // If the first half is sorted  (start < mid) and our key value is >= start and < middle
                 searchFirstHalf = true;
             else
                 // Sorted, but key is out of range, only chance is second half.
                 searchFirstHalf = false;
         } else if (secondHalfSorted)  {
+            // If the second half is sorted and our key value is in range
             if ((key > a[mid]) && (key <= a[end]))
-                // If the second half is sorted (mid < end) and our key value is > middle and <= end
                 searchFirstHalf = false;
             else
                 // Sorted, but key is out of range, only chance is first half.
@@ -74,18 +74,18 @@ public class SearchRotatedArray {
 
             boolean searchFirstHalf;
             if (firstHalfSorted) {
+                // If the first half is sorted and key value is in range
                 if ((key >= a[start]) && (key < a[mid]))
-                    // If the first half is sorted  (start < mid) and our key value is >= start and < middle
                     searchFirstHalf = true;
                 else
-                    // Sorted, but key is out of range, only chance is second half.
+                    // Sorted, but key is out of range, only chance is second half
                     searchFirstHalf = false;
             } else if (secondHalfSorted)  {
-                    if ((key > a[mid]) && (key <= a[end]))
-                    // If the second half is sorted (mid < end) and our key value is > middle and <= end
+                // If the second half is sorted and our key value is in range
+                if ((key > a[mid]) && (key <= a[end]))
                     searchFirstHalf = false;
                 else
-                    // Sorted, but key is out of range, only chance is first half.
+                    // Sorted, but key is out of range, only chance is first half
                     searchFirstHalf = true;
             } else
                 // Technically not valid since array is sorted at-least in one of the halves.
@@ -100,7 +100,7 @@ public class SearchRotatedArray {
         return -1;
     }
 
-    private static boolean useRecursion = true;
+    private static boolean useRecursion = false;
     private static int binarySearchRotated (int [] a, int key) {
         if (useRecursion)
             return binSearchRecurse(a, key, 0, a.length - 1);
