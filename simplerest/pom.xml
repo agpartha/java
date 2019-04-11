@@ -20,7 +20,7 @@
     </dependencies>
 
     <properties>
-        <java.version>13</java.version>
+        <java.version>11</java.version>
         <docker.image.prefix>simplerest</docker.image.prefix>
     </properties>
     <build>
@@ -31,7 +31,7 @@
                 <version>1.2.0</version>
                 <configuration>
                     <imageName>${project.artifactId}</imageName>
-                    <baseImage>openjdk:13-alpine</baseImage>
+                    <baseImage>openjdk:11</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
                         <resource>
