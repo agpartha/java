@@ -53,15 +53,6 @@
                     <repository>agpartha/privreg</repository>
                     <tag>${docker.tag.prefix}-${project.artifactId}-${project.version}</tag>
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>default</id>
-                        <goals>
-                            <goal>build</goal>
-                            <goal>push</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
 
         </plugins>
