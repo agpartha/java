@@ -14,7 +14,7 @@
     </parent>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>12</java.version>
         <docker.tag.prefix>java</docker.tag.prefix>
         <jarName>${project.artifactId}-${project.version}</jarName>
     </properties>
