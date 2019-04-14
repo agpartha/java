@@ -2,22 +2,30 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <java.version>12</java.version>
+        <!--> Enable this instead of empty build number if we want a build number in jar versions
+        <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
+        <buildNumber>-${maven.build.timestamp}</buildNumber>
+        -->
+        <buildNumber></buildNumber>
+        <docker.tag.prefix>java</docker.tag.prefix>
+        <jarName>${project.artifactId}-${project.version}</jarName>
+    </properties>
+
     <groupId>io.anand.springboot</groupId>
     <artifactId>simplerest</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT${buildNumber}</version>
     <name>Simple REST API</name>
     <packaging>jar</packaging>
+
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.5.RELEASE</version>
     </parent>
 
-    <properties>
-        <java.version>12</java.version>
-        <docker.tag.prefix>java</docker.tag.prefix>
-        <jarName>${project.artifactId}-${project.version}</jarName>
-    </properties>
 
     <dependencies>
         <dependency>
