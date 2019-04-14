@@ -16,9 +16,7 @@
     <properties>
         <java.version>1.8</java.version>
         <docker.tag.prefix>java</docker.tag.prefix>
-        <directory>${project.build.sourceDirectory}/target</directory>
-        <finalName>${project.artifactId}-${project.version}</finalName>
-        <targetJar>target/${finalName}.jar</targetJar>
+        <jarName>${project.artifactId}-${project.version}</jarName>
     </properties>
 
     <dependencies>
@@ -54,9 +52,9 @@
                 <version>1.4.10</version>
                 <configuration>
                     <repository>agpartha/privreg</repository>
-                    <tag>${docker.tag.prefix}-${finalName}</tag>
+                    <tag>${docker.tag.prefix}-${jarName}</tag>
                     <buildArgs>
-                    <JAR_FILE>${targetJar}</JAR_FILE>
+                    <JAR_FILE>target/${jarName}.jar</JAR_FILE>
                     </buildArgs>
                 </configuration>
             </plugin>
