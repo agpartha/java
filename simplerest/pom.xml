@@ -4,18 +4,21 @@
 
     <properties>
         <java.version>12</java.version>
-        <!--> Enable this instead of empty build number if we want a build number in jar versions
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-        <buildNumber>-${maven.build.timestamp}</buildNumber>
-        -->
-        <buildNumber></buildNumber>
+        <buildNumber>${maven.build.timestamp}</buildNumber>
         <docker.tag.prefix>java</docker.tag.prefix>
         <jarName>${project.artifactId}-${project.version}</jarName>
     </properties>
 
     <groupId>io.anand.springboot</groupId>
     <artifactId>simplerest</artifactId>
-    <version>0.0.1-SNAPSHOT${buildNumber}</version>
+    <!--> Enable this instead of empty build number if we want a build number in jar versions
+    <version>0.0.1-SNAPSHOT$.{buildNumber}</version>
+    -->
+    <!--> Enable this for no build number in jar versions
+    <version>0.0.1-SNAPSHOT</version>
+    -->
+    <version>0.0.1-SNAPSHOT</version>
     <name>Simple REST API</name>
     <packaging>jar</packaging>
 
@@ -62,7 +65,7 @@
                     <repository>agpartha/privreg</repository>
                     <tag>${docker.tag.prefix}-${jarName}</tag>
                     <buildArgs>
-                    <JAR_FILE>target/${jarName}.jar</JAR_FILE>
+                        <JAR_FILE>target/${jarName}.jar</JAR_FILE>
                     </buildArgs>
                 </configuration>
             </plugin>
