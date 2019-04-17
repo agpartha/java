@@ -56,7 +56,9 @@ public class RestApplication {
     public static void main (String [] args) {
         try {
             System.out.println("Starting: " + getAppStringFromManifest());
-            System.out.println("Starting: " + getBuildNumberFromProps());
+            String buildNumber = getBuildNumberFromProps();
+            if (null != buildNumber)
+                System.out.println("Build: " + buildNumber);
         } catch (IOException e) {
             e.printStackTrace();
         }
