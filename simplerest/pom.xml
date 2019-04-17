@@ -44,16 +44,16 @@
 
     <build>
 
+        <!--> This seems to have issues by blocking application properties not being honored. commenting till further debug
         <resources>
             <resource>
-                <!-- Filter for build number -->
                 <directory>src/main/resources</directory>
-                <filtering>true</filtering>
                 <includes>
                     <include>build.properties</include>
                 </includes>
             </resource>
         </resources>
+        -->
 
         <plugins>
 
