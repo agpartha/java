@@ -14,7 +14,7 @@ import java.util.jar.Attributes;
 import java.util.jar.Manifest;
 
 @Service
-public class HealthService {
+public class InfoService {
 
 	private String appString	= null;
 	private String buildNumber	= null;
@@ -55,7 +55,7 @@ public class HealthService {
 		return null;
 	}
 
-    public HealthService() {
+    public InfoService() {
 		try {
 			appString = getAppStringFromManifest();
 			buildNumber = getBuildNumberFromProps();

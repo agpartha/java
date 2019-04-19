@@ -12,11 +12,11 @@ public class AppStartupRunner implements ApplicationRunner {
     private static final Logger logger = LoggerFactory.getLogger(AppStartupRunner.class);
 
     @Autowired
-    HealthService healthService;
+    InfoService infoService;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        logger.info("Started {}", healthService.getHealth());
+        logger.info("Started {}", infoService.getHealth());
     }
 
 }
