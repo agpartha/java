@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: simplerest
+spec:
+  selector:
+    app: simplerest
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 7070
+    targetPort: 7070
