@@ -72,7 +72,7 @@ public class InfoService {
     }
 			
 	public String getHealth () {
-		return "Running " + appString + "on " + hostName;
+		return "Running " + appString + ", on " + hostName;
 	}
 	
 	public String getVersion () {
