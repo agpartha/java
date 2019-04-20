@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.InetAddress;
 import java.net.URL;
-import java.util.ArrayList;
+import java.net.UnknownHostException;
 import java.util.Enumeration;
-import java.util.List;
 import java.util.Properties;
 import java.util.jar.Attributes;
 import java.util.jar.Manifest;
@@ -18,6 +18,7 @@ public class InfoService {
 
 	private String appString	= null;
 	private String buildNumber	= null;
+	private String hostName     = null;
 
 	private String getAppStringFromManifest() throws IOException {
 		String appString;
@@ -55,17 +56,23 @@ public class InfoService {
 		return null;
 	}
 
+	public String getHostName() throws UnknownHostException {
+		InetAddress myHost = InetAddress.getLocalHost();
+		return myHost.getHostName();
+	}
+
     public InfoService() {
 		try {
-			appString = getAppStringFromManifest();
+			appString   = getAppStringFromManifest();
 			buildNumber = getBuildNumberFromProps();
+			hostName    = getHostName();
 		} catch (Exception e) {
 				e.printStackTrace();
 		}
     }
 			
 	public String getHealth () {
-		return "Running: " + appString;
+		return "Running " + appString + "on " + hostName;
 	}
 	
 	public String getVersion () {
