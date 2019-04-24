@@ -25,7 +25,8 @@ public class UserController {
 		return userService.getUsers();
 	}
 
-	@RequestMapping(method=RequestMethod.GET, value="/users/{name}")
+//	@RequestMapping(method=RequestMethod.GET, value="/users/{name}")
+	@GetMapping("/users/{name}")
 	@ApiOperation(value = "Lookup an user information by name",
 			notes = "")
 	public User getUser (@PathVariable String name) {
@@ -33,6 +34,7 @@ public class UserController {
 	}
 
 	@RequestMapping(method=RequestMethod.PUT, value="/users/{name}")
+	@PutMapping("/users/{name}")
 	@ApiOperation(value = "Update an user information",
 			notes = "")
 	public User updUser (@PathVariable String name, @RequestBody User newUser) {
@@ -40,6 +42,7 @@ public class UserController {
 	}
 
 	@RequestMapping(method=RequestMethod.POST, value="/users/")
+	@PostMapping("/users")
 	@ApiOperation(value = "Create a new user",
 			notes = "")
 	public boolean addUser (@RequestBody User user) {
@@ -47,6 +50,7 @@ public class UserController {
 	}
 
 	@RequestMapping(method=RequestMethod.DELETE, value="/users/{name}")
+	@DeleteMapping("/users/{name}")
 	@ApiOperation(value = "Delete a new user",
 			notes = "")
 	public boolean remUser (@RequestBody User user) {
