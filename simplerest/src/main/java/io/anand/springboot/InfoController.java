@@ -4,8 +4,8 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@Api(value="Info API", description="Operations for Information")
 @RestController
+@Api(value="/info", description="Operations for Information")
 public class InfoController {
 
 	@Autowired

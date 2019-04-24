@@ -8,20 +8,17 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-@Api(value="Users API", description="Operations pertaining to Users")
 @RestController
+@Api(value="/users", description="Operations pertaining to Users")
 public class UserController {
 
 	@Autowired
 	private UserService userService;
 
-	@RequestMapping(method=RequestMethod.GET, value="/users")
+//	@RequestMapping(method=RequestMethod.GET, value="/users")
+	@GetMapping("/users")
 	@ApiOperation(value = "Returns list of users",
 			notes = "")
 	public List<User> getUsers () {
