@@ -1,8 +1,10 @@
 package io.anand.springboot;
 
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@Api(value="Info API", description="Operations for Information")
 @RestController
 public class InfoController {
 
