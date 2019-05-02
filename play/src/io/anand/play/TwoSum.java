@@ -6,9 +6,7 @@ import java.util.Map;
 
 public class TwoSum {
 
-    static public int [] twoSum_A (int nums[], int target) {
-        // Sort the Array
-        Arrays.sort(nums);
+    static public int [] twoSumSorted (int nums[], int target) {
 
         int result[] = new int [2];
         result[0] = result[1] = -1;
@@ -48,11 +46,11 @@ public class TwoSum {
             }
         }
 
-        System.out.println("TwoSum: Matched indices: " + result[0] + ", " + result[1] + ", Target: " + target + ", Input: " + Arrays.toString(nums));
+        System.out.println("Target: " + target + ", Matched indices: " + result[0] + ", " + result[1]);
         return result;
     }
 
-    static public int [] twoSum (int nums[], int target) {
+    static public int [] twoSumUnSorted (int nums[], int target) {
         int result[] = new int [2];
         Map<Integer, Integer> numberIndex = new HashMap<>();
 
@@ -80,7 +78,7 @@ public class TwoSum {
             // Found our complement, pack up!
             result[0] = complementIndex;
             result[1] = i;
-            System.out.println("TwoSum: Matched indices: " + result[0] + ", " + result[1] + ", Target: " + target + ", Input: " + Arrays.toString(nums));
+            System.out.println("Target: " + target + ", Matched indices: " + result[0] + ", " + result[1]);
             break;
         }
         return result;
@@ -101,7 +99,7 @@ public class TwoSum {
         for (int i = 0; i < nums.length -1; i++) {
             int result2Sum[] = { -1, -1};
             int needComplement = target - nums[i];
-            result2Sum = twoSum_A(Arrays.copyOfRange(nums, i + 1, nums.length), needComplement);
+            result2Sum = twoSumUnSorted(Arrays.copyOfRange(nums, i + 1, nums.length), needComplement);
             if ( (result2Sum[0] != -1) && (result2Sum[1] != -1)) {
                 result[0] = i;
                 result[1] = result2Sum[0] + i + 1;
@@ -109,18 +107,26 @@ public class TwoSum {
                 break;
             }
         }
-        System.out.println("Three Sum: Matched indices: " + result[0] + ", " + result[1] + ", " + result[2] + ", Target: " + target + ", Input: " + Arrays.toString(nums));
+        System.out.println("Target: " + target + ", Matched indices: " + result[0] + ", " + result[1] + ", " + result[2]);
         return result;
     }
 
     public static void main (String args []) {
         //int nums [] = { 1, 2, 3, 4, 5, 6, 7};
         //int nums [] = { 1, 2, 6};
-        int nums [] = {1, 8, 9};
-        int twoSmTarget    = 7;
-        int threeSumTarget = 18;
+        int nums [] = {1, 8, 9, 7, 4, 5};
 
-        twoSum_A(nums, twoSmTarget);
+        int threeSumTarget = 10;
+        System.out.println("\nInput: " + Arrays.toString(nums));
         threeSum(nums, threeSumTarget);
+
+
+        int twoSumTarget    = 10;
+        System.out.println("\nInput: " + Arrays.toString(nums));
+        twoSumUnSorted(nums, twoSumTarget);
+
+        Arrays.sort(nums);
+        System.out.println("\nInput: " + Arrays.toString(nums));
+        twoSumSorted(nums, twoSumTarget);
     }
 }
