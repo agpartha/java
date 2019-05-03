@@ -8,3 +8,4 @@
 **/*.class
 **/simplerest/bin/*
 **/.iml
+**/.idea/*
