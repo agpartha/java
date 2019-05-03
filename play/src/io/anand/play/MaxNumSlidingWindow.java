@@ -6,9 +6,10 @@ import java.util.*;
 public class MaxNumSlidingWindow {
     public static void find_max_sliding_window(int[] array, int window_size) {
 
-        ArrayDeque result = new ArrayDeque();
+        int[] result = new int[array.length - window_size + 1];
         int max = 0;
         int count = 1;
+        int j = 0;
 
         //traverse the array while shifting the window forward
         for (int i = 0; i < array.length; i++) {
@@ -17,7 +18,7 @@ public class MaxNumSlidingWindow {
                 max = array[i];
             }
             if (count == window_size) {
-                result.add(max);
+                result[j++] = max;
                 max = 0;
                 // this seeks the array index back to next number in the sequence.
                 i = i - count + 1;
@@ -25,7 +26,7 @@ public class MaxNumSlidingWindow {
             }
             count++;
         }
-        System.out.println(result + ", ");
+        System.out.println(Arrays.toString(result) + ", ");
     }
 
     public static void main(String[] args) {
