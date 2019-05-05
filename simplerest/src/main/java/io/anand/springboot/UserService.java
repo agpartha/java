@@ -31,37 +31,41 @@ public class UserService {
     }
 
     public User getUser (String userName) {
-        return userRepository.findByName(userName);
-        /*
+        User user = userRepository.findByName(userName);
+        if (null == user)
+            return user;
+
         try {
-            return users.stream().filter(u -> u.getName().equals(userName)).findFirst().get();
+            return users.stream().filter(u -> u.getName().equals(user.getName())).findFirst().get();
         } catch (Exception e) {
             System.out.println("Caught Exception looking up user: " + userName + ", e: " + e);
         }
         return null;
-        */
     }
 
     public User updUser (String userName, User updUser) {
-        return userRepository.save(updUser);
-        /*
-        int index = users.indexOf(users.stream().filter(u -> u.getName().equals(userName)).findFirst().get());
+        User user = userRepository.save(updUser);
+        if (null == user)
+            return user;
+
+        int index = users.indexOf(users.stream().filter(u -> u.getId() == (user.getId())).findFirst().get());
         users.set(index, updUser);
         return users.get(index);
-         */
     }
 
     public User addUser (User user) {
-
         User addedUser = userRepository.save(user);
+        if (null == addedUser)
+            return addedUser;
+
         users.add(user);
         return addedUser;
     }
 
     public boolean remUser (User user) {
-        userRepository.delete(user);
         boolean deleted = users.remove(getUser(user.getName()));
         System.out.println(deleted ? "Able " : " Unable " + "to remove the user: " + user.toString());
+        userRepository.delete(user);
         return deleted;
     }
 }
