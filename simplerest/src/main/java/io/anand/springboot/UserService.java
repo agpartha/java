@@ -27,37 +27,42 @@ public class UserService {
 
     public List<User> getUsers () {
         // Hack to save on first get of all users
+        return (List<User>) userRepository.findAll();
+        /*
         userRepository.saveAll(users);
         return users;
+         */
     }
 
     public User getUser (String userName) {
-//          return userRepository.findByName(userName);
+        return userRepository.findByName(userName);
+        /*
         try {
             return users.stream().filter(u -> u.getName().equals(userName)).findFirst().get();
         } catch (Exception e) {
             System.out.println("Caught Exception looking up user: " + userName + ", e: " + e);
         }
         return null;
+        */
     }
 
     public User updUser (String userName, User updUser) {
+        userRepository.save(updUser);
         int index = users.indexOf(users.stream().filter(u -> u.getName().equals(userName)).findFirst().get());
         users.set(index, updUser);
-        userRepository.save(updUser);
         return users.get(index);
     }
 
     public boolean addUser (User user) {
-        boolean userAdded = users.add(user);
         userRepository.save(user);
+        boolean userAdded = users.add(user);
         return userAdded;
     }
 
     public boolean remUser (User user) {
+        userRepository.delete(user);
         boolean deleted = users.remove(user);
         System.out.println(deleted ? "Able " : " Unable " + "to remove the user: " + user.toString());
-        userRepository.delete(user);
         return deleted;
     }
 }
