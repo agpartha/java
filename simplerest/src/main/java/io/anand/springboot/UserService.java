@@ -32,6 +32,7 @@ public class UserService {
     }
 
     public User getUser (String userName) {
+//          return userRepository.findByName(userName);
         return users.stream().filter(u -> u.getName().equals(userName)).findFirst().get();
     }
 
