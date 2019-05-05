@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.server.ResponseStatusException;
 
+import static org.springframework.http.HttpStatus.NOT_ACCEPTABLE;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @RestController
@@ -58,16 +59,15 @@ public class UserController {
 	@ApiOperation(value = "Create a new user",
 			notes = "")
 	public User addUser (@RequestBody User user) {
-		boolean added = false;
 
 		User existingUser = userService.getUser(user.getName());
 		if (null != existingUser)
 			return existingUser;
 
-		added = userService.addUser(user);
-		if (!added)
-			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
-		return user;
+		User addedUser = userService.addUser(user);
+		if (null == addedUser)
+			throw new ResponseStatusException(NOT_ACCEPTABLE, "Unable to add student");
+		return addedUser;
 	}
 
 	@RequestMapping(method=RequestMethod.DELETE, value="/users/{name}")
