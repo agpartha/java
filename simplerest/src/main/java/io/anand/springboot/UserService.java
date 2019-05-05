@@ -54,6 +54,7 @@ public class UserService {
     }
 
     public boolean addUser (User user) {
+
         userRepository.save(user);
         boolean userAdded = users.add(user);
         return userAdded;
@@ -61,7 +62,7 @@ public class UserService {
 
     public boolean remUser (User user) {
         userRepository.delete(user);
-        boolean deleted = users.remove(user);
+        boolean deleted = users.remove(getUser(user.getName()));
         System.out.println(deleted ? "Able " : " Unable " + "to remove the user: " + user.toString());
         return deleted;
     }

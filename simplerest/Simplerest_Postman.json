@@ -1,0 +1,148 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+			"name": "SimpleRest",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"a39c8e37-51a7-4551-80cc-4087f5cfa2a5",
+				"6f29c63d-d6ef-48f4-9f89-c2a080583d4a",
+				"5e741520-1bc8-4bdf-b6e4-e4b16cef1d86",
+				"bfd73e45-56cf-4c6b-9a90-36d369248d71",
+				"2528f9e3-5dc6-486d-a77e-856a7d946c73"
+			],
+			"folders_order": [],
+			"folders": [],
+			"requests": [
+				{
+					"id": "2528f9e3-5dc6-486d-a77e-856a7d946c73",
+					"name": "Get a Student",
+					"url": "http://localhost:7070/users/Balaji",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"pathVariables": {}
+				},
+				{
+					"id": "5e741520-1bc8-4bdf-b6e4-e4b16cef1d86",
+					"name": "Create Student",
+					"url": "http://localhost:7070/users",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"rawModeData": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"High School\",\n        \"id\": 192858,\n        \"graduated\": 145354545\n    }\n    ",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "6f29c63d-d6ef-48f4-9f89-c2a080583d4a",
+					"name": "Update Student",
+					"url": "http://localhost:7070/users/John",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"rawModeData": "    {\n        \"name\": \"John\",\n        \"grade\": \"Middle\",\n        \"id\": 192838,\n        \"graduated\": 145354545\n    }\n    ",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "a39c8e37-51a7-4551-80cc-4087f5cfa2a5",
+					"name": "Get all Students",
+					"url": "http://localhost:7070/users",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"pathVariables": {}
+				},
+				{
+					"id": "bfd73e45-56cf-4c6b-9a90-36d369248d71",
+					"name": "Remove Student",
+					"url": "http://localhost:7070/users/Balaji",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "5280e434-c78c-4d4d-bfb0-3db8d33905ef",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}

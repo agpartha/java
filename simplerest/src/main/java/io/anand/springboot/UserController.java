@@ -8,7 +8,13 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.server.ResponseStatusException;
+
+import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @RestController
 @Api(value="/users", description="Operations pertaining to Users")
@@ -30,7 +36,10 @@ public class UserController {
 	@ApiOperation(value = "Lookup an user information by name",
 			notes = "")
 	public User getUser (@PathVariable String name) {
-		return userService.getUser(name);
+		User user = userService.getUser(name);
+		if (null == user)
+			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
+		return user;
 	}
 
 	@RequestMapping(method=RequestMethod.PUT, value="/users/{name}")
@@ -38,25 +47,40 @@ public class UserController {
 	@ApiOperation(value = "Update an user information",
 			notes = "")
 	public User updUser (@PathVariable String name, @RequestBody User newUser) {
-	    return userService.updUser(name, newUser);
+		User updUser = userService.updUser(name, newUser);
+		if (null == updUser)
+			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
+		return updUser;
 	}
 
 	@RequestMapping(method=RequestMethod.POST, value="/users")
 	@PostMapping("/users")
 	@ApiOperation(value = "Create a new user",
 			notes = "")
-	public boolean addUser (@RequestBody User user) {
-		return userService.addUser(user);
+	public User addUser (@RequestBody User user) {
+		boolean added = false;
+
+		User existingUser = userService.getUser(user.getName());
+		if (null != existingUser)
+			return existingUser;
+
+		added = userService.addUser(user);
+		if (!added)
+			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
+		return user;
 	}
 
 	@RequestMapping(method=RequestMethod.DELETE, value="/users/{name}")
 	@DeleteMapping("/users/{name}")
 	@ApiOperation(value = "Delete an user",
 			notes = "")
-	public boolean remUser (@PathVariable String name) {
+	public User remUser (@PathVariable String name) {
+		boolean deleted = false;
 		User user = userService.getUser(name);
-		if (null == user)
-			return false;
-	    return userService.remUser(user);
+		if (null != user)
+			deleted = userService.remUser(user);
+		if (!deleted)
+			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
+		return user;
 	}
 }
