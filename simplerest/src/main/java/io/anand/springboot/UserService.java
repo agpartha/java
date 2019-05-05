@@ -33,7 +33,12 @@ public class UserService {
 
     public User getUser (String userName) {
 //          return userRepository.findByName(userName);
-        return users.stream().filter(u -> u.getName().equals(userName)).findFirst().get();
+        try {
+            return users.stream().filter(u -> u.getName().equals(userName)).findFirst().get();
+        } catch (Exception e) {
+            System.out.println("Caught Exception looking up user: " + userName + ", e: " + e);
+        }
+        return null;
     }
 
     public User updUser (String userName, User updUser) {
