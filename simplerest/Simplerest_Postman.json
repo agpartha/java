@@ -2,45 +2,26 @@
 	"version": 1,
 	"collections": [
 		{
-			"id": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+			"id": "40888974-0f72-46cb-b466-108e1b63ce62",
 			"name": "SimpleRest",
 			"description": null,
 			"auth": null,
 			"events": null,
 			"variables": [],
 			"order": [
-				"a39c8e37-51a7-4551-80cc-4087f5cfa2a5",
-				"6f29c63d-d6ef-48f4-9f89-c2a080583d4a",
-				"5e741520-1bc8-4bdf-b6e4-e4b16cef1d86",
-				"bfd73e45-56cf-4c6b-9a90-36d369248d71",
-				"2528f9e3-5dc6-486d-a77e-856a7d946c73"
+				"43927acf-391e-446c-a17a-408fccafd817",
+				"a53e8299-8a2b-42ce-8932-7d4c0876395d",
+				"098efbd9-3850-4f11-9a54-0a323c32a56a",
+				"455ed4a9-96b4-4941-9d84-d945dfd35490",
+				"cbd7e3e7-f7fe-4108-aa98-08d3e215a869"
 			],
 			"folders_order": [],
 			"folders": [],
 			"requests": [
 				{
-					"id": "2528f9e3-5dc6-486d-a77e-856a7d946c73",
-					"name": "Get a Student",
-					"url": "http://localhost:7070/users/Balaji",
-					"description": "",
-					"data": null,
-					"dataMode": null,
-					"headerData": null,
-					"method": "GET",
-					"pathVariableData": [],
-					"queryParams": [],
-					"auth": null,
-					"events": null,
-					"folder": null,
-					"currentHelper": null,
-					"helperAttributes": null,
-					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
-					"pathVariables": {}
-				},
-				{
-					"id": "5e741520-1bc8-4bdf-b6e4-e4b16cef1d86",
+					"id": "098efbd9-3850-4f11-9a54-0a323c32a56a",
 					"name": "Create Student",
-					"url": "http://localhost:7070/users",
+					"url": "{{service_url}}/users/",
 					"description": "",
 					"data": [],
 					"dataMode": "raw",
@@ -61,48 +42,19 @@
 					"folder": null,
 					"currentHelper": null,
 					"helperAttributes": null,
-					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
 					"rawModeData": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"High School\",\n        \"id\": 192658,\n        \"graduated\": 145354545\n    }\n    ",
 					"headers": "Content-Type: application/json\n",
 					"pathVariables": {}
 				},
 				{
-					"id": "6f29c63d-d6ef-48f4-9f89-c2a080583d4a",
-					"name": "Update Student",
-					"url": "http://localhost:7070/users/Balaji",
-					"description": "",
-					"data": [],
-					"dataMode": "raw",
-					"headerData": [
-						{
-							"key": "Content-Type",
-							"name": "Content-Type",
-							"value": "application/json",
-							"description": "",
-							"type": "text"
-						}
-					],
-					"method": "PUT",
-					"pathVariableData": [],
-					"queryParams": [],
-					"auth": null,
-					"events": null,
-					"folder": null,
-					"currentHelper": null,
-					"helperAttributes": null,
-					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
-					"rawModeData": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"Elementary\",\n        \"id\": 192658,\n        \"graduated\": 145354545\n    }\n    ",
-					"headers": "Content-Type: application/json\n",
-					"pathVariables": {}
-				},
-				{
-					"id": "a39c8e37-51a7-4551-80cc-4087f5cfa2a5",
+					"id": "43927acf-391e-446c-a17a-408fccafd817",
 					"name": "Get all Students",
-					"url": "http://localhost:7070/users",
+					"url": "{{service_url}}/users",
 					"description": "",
 					"data": null,
 					"dataMode": null,
-					"headerData": null,
+					"headerData": [],
 					"method": "GET",
 					"pathVariableData": [],
 					"queryParams": [],
@@ -111,13 +63,14 @@
 					"folder": null,
 					"currentHelper": null,
 					"helperAttributes": null,
-					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
+					"headers": "",
 					"pathVariables": {}
 				},
 				{
-					"id": "bfd73e45-56cf-4c6b-9a90-36d369248d71",
+					"id": "455ed4a9-96b4-4941-9d84-d945dfd35490",
 					"name": "Remove Student",
-					"url": "http://localhost:7070/users/Balaji",
+					"url": "{{service_url}}/users//Balaji",
 					"description": "",
 					"data": null,
 					"dataMode": null,
@@ -138,8 +91,57 @@
 					"folder": null,
 					"currentHelper": null,
 					"helperAttributes": null,
-					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
 					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "a53e8299-8a2b-42ce-8932-7d4c0876395d",
+					"name": "Update Student",
+					"url": "{{service_url}}/users/Balaji",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
+					"rawModeData": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"Elementary\",\n        \"id\": 192658,\n        \"graduated\": 145354545\n    }\n    ",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "cbd7e3e7-f7fe-4108-aa98-08d3e215a869",
+					"name": "Get a Student",
+					"url": "{{service_url}}/users/Balaji",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
+					"headers": "",
 					"pathVariables": {}
 				}
 			]
@@ -147,7 +149,48 @@
 	],
 	"environments": [
 		{
-			"id": "252c0045-778d-48dc-8d4c-106fb76c6381",
+			"id": "807fdbe4-e459-4839-b2bd-8cdac454354a",
+			"name": "Local",
+			"values": [
+				{
+					"key": "service_port",
+					"value": "7070",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "service_url",
+					"value": "http://localhost:{{service_port}}",
+					"description": "",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "c0ce3763-07d4-435a-8417-c70353d03bb0",
+			"name": "Deployment",
+			"values": [
+				{
+					"key": "service_port",
+					"value": "7070",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "service_url",
+					"value": "http://localhost:{{service_port}}",
+					"description": "",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "e749bcb2-f103-4db5-a8f2-c09ad61b7f4a",
+			"name": "My Workspace - globals",
+			"values": []
+		},
+		{
+			"id": "6ac50b54-8c0b-41c9-bac4-6264782874de",
 			"name": "My Workspace - globals",
 			"values": []
 		}
