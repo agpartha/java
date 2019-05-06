@@ -62,10 +62,13 @@ public class UserService {
         return addedUser;
     }
 
-    public boolean remUser (User user) {
-        boolean deleted = users.remove(getUser(user.getName()));
-        System.out.println(deleted ? "Able " : " Unable " + "to remove the user: " + user.toString());
-        userRepository.delete(user);
-        return deleted;
-    }
+    public User remUser (String userName) {
+        users.remove(getUser(userName));
+        User remUser = userRepository.findByName(userName);
+        if (null == remUser)
+            return remUser;
+
+        userRepository.delete(remUser);
+        return remUser;
+     }
 }

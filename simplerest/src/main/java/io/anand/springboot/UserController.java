@@ -59,11 +59,6 @@ public class UserController {
 	@ApiOperation(value = "Create a new user",
 			notes = "")
 	public User addUser (@RequestBody User user) {
-
-		User existingUser = userService.getUser(user.getName());
-		if (null != existingUser)
-			return existingUser;
-
 		User addedUser = userService.addUser(user);
 		if (null == addedUser)
 			throw new ResponseStatusException(NOT_ACCEPTABLE, "Unable to add student");
@@ -75,12 +70,9 @@ public class UserController {
 	@ApiOperation(value = "Delete an user",
 			notes = "")
 	public User remUser (@PathVariable String name) {
-		boolean deleted = false;
-		User user = userService.getUser(name);
-		if (null != user)
-			deleted = userService.remUser(user);
-		if (!deleted)
-			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
-		return user;
+		User remUser = userService.remUser(name);
+		if (null == remUser)
+			throw new ResponseStatusException(NOT_ACCEPTABLE, "Unable to add student");
+		return remUser;
 	}
 }
