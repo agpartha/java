@@ -12,7 +12,6 @@ public class User {
 	private String	name;
 	private String	grade;
 	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private long  	id;
 	private long	graduated;
 

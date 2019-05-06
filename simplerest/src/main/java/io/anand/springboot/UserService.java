@@ -36,7 +36,7 @@ public class UserService {
             return user;
 
         try {
-            return users.stream().filter(u -> u.getName().equals(user.getName())).findFirst().get();
+            return users.stream().filter(u -> u.getName().equals(user.getName())).findFirst().orElse(null);
         } catch (Exception e) {
             System.out.println("Caught Exception looking up user: " + userName + ", e: " + e);
         }
@@ -48,9 +48,17 @@ public class UserService {
         if (null == user)
             return user;
 
-        int index = users.indexOf(users.stream().filter(u -> u.getId() == (user.getId())).findFirst().get());
-        users.set(index, updUser);
-        return users.get(index);
+        try {
+            int index = users.indexOf(users.stream().filter(u -> u.getId() == (user.getId())).findFirst().orElse(null));
+            if (-1 == index)
+                users.add(user);
+            else
+                users.set(index, updUser);
+            return user;
+        } catch (Exception e) {
+            System.out.println("Caught Exception looking up user: " + updUser.getName() + ", e: " + e);
+            return null;
+        }
     }
 
     public User addUser (User user) {
@@ -58,8 +66,17 @@ public class UserService {
         if (null == addedUser)
             return addedUser;
 
-        users.add(user);
-        return addedUser;
+        try {
+            int index = users.indexOf(users.stream().filter(u -> u.getId() == (addedUser.getId())).findFirst().orElse(null));
+            if (-1 == index)
+                users.add(user);
+            else
+                users.set(index, user);
+            return user;
+        } catch (Exception e) {
+            System.out.println("Caught Exception adding user: " + user.getName() + ", e: " + e);
+            return null;
+        }
     }
 
     public User remUser (String userName) {

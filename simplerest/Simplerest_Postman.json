@@ -62,14 +62,14 @@
 					"currentHelper": null,
 					"helperAttributes": null,
 					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
-					"rawModeData": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"High School\",\n        \"id\": 192858,\n        \"graduated\": 145354545\n    }\n    ",
+					"rawModeData": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"High School\",\n        \"id\": 192658,\n        \"graduated\": 145354545\n    }\n    ",
 					"headers": "Content-Type: application/json\n",
 					"pathVariables": {}
 				},
 				{
 					"id": "6f29c63d-d6ef-48f4-9f89-c2a080583d4a",
 					"name": "Update Student",
-					"url": "http://localhost:7070/users/John",
+					"url": "http://localhost:7070/users/Balaji",
 					"description": "",
 					"data": [],
 					"dataMode": "raw",
@@ -91,7 +91,7 @@
 					"currentHelper": null,
 					"helperAttributes": null,
 					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
-					"rawModeData": "    {\n        \"name\": \"John\",\n        \"grade\": \"Middle\",\n        \"id\": 192838,\n        \"graduated\": 145354545\n    }\n    ",
+					"rawModeData": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"Elementary\",\n        \"id\": 192658,\n        \"graduated\": 145354545\n    }\n    ",
 					"headers": "Content-Type: application/json\n",
 					"pathVariables": {}
 				},
@@ -121,7 +121,15 @@
 					"description": "",
 					"data": null,
 					"dataMode": null,
-					"headerData": null,
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
 					"method": "DELETE",
 					"pathVariableData": [],
 					"queryParams": [],
@@ -131,6 +139,7 @@
 					"currentHelper": null,
 					"helperAttributes": null,
 					"collectionId": "61a2e4e0-c35b-4197-92a5-02a7f1462bb8",
+					"headers": "Content-Type: application/json\n",
 					"pathVariables": {}
 				}
 			]
@@ -138,7 +147,7 @@
 	],
 	"environments": [
 		{
-			"id": "5280e434-c78c-4d4d-bfb0-3db8d33905ef",
+			"id": "252c0045-778d-48dc-8d4c-106fb76c6381",
 			"name": "My Workspace - globals",
 			"values": []
 		}

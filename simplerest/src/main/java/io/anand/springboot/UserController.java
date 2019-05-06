@@ -50,7 +50,7 @@ public class UserController {
 	public User updUser (@PathVariable String name, @RequestBody User newUser) {
 		User updUser = userService.updUser(name, newUser);
 		if (null == updUser)
-			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
+			throw new ResponseStatusException(NOT_FOUND, "Unable to update student");
 		return updUser;
 	}
 
@@ -72,7 +72,7 @@ public class UserController {
 	public User remUser (@PathVariable String name) {
 		User remUser = userService.remUser(name);
 		if (null == remUser)
-			throw new ResponseStatusException(NOT_ACCEPTABLE, "Unable to add student");
+			throw new ResponseStatusException(NOT_FOUND, "Unable to delete student");
 		return remUser;
 	}
 }
