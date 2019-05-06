@@ -9,14 +9,13 @@ import javax.persistence.Id;
 @Entity
 public class User {
 
-	private String	name;
-	private String	grade;
 	@Id
 	private long  	id;
+	private String	name;
+	private String	grade;
 	private long	graduated;
 
 	public User () {
-		
 	}
 	
 	public User(String name, String grade, long id, long graduated) {
@@ -27,7 +26,6 @@ public class User {
 		this.graduated = graduated;
 	}
 
-	
 	public String getName() {
 		return name;
 	}
@@ -52,5 +50,4 @@ public class User {
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-	
 }

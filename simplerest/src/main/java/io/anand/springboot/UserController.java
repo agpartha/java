@@ -43,7 +43,7 @@ public class UserController {
 		throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
 	}
 
-	@RequestMapping(method=RequestMethod.PUT, value="/users/{name}")
+//	@RequestMapping(method=RequestMethod.PUT, value="/users/{name}")
 	@PutMapping("/users/{name}")
 	@ApiOperation(value = "Update an user information",
 			notes = "")
@@ -54,7 +54,7 @@ public class UserController {
 		throw new ResponseStatusException(NOT_FOUND, "Unable to update student");
 	}
 
-	@RequestMapping(method=RequestMethod.POST, value="/users")
+//	@RequestMapping(method=RequestMethod.POST, value="/users")
 	@PostMapping("/users")
 	@ApiOperation(value = "Create a new user",
 			notes = "")
@@ -65,7 +65,7 @@ public class UserController {
 		throw new ResponseStatusException(NOT_ACCEPTABLE, "Unable to add student");
 	}
 
-	@RequestMapping(method=RequestMethod.DELETE, value="/users/{name}")
+//	@RequestMapping(method=RequestMethod.DELETE, value="/users/{name}")
 	@DeleteMapping("/users/{name}")
 	@ApiOperation(value = "Delete an user",
 			notes = "")
