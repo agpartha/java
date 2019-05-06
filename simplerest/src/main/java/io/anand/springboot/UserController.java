@@ -38,9 +38,9 @@ public class UserController {
 			notes = "")
 	public User getUser (@PathVariable String name) {
 		User user = userService.getUser(name);
-		if (null == user)
-			throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
-		return user;
+		if (null != user)
+			return user;
+		throw new ResponseStatusException(NOT_FOUND, "Unable to find student");
 	}
 
 	@RequestMapping(method=RequestMethod.PUT, value="/users/{name}")
@@ -49,9 +49,9 @@ public class UserController {
 			notes = "")
 	public User updUser (@PathVariable String name, @RequestBody User newUser) {
 		User updUser = userService.updUser(name, newUser);
-		if (null == updUser)
-			throw new ResponseStatusException(NOT_FOUND, "Unable to update student");
-		return updUser;
+		if (null != updUser)
+			return updUser;
+		throw new ResponseStatusException(NOT_FOUND, "Unable to update student");
 	}
 
 	@RequestMapping(method=RequestMethod.POST, value="/users")
@@ -60,9 +60,9 @@ public class UserController {
 			notes = "")
 	public User addUser (@RequestBody User user) {
 		User addedUser = userService.addUser(user);
-		if (null == addedUser)
-			throw new ResponseStatusException(NOT_ACCEPTABLE, "Unable to add student");
-		return addedUser;
+		if (null != addedUser)
+			return addedUser;
+		throw new ResponseStatusException(NOT_ACCEPTABLE, "Unable to add student");
 	}
 
 	@RequestMapping(method=RequestMethod.DELETE, value="/users/{name}")
@@ -71,8 +71,8 @@ public class UserController {
 			notes = "")
 	public User remUser (@PathVariable String name) {
 		User remUser = userService.remUser(name);
-		if (null == remUser)
-			throw new ResponseStatusException(NOT_FOUND, "Unable to delete student");
-		return remUser;
+		if (null != remUser)
+			return remUser;
+		throw new ResponseStatusException(NOT_FOUND, "Unable to delete student");
 	}
 }
