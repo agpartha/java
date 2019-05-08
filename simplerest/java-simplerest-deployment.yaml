@@ -24,3 +24,6 @@ spec:
         - containerPort: 7070
 #      imagePullSecrets:
 #      - name: regcred
+        env:
+          - name: SIMPLEREST_SERVER_PORT
+            value: "7070"

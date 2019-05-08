@@ -13,7 +13,10 @@
 				"a53e8299-8a2b-42ce-8932-7d4c0876395d",
 				"098efbd9-3850-4f11-9a54-0a323c32a56a",
 				"455ed4a9-96b4-4941-9d84-d945dfd35490",
-				"cbd7e3e7-f7fe-4108-aa98-08d3e215a869"
+				"cbd7e3e7-f7fe-4108-aa98-08d3e215a869",
+				"ee189796-3c04-491e-84e6-903dadc0cdd1",
+				"aa00f4b4-28f9-4951-99b2-8fd4e3352b9d",
+				"6ee3f1f3-4082-4cab-b80c-bde151379812"
 			],
 			"folders_order": [],
 			"folders": [],
@@ -96,6 +99,26 @@
 					"pathVariables": {}
 				},
 				{
+					"id": "6ee3f1f3-4082-4cab-b80c-bde151379812",
+					"name": "Application Build Number",
+					"url": "{{service_url}}/info/build",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
 					"id": "a53e8299-8a2b-42ce-8932-7d4c0876395d",
 					"name": "Update Student",
 					"url": "{{service_url}}/users/Balaji",
@@ -125,9 +148,49 @@
 					"pathVariables": {}
 				},
 				{
+					"id": "aa00f4b4-28f9-4951-99b2-8fd4e3352b9d",
+					"name": "Application Version",
+					"url": "{{service_url}}/info/version",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
 					"id": "cbd7e3e7-f7fe-4108-aa98-08d3e215a869",
 					"name": "Get a Student",
 					"url": "{{service_url}}/users/Balaji",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "40888974-0f72-46cb-b466-108e1b63ce62",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "ee189796-3c04-491e-84e6-903dadc0cdd1",
+					"name": "Appplication Health Information",
+					"url": "{{service_url}}/info",
 					"description": "",
 					"data": null,
 					"dataMode": null,
@@ -190,7 +253,7 @@
 			"values": []
 		},
 		{
-			"id": "6ac50b54-8c0b-41c9-bac4-6264782874de",
+			"id": "bf6d5b3a-45cc-40fb-af17-2144a290efd3",
 			"name": "My Workspace - globals",
 			"values": []
 		}
