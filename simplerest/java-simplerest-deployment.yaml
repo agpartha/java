@@ -25,5 +25,5 @@ spec:
 #      imagePullSecrets:
 #      - name: regcred
         env:
-          - name: SIMPLEREST_SERVER_PORT
+          - name: SERVER_PORT
             value: "7070"
