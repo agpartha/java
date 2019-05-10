@@ -21,9 +21,26 @@ spec:
 #        image: index.docker.io/agpartha/privreg:java-simplerest-0.0.1-SNAPSHOT
 #        imagePullPolicy: Always
         ports:
-        - containerPort: 7070
+        - containerPort: &server_port 7070
 #      imagePullSecrets:
 #      - name: regcred
         env:
           - name: SERVER_PORT
-            value: "7070"
+# this is the intent, but in environment variables the values need to be strings and we cannot concat in YAML
+#            value: !!str {*server_port}
+            value: !!str 7070
+#            value: \"*server_port\"
+        readinessProbe:
+          httpGet:
+            path: /info
+            port: *server_port
+          initialDelaySeconds: 30
+          timeoutSeconds: 2
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /info
+            port: *server_port
+          initialDelaySeconds: 60
+          timeoutSeconds: 2
+          periodSeconds: 10
