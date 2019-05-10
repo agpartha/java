@@ -34,13 +34,13 @@ spec:
           httpGet:
             path: /info
             port: *server_port
-          initialDelaySeconds: 30
+          initialDelaySeconds: 50
           timeoutSeconds: 2
           periodSeconds: 10
         livenessProbe:
           httpGet:
             path: /info
             port: *server_port
-          initialDelaySeconds: 60
+          initialDelaySeconds: 0
           timeoutSeconds: 2
           periodSeconds: 10
