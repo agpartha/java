@@ -29,6 +29,14 @@ spec:
 # this is the intent, but in environment variables the values need to be strings and we cannot concat in YAML
 #            value: !!str {*server_port}
             value: !!str 7070
+          - name: SPRING_PROFILES_ACTIVE
+            value: "deployment"
+          - name: DB_URL
+            value: jdbc:mysql://mysql-external:3306/simplerest?useSSL=false
+          - name: DB_USER
+            value: "appUser"
+          - name: DB_PASSWORD
+            value: "reallyNotSecure"
         readinessProbe:
           httpGet:
             path: /info
