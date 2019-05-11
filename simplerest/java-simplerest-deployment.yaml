@@ -29,7 +29,6 @@ spec:
 # this is the intent, but in environment variables the values need to be strings and we cannot concat in YAML
 #            value: !!str {*server_port}
             value: !!str 7070
-#            value: \"*server_port\"
         readinessProbe:
           httpGet:
             path: /info
