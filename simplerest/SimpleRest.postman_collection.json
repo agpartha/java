@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "40888974-0f72-46cb-b466-108e1b63ce62",
+		"name": "SimpleRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/users",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"Elementary\",\n        \"id\": 192658,\n        \"graduated\": 145354545\n    }\n    "
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/users/Balaji",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"users",
+						"Balaji"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"Balaji\",\n        \"grade\": \"High School\",\n        \"id\": 192658,\n        \"graduated\": 145354545\n    }\n    "
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/users/",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Student",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/users//Balaji",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"users",
+						"",
+						"Balaji"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/users/Balaji",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"users",
+						"Balaji"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Appplication Health Information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/info",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Application Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/info/version",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"info",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Application Build Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{simplerest_url}}/info/build",
+					"host": [
+						"{{simplerest_url}}"
+					],
+					"path": [
+						"info",
+						"build"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
