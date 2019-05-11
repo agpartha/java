@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-simplerest
+  labels:
+    app: simplerest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: simplerest
+  template:
+    metadata:
+      labels:
+        app: simplerest
+    spec:
+      containers:
+      - name: java-simplerest
+        image: agpartha/privreg:java-simplerest-0.0.1-SNAPSHOT
+        imagePullPolicy: Never
+#        image: index.docker.io/agpartha/privreg:java-simplerest-0.0.1-SNAPSHOT
+#        imagePullPolicy: Always
+        ports:
+        - containerPort: &server_port 7070
+#      imagePullSecrets:
+#      - name: regcred
+        env:
+          - name: SERVER_PORT
+# this is the intent, but in environment variables the values need to be strings and we cannot concat in YAML
+#            value: !!str {*server_port}
+            value: !!str 7070
+        readinessProbe:
+          httpGet:
+            path: /info
+            port: *server_port
+          initialDelaySeconds: 30
+          timeoutSeconds: 2
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /info
+            port: *server_port
+          initialDelaySeconds: 30
+          timeoutSeconds: 2
+          periodSeconds: 10
