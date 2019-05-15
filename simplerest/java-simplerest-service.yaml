@@ -7,6 +7,6 @@ spec:
     app: simplerest
   type: NodePort
   ports:
-  - protocol: TCP
-    port: 7070
-    targetPort: 7070
+    - protocol: TCP
+      port: 7070
+      targetPort: 7070
