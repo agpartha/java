@@ -24,7 +24,7 @@ public class MinTrainPlatforms {
         numPlatforms = maxPlatforms = arrIndex = depIndex = 0;
         while ((arrIndex < arrivals.length) && (depIndex < departures.length)) {
             // if arrival time is less than departure time, we need a platform and let us advance to next arrival time.
-            if (arrivals[arrIndex] < departures[depIndex]) {
+            if (arrivals[arrIndex] <= departures[depIndex]) {
                 numPlatforms++;
                 arrIndex++;
                 // if we detect we have a situation of more trains than what max numner of trains we had seen earlier, capture it
@@ -40,8 +40,8 @@ public class MinTrainPlatforms {
     }
 
     public static void main(String[] args) {
-        int arrival[]    = {9,  10, 11, 1, 3, 2,  5,  7};
-        int departures[] = {16, 17, 14, 18, 4, 8, 10, 11};
+        int arrival[]    = {9,  18, 12, 0, 2, 4, 6, 7};
+        int departures[] = {17, 19, 14, 2, 4, 5, 7, 8};
 
         System.out.println("Arrival: " + Arrays.toString(arrival) + "\nDepartures: " + Arrays.toString(departures) + "\nPlatforms needed: " +
                 findMinPlatformd(arrival, departures));
