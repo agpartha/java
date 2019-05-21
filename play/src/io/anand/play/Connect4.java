@@ -125,6 +125,7 @@ public class Connect4 {
             // Board full ?
             if (isBoardFull()) {
                 System.out.println("Board is full");
+                drawBoard();
                 break;
             }
 
