@@ -67,7 +67,7 @@ public class PermutationStringCharacaters {
 
     public static void main(String[] args) {
         String s1 = "Hello World! ";
-        String s2 = "World Hell o! ";
+        String s2 = "World Hello! ";
         
         System.out.format("permutationSort: String: \"%s\" and \"%s\" are%s permuations of each other\n", s1, s2, isPermutationSort(s1, s2) ? "": " NOT");
         System.out.format("permutationHash: String: \"%s\" and \"%s\" are%s permuations of each other\n", s1, s2, isPermutationHash(s1, s2) ? "": " NOT");
