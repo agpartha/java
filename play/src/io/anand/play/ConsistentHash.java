@@ -4,6 +4,7 @@ package io.anand.play;
 import java.util.ArrayList;
 import java.util.List;
 
+//
 // Implement a Consistent Hash Object.
 // Intent is to provide it with Nodes which either serve the requests or host the keys
 // [for load balance or data store applications respectively]
@@ -21,8 +22,6 @@ import java.util.List;
 //
 // murmur hash should provide a 32 bit value for the position on the circular ring of values.
 // For this exercise we will use java object hashcode in it's place.
-//
-//
 //
 
 class ConsistentHash {
