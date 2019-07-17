@@ -66,6 +66,8 @@ public class RomanNumeral {
 
     // Convert Decimal to Roman Numeral
     static String decimalToRoman(int n) {
+        // One approach is to go from right to left and get the number in
+        // the place value and covert to equivalent roman numerals.
         return "MCVXL";
     }
 
