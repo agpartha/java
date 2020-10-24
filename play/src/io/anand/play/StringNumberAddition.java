@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class StringNumberAddition {
 
     private static class CarryPlace {
-        int carry = 0;
-        int place = 1;
-        int sum   = 0;
+        int carry               = 0;
+        int place               = 1;
+        int sum                 = 0;
+        StringBuilder sumString = new StringBuilder();
     }
     private static CarryPlace carryPlace = new CarryPlace();
 
@@ -15,6 +16,7 @@ public class StringNumberAddition {
         int val             = carryPlace.carry + (digOne - '0') + digTwo - '0';
         carryPlace.carry    = val / 10;
         carryPlace.sum     += (val % 10) * carryPlace.place;
+        carryPlace.sumString.insert(0, (char)((val % 10) + '0'));
         carryPlace.place   *= 10;
     }
 
@@ -66,6 +68,7 @@ public class StringNumberAddition {
         // Last addition would have possible left acarry and do not
         // ignore the place value for this carry and add it
         addStringDigits();
+        System.out.println("Sum String: " + carryPlace.sumString);
         return carryPlace.sum;
     }
 
