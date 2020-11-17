@@ -72,11 +72,45 @@ public class StringNumberAddition {
         return carryPlace.sum;
     }
 
+    private static int addStringNumbersTwo (String numOne, String numTwo) {
+        // Sanitize the inputs
+        // Null strings, empty strings
+        // non numeric characters in the input
+        // define the expectation and return a defined output to indicate invalid input
+
+        int len1    = numOne.length();
+        int len2    = numTwo.length();
+
+        // Will traverse both till we finish the shorter string length
+        int i = numOne.length() - 1;
+        int j = numTwo.length() - 1;
+        while (i >= 0 || j >= 0) {
+            int dig1 = i >= 0 ? numOne.charAt(i) - '0' : 0;
+            int dig2 = j >= 0 ? numTwo.charAt(j) - '0' : 0;
+
+            int val = dig1 + dig2 + carryPlace.carry;
+            carryPlace.sum  += (val % 10) * carryPlace.place;
+            carryPlace.carry = (val / 10);
+            carryPlace.sumString.insert(0, (char)((val % 10) + '0'));
+            carryPlace.place   *= 10;
+            // addStringDigits(dig1, dig2);
+            i--;
+            j--;
+        }
+
+        // Last addition would have possible left a carry and do not
+        // ignore the place value for this carry and add it
+        addStringDigits();
+        System.out.println("Sum String: " + carryPlace.sumString);
+        return carryPlace.sum;
+    }
+
+
     public static void main(String []args){
         String numOne = "900097894";
         String numTwo = "0050087";
 
         System.out.println("Input: number 1: " + numOne + ", number 2: " + numTwo);
-        System.out.println("Sum: " + addStringNumbers(numOne, numTwo));
+        System.out.println("Sum: " + addStringNumbersTwo(numOne, numTwo));
     }
 }

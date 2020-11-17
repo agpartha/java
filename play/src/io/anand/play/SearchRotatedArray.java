@@ -100,7 +100,7 @@ public class SearchRotatedArray {
         return -1;
     }
 
-    private static boolean useRecursion = false;
+    private static boolean useRecursion = true;
     private static int binarySearchRotated (int [] a, int key) {
         if (useRecursion)
             return binSearchRecurse(a, key, 0, a.length - 1);

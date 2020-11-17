@@ -30,7 +30,7 @@ public class MissingNumber {
 
             // We have to scan the lookup once we get to the end. The smallest number could have moved in lumps and miss
             // checking
-            // [1,3,6,4,1,2]
+            // [1,3,6,4,7,2]
             while (true) {
                 if (numSet.contains(smallestPosNum)) {
                     smallestPosNum++;
