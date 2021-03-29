@@ -97,5 +97,7 @@ public class RomanNumeral {
         System.out.println("Roman Number: " +  r + ", Decimal Number: " + romanNumeral.romanToDecimal(r));
         r = "MCMX";
         System.out.println("Roman Number: " +  r + ", Decimal Number: " + romanNumeral.romanToDecimal(r));
+        r = "Vishaka";
+        System.out.println("Roman Number: " +  r + ", Decimal Number: " + romanNumeral.romanToDecimal(r));
     }
 }

@@ -63,6 +63,6 @@ public class RotateArray {
         int num [] = {1,2,3,4,5};
         int[] result = rotLeft_A(num, 1);
 
-        System.out.println("Numbers: " + Arrays.asList(num) + ", Rotated Numbers: " + Arrays.asList(result));
+        System.out.println("Numbers: " + Arrays.toString(num) + ", Rotated Numbers: " + Arrays.toString(result));
     }
 }
