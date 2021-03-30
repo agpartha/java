@@ -1,13 +1,11 @@
 package io.anand.play;
 
-import java.util.Arrays;
-
 public class StringNumberAddition {
 
     private static class CarryPlace {
         int carry               = 0;
         int place               = 1;
-        int sum                 = 0;
+        int result = 0;
         StringBuilder sumString = new StringBuilder();
     }
     private static CarryPlace carryPlace = new CarryPlace();
@@ -23,7 +21,7 @@ public class StringNumberAddition {
     private static void addStringDigits (char digOne, char digTwo) {
         int val             = carryPlace.carry + (digOne - '0') + digTwo - '0';
         carryPlace.carry    = val / 10;
-        carryPlace.sum     += (val % 10) * carryPlace.place;
+        carryPlace.result += (val % 10) * carryPlace.place;
         carryPlace.sumString.insert(0, (char)((val % 10) + '0'));
         carryPlace.place   *= 10;
     }
@@ -102,7 +100,7 @@ public class StringNumberAddition {
         // ignore the place value for this carry and add it
         addStringDigits();
         System.out.println("Sum String: " + carryPlace.sumString);
-        return carryPlace.sum;
+        return carryPlace.result;
     }
 
     private static int addStringNumbersTwo (String numOne, String numTwo) {
@@ -118,16 +116,6 @@ public class StringNumberAddition {
         int i = numOne.length() - 1;
         int j = numTwo.length() - 1;
         while (i >= 0 || j >= 0) {
-            /*
-            int dig1 = i >= 0 ? numOne.charAt(i) - '0' : 0;
-            int dig2 = j >= 0 ? numTwo.charAt(j) - '0' : 0;
-
-            int val = dig1 + dig2 + carryPlace.carry;
-            carryPlace.sum  += (val % 10) * carryPlace.place;
-            carryPlace.carry = (val / 10);
-            carryPlace.sumString.insert(0, (char)((val % 10) + '0'));
-            carryPlace.place   *= 10;
-            */
             addStringDigits(i >= 0 ? numOne.charAt(i): '0', j >= 0 ? numTwo.charAt(j) : '0');
             i--;
             j--;
@@ -136,12 +124,12 @@ public class StringNumberAddition {
         // Last addition would have possible left a carry and do not
         // ignore the place value for this carry and add it
         addStringDigits();
-        System.out.println("Sum String: " + carryPlace.sumString);
-        return carryPlace.sum;
+        System.out.println("\nSum String: " + carryPlace.sumString);
+        return carryPlace.result;
     }
 
 
-    private static int subStringNumbersTwo (String numOne, String numTwo) {
+    private static int subStringNumbers (String numOne, String numTwo) {
         // Sanitize the inputs
         // Null strings, empty strings
         // non numeric characters in the input
@@ -160,9 +148,9 @@ public class StringNumberAddition {
         }
 
         // Last addition would have possible left a borrow and do not
-        // ignore the place value for this borrow and add it
+        // ignore the place value for this borrow and subtract it
         subStringDigits();
-        System.out.println("Sub String: " + borrowPlace.subString);
+        System.out.println("\nSub String: " + borrowPlace.subString);
         return borrowPlace.result;
     }
 
@@ -171,8 +159,9 @@ public class StringNumberAddition {
         String numTwo = "0050087";
 
         System.out.println("Input: number 1: " + numOne + ", number 2: " + numTwo);
-        System.out.println("Sum: " + addStringNumbersTwo(numOne, numTwo));
-        System.out.println("Sub: " + subStringNumbersTwo(numOne, numTwo));
+        System.out.println("Sum (1): " + addStringNumbers(numOne, numTwo));
+        System.out.println("Sum (2): " + addStringNumbersTwo(numOne, numTwo));
+        System.out.println("Sub (1): " + subStringNumbers(numOne, numTwo));
 
     }
 }
