@@ -118,6 +118,7 @@ public class StringNumberAddition {
         int i = numOne.length() - 1;
         int j = numTwo.length() - 1;
         while (i >= 0 || j >= 0) {
+            /*
             int dig1 = i >= 0 ? numOne.charAt(i) - '0' : 0;
             int dig2 = j >= 0 ? numTwo.charAt(j) - '0' : 0;
 
@@ -126,7 +127,8 @@ public class StringNumberAddition {
             carryPlace.carry = (val / 10);
             carryPlace.sumString.insert(0, (char)((val % 10) + '0'));
             carryPlace.place   *= 10;
-            // subStringDigits(dig1, dig2);
+            */
+            addStringDigits(i >= 0 ? numOne.charAt(i): '0', j >= 0 ? numTwo.charAt(j) : '0');
             i--;
             j--;
         }
@@ -152,22 +154,6 @@ public class StringNumberAddition {
         int i = numOne.length() - 1;
         int j = numTwo.length() - 1;
         while (i >= 0 || j >= 0) {
-            /*
-            int dig1 = i >= 0 ? numOne.charAt(i) - '0' : 0;
-            int dig2 = j >= 0 ? numTwo.charAt(j) - '0' : 0;
-
-            int val = dig1 - dig2 - borrowPlace.borrow;
-            if (val >= 0) {
-                borrowPlace.borrow = 0;
-            } else {
-                borrowPlace.borrow = 1;
-                val += 10;
-            }
-
-            borrowPlace.result  += (val % 10) * borrowPlace.place;
-            borrowPlace.subString.insert(0, (char)((val % 10) + '0'));
-            borrowPlace.place   *= 10;
-            */
             subStringDigits((i >= 0 ? numOne.charAt(i) : '0'), (j >= 0 ? numTwo.charAt(j) : '0'));
             i--;
             j--;
