@@ -100,11 +100,54 @@ public class SearchRotatedArray {
         return -1;
     }
 
+    //a is sorted array
+    private static int binSearchIterCompact(int[] a, int key) {
+        int end = a.length - 1;
+        int start = 0;
+
+        // Edge cases
+        if (1 == a.length)
+            if (a[0] == key)
+                return 0;
+        // Search for the value for the modpoint and if less than midpoint
+        // search within theat section, else the half after mid point
+        //
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
+
+            // If the value is at any one of the locations we have access to, just check and be done with it.
+            if (a[mid] == key)
+                return mid;
+
+            // Start with base assumption, Of course we will validate further
+            boolean searchFirstHalf = false;
+            if (a[start] < a[mid]) {
+                // If the first half is sorted and key value is in range
+                if ((key >= a[start]) && (key < a[mid]))
+                    searchFirstHalf = true;
+            } else if (a[mid] < a[end])  {
+                // If the second half is sorted and our key value is out of range
+                if ((key > a[mid]) && (key <= a[end]))
+                    searchFirstHalf = true;
+            } else
+                // Technically not valid since array is sorted at-least in one of the halves.
+                return -1;
+
+            // Adjust the next search indices
+            if (searchFirstHalf)
+                end = mid - 1;
+            else
+                start = mid + 1;
+        }
+        return -1;
+    }
+
     private static boolean useRecursion = true;
     private static int binarySearchRotated (int [] a, int key) {
         if (useRecursion)
             return binSearchRecurse(a, key, 0, a.length - 1);
-        return binSearchIter(a, key);
+        return binSearchIterCompact(a, key);
     }
 
     public static void main(String []args){
