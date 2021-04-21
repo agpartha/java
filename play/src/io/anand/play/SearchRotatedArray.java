@@ -50,7 +50,7 @@ public class SearchRotatedArray {
     }
 
     //a is sorted array
-    private static int binSearchIter(int[] a, int key) {
+    private static int binSearchIterVerbose(int[] a, int key) {
         int end = a.length - 1;
         int start = 0;
 
@@ -101,7 +101,7 @@ public class SearchRotatedArray {
     }
 
     //a is sorted array
-    private static int binSearchIterCompact(int[] a, int key) {
+    private static int binSearchIter(int[] a, int key) {
         int end = a.length - 1;
         int start = 0;
 
@@ -147,7 +147,7 @@ public class SearchRotatedArray {
     private static int binarySearchRotated (int [] a, int key) {
         if (useRecursion)
             return binSearchRecurse(a, key, 0, a.length - 1);
-        return binSearchIterCompact(a, key);
+        return binSearchIter(a, key);
     }
 
     public static void main(String []args){
