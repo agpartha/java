@@ -75,6 +75,6 @@ public class BinarySearch {
         int key = 7;
         int index = binSearch(a, key);
 
-        System.out.println("Key: " + key + " at the array: " + index + ", in input: " + Arrays.toString(a));
+        System.out.println("Key: " + key + " at the index: " + index + ", in input: " + Arrays.toString(a));
     }
 }
