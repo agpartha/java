@@ -153,11 +153,7 @@ public class SearchRotatedArray {
     private static int findPivot (int [] a) {
         int end = a.length - 1;
         int start = 0;
-
-        // If array has no pivot, array is sorted as seen by end values
-//        if (a[start] <= a[end])
-//            return -1;
-
+        
         // There is a pivot somewhere, do a regular binary search
         // When we see a mid, check if that value is meeting the condition of
         // mid-1 > mid < mid+1
