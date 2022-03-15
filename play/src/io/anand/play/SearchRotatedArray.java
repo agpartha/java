@@ -154,20 +154,23 @@ public class SearchRotatedArray {
         int end = a.length - 1;
         int start = 0;
 
-        // Edge cases
-        if (1 == a.length)
-            return -1;
-
-        // If array has no pivot, array is sorted so it has to show a sign of rotation
-        if (a[start] <= a[end])
-            return -1;
+        // If array has no pivot, array is sorted as seen by end values
+//        if (a[start] <= a[end])
+//            return -1;
 
         // There is a pivot somewhere, do a regular binary search
         // When we see a mid, check if that value is meeting the condition of
         // mid-1 > mid < mid+1
-        while (start <= end) {
+        while (start < end) {
             int mid = start + (end - start) / 2;
             System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
+
+            // Edge cases
+            if (end == (start + 1))
+                if (a[end] < a[start])
+                    return end;
+            else
+                return -1;
 
             // Did we meet the pivot criteria
             if ((a[mid] < a[mid-1]) && (a[mid] < a[mid+1]))
@@ -183,14 +186,17 @@ public class SearchRotatedArray {
 
     public static void main(String []args){
         int[] v1 = {6, 7, 1, 2, 3, 4, 5};
+        int p;
         System.out.println("Input: " + Arrays.toString(v1));
-        System.out.println("Pivot found at: "+findPivot(v1));
+        p = findPivot(v1);
+        System.out.println("Pivot: " + (p > 0 ? v1[p] + " at index: " + p : "Not Found"));
         System.out.println("Key(3) found at: "+binarySearchRotated(v1, 3));
         System.out.println("Key(6) found at: "+binarySearchRotated(v1, 6));
         System.out.println("Key(1) found at: "+binarySearchRotated(v1, 1));
         int[] v2 = {4, 5, 6, 1, 2, 3};
         System.out.println("Input: " + Arrays.toString(v2));
-        System.out.println("Pivot found at: "+findPivot(v2));
+        p = findPivot(v2);
+        System.out.println("Pivot: " + (p > 0 ? v2[p] + " at index: " + p : "Not Found"));
         System.out.println("Key(3) found at: "+binarySearchRotated(v2, 3));
         System.out.println("Key(6) found at: "+binarySearchRotated(v2, 6));
         System.out.println("Key(4) found at: "+binarySearchRotated(v2, 4));
@@ -200,5 +206,17 @@ public class SearchRotatedArray {
         int[] v3 = {1, 2, 2, 2, 2};
         System.out.println("Input: " + Arrays.toString(v3));
         System.out.println("Key(1) found at: "+binarySearchRotated(v3, 2));
+        p = findPivot(v3);
+        System.out.println("Pivot: " + (p > 0 ? v3[p] + " at index: " + p : "Not Found"));
+        int[] v4 = {3, 2};
+        System.out.println("Input: " + Arrays.toString(v4));
+        System.out.println("Key(1) found at: "+binarySearchRotated(v3, 2));
+        p = findPivot(v4);
+        System.out.println("Pivot: " + (p > 0 ? v4[p] + " at index: " + p : "Not Found"));
+        int[] v5 = {3, 4, 2};
+        System.out.println("Input: " + Arrays.toString(v5));
+        System.out.println("Key(1) found at: "+binarySearchRotated(v3, 2));
+        p = findPivot(v5);
+        System.out.println("Pivot: " + (p > 0 ? v5[p] + " at index: " + p : "Not Found"));
     }
 }
