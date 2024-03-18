@@ -110,7 +110,7 @@ public class SearchRotatedArray {
             if (a[0] == key)
                 return 0;
         // Search for the value for the modpoint and if less than midpoint
-        // search within theat section, else the half after mid point
+        // search within that section, else the half after mid point
         //
         while (start <= end) {
             int mid = start + (end - start) / 2;
@@ -122,13 +122,13 @@ public class SearchRotatedArray {
 
             // Start with base assumption, Of course we will validate further
             boolean searchFirstHalf = false;
-            if (a[start] < a[mid]) {
+            if (a[start] <= a[mid]) {
                 // If the first half is sorted and key value is in range
                 if ((key >= a[start]) && (key < a[mid]))
                     searchFirstHalf = true;
-            } else if (a[mid] < a[end])  {
+            } else if (a[mid] <= a[end])  {
                 // If the second half is sorted and our key value is out of range
-                if ((key > a[mid]) && (key <= a[end]))
+                if ((key > a[end]) || (key < a[mid]))
                     searchFirstHalf = true;
             } else
                 // Technically not valid since array is sorted at-least in one of the halves.
@@ -143,7 +143,45 @@ public class SearchRotatedArray {
         return -1;
     }
 
-    private static boolean useRecursion = true;
+
+    private static int binSearchIter2(int[] a, int key) {
+        int end = a.length - 1;
+        int start = 0;
+
+        // Edge cases
+        if (1 == a.length)
+            if (a[0] == key)
+                return 0;
+        // Search for the value for the modpoint and if less than midpoint
+        // search within theat section, else the half after mid point
+        //
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
+
+            // If the value is at any one of the locations we have access to, just check and be done with it.
+            if (a[mid] == key)
+                return mid;
+
+            // Start with base assumption, Of course we will validate further
+            boolean searchFirstHalf = false;
+            if ((a[start] <= a[mid]) && ((key >= a[start]) && (key < a[mid]))) {
+                // If the first half is sorted and key value is in this range
+                searchFirstHalf = true;
+            } else if ((a[mid] <= a[end]) && ((key < a[mid]) || (key > a[end]))) {
+                    // If the second half is sorted and key value is out of this range
+                    searchFirstHalf = true;
+            }
+
+            // Adjust the next search indices
+            if (searchFirstHalf)
+                end = mid - 1;
+            else
+                start = mid + 1;
+        }
+        return -1;
+    }
+    private static boolean useRecursion = false;
     private static int binarySearchRotated (int [] a, int key) {
         if (useRecursion)
             return binSearchRecurse(a, key, 0, a.length - 1);
@@ -181,8 +219,10 @@ public class SearchRotatedArray {
     }
 
     public static void main(String []args){
+
         int[] v1 = {6, 7, 1, 2, 3, 4, 5};
         int p;
+        
         System.out.println("Input: " + Arrays.toString(v1));
         p = findPivot(v1);
         System.out.println("Pivot: " + (p > 0 ? v1[p] + " at index: " + p : "Not Found"));
@@ -201,17 +241,17 @@ public class SearchRotatedArray {
         System.out.println("Key(-1) found at: "+binarySearchRotated(v2, -1));
         int[] v3 = {1, 2, 2, 2, 2};
         System.out.println("Input: " + Arrays.toString(v3));
-        System.out.println("Key(1) found at: "+binarySearchRotated(v3, 2));
+        System.out.println("Key(2) found at: "+binarySearchRotated(v3, 2));
         p = findPivot(v3);
         System.out.println("Pivot: " + (p > 0 ? v3[p] + " at index: " + p : "Not Found"));
         int[] v4 = {3, 2};
         System.out.println("Input: " + Arrays.toString(v4));
-        System.out.println("Key(1) found at: "+binarySearchRotated(v3, 2));
+        System.out.println("Key(2) found at: "+binarySearchRotated(v4, 2));
         p = findPivot(v4);
         System.out.println("Pivot: " + (p > 0 ? v4[p] + " at index: " + p : "Not Found"));
         int[] v5 = {3, 4, 2};
         System.out.println("Input: " + Arrays.toString(v5));
-        System.out.println("Key(1) found at: "+binarySearchRotated(v3, 2));
+        System.out.println("Key(2) found at: "+binarySearchRotated(v5, 2));
         p = findPivot(v5);
         System.out.println("Pivot: " + (p > 0 ? v5[p] + " at index: " + p : "Not Found"));
     }

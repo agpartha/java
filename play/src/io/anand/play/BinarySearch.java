@@ -40,7 +40,7 @@ public class BinarySearch {
         if (1 == a.length)
             if (a[0] == key)
                 return 0;
-        // Search for the value for the modpoint and if less than midpoint
+        // Search for the value for the midpoint and if less than midpoint
         // search within theat section, else the half after mid point
         //
         while (start <= end) {
