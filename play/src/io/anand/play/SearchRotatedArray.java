@@ -222,7 +222,7 @@ public class SearchRotatedArray {
 
         int[] v1 = {6, 7, 1, 2, 3, 4, 5};
         int p;
-        
+
         System.out.println("Input: " + Arrays.toString(v1));
         p = findPivot(v1);
         System.out.println("Pivot: " + (p > 0 ? v1[p] + " at index: " + p : "Not Found"));
