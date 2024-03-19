@@ -4,6 +4,35 @@ import java.util.Arrays;
 
 public class SearchRotatedArray {
     //a is sorted array
+    private static int findPivot (int [] a) {
+        int end = a.length - 1;
+        int start = 0;
+
+        // There is a pivot somewhere, do a regular binary search
+        // When we see a mid, check if that value is meeting the condition of
+        // mid-1 > mid < mid+1
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
+
+            // Edge cases
+            if (end == (start + 1))
+                if (a[end] < a[start])
+                    return end;
+                else
+                    return -1;
+
+            // Did we meet the pivot criteria
+            if ((a[mid] < a[mid-1]) && (a[mid] < a[mid+1]))
+                return mid;
+            // Find the sorted part and look in the other section
+            if (a[start] > a[mid])
+                end = mid;
+            else
+                start = mid;
+        }
+        return -1;
+    }
     private static int binSearchRecurse(int[] a, int key, int start, int end) {
 
         // crossed indices means we are done searching.
@@ -187,37 +216,7 @@ public class SearchRotatedArray {
             return binSearchRecurse(a, key, 0, a.length - 1);
         return binSearchIter(a, key);
     }
-
-    private static int findPivot (int [] a) {
-        int end = a.length - 1;
-        int start = 0;
-        
-        // There is a pivot somewhere, do a regular binary search
-        // When we see a mid, check if that value is meeting the condition of
-        // mid-1 > mid < mid+1
-        while (start < end) {
-            int mid = start + (end - start) / 2;
-            System.out.println("start: " + start + ", end: " + end + ", mid: " + mid + ", value[mid]: " + a[mid]);
-
-            // Edge cases
-            if (end == (start + 1))
-                if (a[end] < a[start])
-                    return end;
-            else
-                return -1;
-
-            // Did we meet the pivot criteria
-            if ((a[mid] < a[mid-1]) && (a[mid] < a[mid+1]))
-                return mid;
-            // Find the sorted part and look in the other section
-            if (a[start] > a[mid])
-                end = mid;
-            else
-                start = mid;
-        }
-        return -1;
-    }
-
+    
     public static void main(String []args){
 
         int[] v1 = {6, 7, 1, 2, 3, 4, 5};
